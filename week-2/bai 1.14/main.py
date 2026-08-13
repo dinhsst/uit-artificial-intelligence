@@ -52,7 +52,7 @@ tong_thoi_gian = max(workers, key=lambda w: w["pages"] / w["speed"])["pages"] / 
 
 in_ket_qua(workers, "Câu B (no local search)")
 
-
+# Cải tiến kết quả bằng local search
 def makespan(workers):
     return max(w["pages"] / w["speed"] for w in workers)
 
