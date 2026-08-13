@@ -1,1 +1,1 @@
-# uit-artificial-intelligence
+#source code nhóm 26 môn Trí Tuệ Nhân Tạo
