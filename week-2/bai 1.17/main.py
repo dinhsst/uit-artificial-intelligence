@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from typing import Dict, List, Set
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -95,7 +96,9 @@ def draw_graph(coloring: Dict[str, int], num_colors: int, filename: str = "ket_q
     plt.title(f"Bài 1.17 - Tô màu 13 tỉnh miền Nam (Tổng: {num_colors} màu)", fontsize=14)
     plt.axis("off")
     plt.tight_layout()
-    plt.savefig(filename, dpi=150)
+    output_dir = os.path.dirname(os.path.abspath(__file__))
+    output_path = os.path.join(output_dir, filename)
+    plt.savefig(output_path, dpi=150)
     print(f"\nDa luu hinh anh sơ đồ ket qua tai: {filename}")
 
 
