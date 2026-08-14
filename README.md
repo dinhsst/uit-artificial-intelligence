@@ -1,1 +1,1 @@
-#source code nhóm 26 môn Trí Tuệ Nhân Tạo
+#source code nhóm 8 môn Trí Tuệ Nhân Tạo
