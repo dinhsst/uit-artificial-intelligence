@@ -1,19 +1,48 @@
-# Bài 1.17 - Tô màu bản đồ 13 tỉnh miền Nam
+# Bài 1.17 — Tô màu bản đồ 13 tỉnh miền Nam
+
+![Đề bài](Đề bài.png)
 
 ## Mục tiêu
-Viết chương trình tô màu cho 13 khu vực (tỉnh) trên bản đồ miền Nam sao cho:
-- Hai tỉnh giáp ranh nhau không được tô cùng một màu.
-- Số màu sử dụng là ít nhất (tối ưu sắc số = 3 màu).
-- Trực quan hóa kết quả bằng sơ đồ đồ thị hình ảnh.
 
-## Thuật toán sử dụng
-Chương trình sử dụng **Thuật toán DSATUR (Degree Saturation - Độ bảo hòa)**:
-- Tại mỗi bước, chương trình ưu tiên chọn tỉnh có **độ bảo hòa cao nhất** (tức là tỉnh kề với nhiều màu khác nhau nhất) để tô màu trước.
-- Nếu độ bảo hòa bằng nhau, chọn tỉnh có **bậc cao nhất** (giáp ranh với nhiều tỉnh khác nhất).
-- Phương pháp này giúp đưa ra lời giải tối ưu (3 màu) một cách nhanh chóng và chính xác.
+Tô màu 13 tỉnh sao cho hai tỉnh giáp ranh không cùng màu và số màu dùng là ít nhất.
 
-## Cài đặt thư viện hỗ trợ (để vẽ hình)
-Để chạy chương trình và tự động xuất ra ảnh sơ đồ kết quả, bạn cần cài đặt hai thư viện `networkx` và `matplotlib`:
+## Chạy chương trình
+
+Phần giải bài toán chỉ dùng thư viện chuẩn Python:
+
+Chạy từ thư mục `week-2`:
 
 ```bash
-pip install networkx matplotlib
+python "bai 1.17/main.py"
+```
+
+Chương trình luôn in phương án tô màu ở terminal. Nếu muốn xuất thêm sơ đồ `ket_qua.png`, cài hai thư viện tùy chọn:
+
+```bash
+python -m pip install -r "bai 1.17/requirements.txt"
+```
+
+## Thuật toán
+
+Chương trình dùng **DSATUR** để tạo phương án tô màu:
+
+1. Chọn tỉnh chưa tô có độ bão hòa cao nhất — tức giáp với nhiều màu khác nhau nhất.
+2. Nếu bằng nhau, ưu tiên tỉnh có nhiều tỉnh kề hơn.
+3. Gán màu nhỏ nhất chưa bị dùng bởi các tỉnh kề.
+
+Sau khi tô, `validate_coloring()` kiểm tra tất cả 13 tỉnh đã có màu và mọi cặp tỉnh giáp ranh đều khác màu.
+
+## Chứng minh số màu tối thiểu
+
+Ba tỉnh **Long An**, **Tiền Giang** và **Đồng Tháp** đôi một giáp nhau, tạo thành một tam giác. Vì vậy đồ thị cần ít nhất 3 màu.
+
+Chương trình cũng dùng backtracking thuần Python để kiểm tra khả năng tô bằng `k` màu:
+
+- Không thể tô bằng 2 màu.
+- Có thể tô bằng 3 màu.
+
+Do đó sắc số của bản đồ là **3**, và phương án DSATUR được in ra là tối ưu.
+
+## Demo đầu ra
+
+Khi đã cài thư viện vẽ, chương trình lưu sơ đồ tại `ket_qua.png` trong cùng thư mục với `main.py`.

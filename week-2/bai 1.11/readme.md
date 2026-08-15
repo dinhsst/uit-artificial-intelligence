@@ -208,8 +208,10 @@ Local search kéo makespan từ **28 xuống 15**: nó chấp nhận cho Ngườ
 
 Chỉ dùng thư viện chuẩn (`copy`, `itertools`), không cần cài thêm gói nào:
 
+Chạy từ thư mục `week-2`:
+
 ```bash
-python main.py
+python "bai 1.11/main.py"
 ```
 
 Muốn chạy với dữ liệu khác, sửa ma trận `t` ở đầu `main.py` (mỗi hàng là một người, mỗi cột là một việc); `m` và `n` tự suy ra từ kích thước ma trận:
