@@ -1,0 +1,187 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[T5]{fontenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\lstset{basicstyle=\ttfamily\small,columns=fullflexible,frame=single,breaklines=true}
+
+\title{\textbf{BÀI GIẢI BÀI TẬP 3\\ THUẬT GIẢI A*}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Bài 1: Tìm đường từ Arad đến Bucharest}
+
+\subsection{Cơ sở của thuật toán}
+
+Với mỗi thành phố $n$, thuật toán A* sử dụng hàm đánh giá
+\[
+    f(n)=g(n)+h(n),
+\]
+trong đó $g(n)$ là chi phí thực tế từ Arad đến $n$, còn $h(n)$ là khoảng
+cách đường chim bay từ $n$ đến Bucharest. Ở mỗi vòng lặp, ta lấy khỏi
+OPEN đỉnh có $f$ nhỏ nhất. Nếu có hòa, lời giải này ưu tiên $g$ nhỏ hơn;
+nếu vẫn hòa thì ưu tiên đỉnh được đưa vào OPEN trước. Ta dừng khi
+Bucharest được lấy ra khỏi OPEN.
+
+Heuristic đường chim bay không vượt quá chi phí ngắn nhất còn lại đến
+Bucharest (admissible), vì vậy A* trả về đường đi tối ưu khi dừng theo
+quy tắc trên.
+
+\subsection{Các bước thực hiện}
+
+Các cạnh cần dùng trong quá trình tìm kiếm là
+\[
+\begin{aligned}
+&Arad\mathbin{-}Sibiu=140,\quad Sibiu\mathbin{-}Rimnicu\ Vilcea=80,\\
+&Rimnicu\ Vilcea\mathbin{-}Pitesti=97,\quad Pitesti\mathbin{-}Bucharest=100,\\
+&Sibiu\mathbin{-}Fagaras=99,\quad Fagaras\mathbin{-}Bucharest=211,\\
+&Rimnicu\ Vilcea\mathbin{-}Craiova=146,\quad Pitesti\mathbin{-}Craiova=124.
+\end{aligned}
+\]
+
+Bảng diễn biến chính của A*:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{c l r r r p{6.2cm}}
+\toprule
+Bước & Đỉnh lấy ra & $g$ & $h$ & $f$ & Các cập nhật quan trọng\\
+\midrule
+0 & Arad & 0 & 366 & 366 & Zerind $(75,374,449)$; Timisoara $(118,329,447)$; Sibiu $(140,253,393)$.\\
+1 & Sibiu & 140 & 253 & 393 & Rimnicu Vilcea $(220,193,413)$; Fagaras $(239,178,417)$; Oradea $(291,380,671)$.\\
+2 & Rimnicu Vilcea & 220 & 193 & 413 & Pitesti $(317,98,415)$; Craiova $(366,160,526)$.\\
+3 & Pitesti & 317 & 98 & 415 & Bucharest $(417,0,417)$. Đường qua Pitesti đến Craiova có $g=441$, không tốt hơn $366$.\\
+4 & Fagaras & 239 & 178 & 417 & Bucharest đã có trong OPEN với $g=417$; đường mới qua Fagaras có $g=450$, không tốt hơn.\\
+5 & Bucharest & 417 & 0 & 417 & Đạt mục tiêu; dừng và truy vết con trỏ cha.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Trong bảng, mỗi bộ ba có dạng $(g,h,f)$. Chẳng hạn, sau khi mở rộng
+Arad, Sibiu được chọn vì $f(Sibiu)=140+253=393$ nhỏ nhất. Sau đó:
+\[
+\begin{aligned}
+ f(Rimnicu\ Vilcea)&=220+193=413,\\
+ f(Pitesti)&=317+98=415,\\
+ f(Bucharest)&=417+0=417.
+\end{aligned}
+\]
+
+\subsection{Kết quả}
+
+Lần theo con trỏ cha từ Bucharest về Arad, ta được
+\[
+\boxed{Arad\;\longrightarrow\;Sibiu\;\longrightarrow\;Rimnicu\ Vilcea
+\;\longrightarrow\;Pitesti\;\longrightarrow\;Bucharest.}
+\]
+
+Tổng độ dài đường đi là
+\[
+    140+80+97+100=\boxed{417\text{ km}}.
+\]
+Đường trực tiếp qua Fagaras có độ dài $140+99+211=450$ km, lớn hơn
+417 km, nên không phải nghiệm tối ưu.
+
+\section{Bài 2: Giải 8-puzzle bằng A*}
+
+\subsection{Mô hình hóa}
+
+Một trạng thái được biểu diễn bởi tuple gồm 9 số theo thứ tự từng hàng;
+số $0$ biểu diễn ô trống. Mỗi nút tìm kiếm lưu trạng thái, chi phí $g$,
+heuristic $h$, nút cha và nước đi đã sinh ra nó. Mỗi nước đi có chi phí
+1, nên chi phí của lời giải chính là số nước đi.
+
+Chương trình trong tệp \texttt{astar\_8puzzle.py} đọc tệp \texttt{INPUT.txt}
+(theo mẫu của đề), hoặc nhận tên tệp qua dòng lệnh. Tệp đầu vào gồm một
+dòng kích thước 3, ba dòng trạng thái đầu và ba dòng trạng thái đích.
+
+\subsection{Heuristic Manhattan}
+
+Với mỗi quân $t\ne0$, gọi $(r_t,c_t)$ là vị trí hiện tại và
+$(r_t^*,c_t^*)$ là vị trí của quân đó trong mục tiêu. Heuristic được dùng
+là
+\[
+ h(s)=\sum_{t\ne0}\left(|r_t-r_t^*|+|c_t-c_t^*|\right).
+\]
+Mỗi nước đi chỉ làm giảm hoặc tăng tổng khoảng cách một lượng không quá
+1, do đó Manhattan là heuristic admissible và consistent. A* graph search
+vì thế tìm được lời giải có số bước nhỏ nhất.
+
+\subsection{Kiểm tra dữ liệu và tính khả giải}
+
+Chương trình kiểm tra kích thước bằng 3, đủ sáu dòng trạng thái, mỗi trạng
+thái chứa đúng một hoán vị của các số $0,1,\ldots,8$. Với bàn cờ $3\times3$,
+số nghịch thế được tính sau khi bỏ số 0. Trạng thái đầu và trạng thái đích
+khả biến đổi qua lại khi và chỉ khi hai số nghịch thế có cùng tính chẵn lẻ.
+Nếu khác parity, chương trình in thông báo không có lời giải và không chạy
+A*.
+
+\subsection{Các bước của A*}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Đưa trạng thái đầu vào priority queue với $g=0$ và $f=g+h$.
+    \item Lấy trạng thái có $f$ nhỏ nhất; bỏ qua bản ghi cũ nếu nó không còn
+    là chi phí tốt nhất đã biết cho trạng thái đó.
+    \item Nếu trạng thái là mục tiêu, truy vết các con trỏ cha.
+    \item Tìm vị trí ô 0 và thử các hướng Lên, Xuống, Trái, Phải nếu hợp lệ.
+    \item Với trạng thái mới có $g$ nhỏ hơn giá trị đã lưu, cập nhật
+    $best\_g$, cha và đưa trạng thái vào OPEN.
+    \item Đảo ngược chuỗi truy vết rồi xuất từng ma trận trung gian.
+\end{enumerate}
+
+Quy ước mã nước đi là $U$ (Lên), $D$ (Xuống), $L$ (Trái), $R$ (Phải),
+theo hướng di chuyển của ô trống. Tệp \texttt{OUTPUT.txt} chứa trạng thái
+đầu, trạng thái đích, từng bước cùng các giá trị $g,h,f$, số bước và số
+nút đã mở rộng.
+
+\subsection{Mã nguồn cốt lõi}
+
+Mã nguồn đầy đủ được bàn giao trong tệp \texttt{astar\_8puzzle.py}. Các
+hàm chính gồm:
+\begin{itemize}
+    \item \texttt{read\_input}, \texttt{parse\_state}: đọc và kiểm tra input;
+    \item \texttt{inversion\_count}, \texttt{is\_solvable}: kiểm tra parity;
+    \item \texttt{manhattan}: tính heuristic;
+    \item \texttt{neighbors}: sinh trạng thái kế tiếp;
+    \item \texttt{a\_star}: tìm kiếm bằng heap tối thiểu;
+    \item \texttt{reconstruct\_path}, \texttt{format\_solution}: truy vết và xuất kết quả.
+\end{itemize}
+
+\subsection{Độ đúng đắn và độ phức tạp}
+
+Manhattan không vượt quá chi phí thật và nhất quán; vì mỗi cạnh có chi phí
+1, A* luôn lấy nghiệm có số bước nhỏ nhất khi trạng thái đích được lấy ra
+khỏi OPEN. Với 8-puzzle chỉ có tối đa $9!$ hoán vị, trong thực tế số trạng
+thái được mở rộng nhỏ hơn nhiều nhờ heuristic và bảng $best\_g$. Độ phức tạp
+phụ thuộc số trạng thái đã sinh, thường viết là $O(b^d)$ trong trường hợp
+xấu nhất, với $b\le4$ và $d$ là độ sâu nghiệm.
+
+\section{Cách chạy và kiểm thử}
+
+Đặt các tệp \texttt{astar\_8puzzle.py} và \texttt{INPUT.txt} cùng thư mục,
+sau đó chạy:
+\begin{lstlisting}
+python astar_8puzzle.py
+\end{lstlisting}
+Có thể chỉ định tệp vào/ra:
+\begin{lstlisting}
+python astar_8puzzle.py INPUT.txt OUTPUT.txt
+\end{lstlisting}
+
+Nên kiểm thử thêm ba trường hợp: trạng thái đầu trùng trạng thái đích (0
+bước), trạng thái đổi chỗ hai quân (không khả giải), và input sai định dạng.
+
+\end{document}

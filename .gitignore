@@ -4,6 +4,7 @@ __pycache__/
 .vscode/
 .venv/
 *.egg-info/
+~$*.docx
 .idea/
 /week-2/bai 1.16/*.png
 /week-2/bai 1.17/*.png

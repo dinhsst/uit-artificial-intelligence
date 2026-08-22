@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mô phỏng 8-puzzle bằng thuật toán A*</title>
+<style>
+:root{
+  --bg:#0f1117; --panel:#171a23; --line:#262b38; --text:#e6e8ee;
+  --muted:#9aa3b2; --accent:#4f8cff; --good:#3ddc97; --bad:#ff6b6b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:15px/1.5 "Segoe UI",system-ui,sans-serif}
+header{padding:18px 24px;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:20px}
+.sub{margin-top:4px;color:var(--muted);font-size:13px}
+main{display:grid;grid-template-columns:360px 1fr;gap:20px;padding:20px;align-items:start}
+@media (max-width:960px){main{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.panel+.panel{margin-top:16px}
+.panel h2{margin:0 0 10px;font-size:13px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted)}
+textarea{width:100%;height:158px;padding:10px;background:#0b0d13;color:var(--text);
+  border:1px solid var(--line);border-radius:8px;resize:vertical;
+  font:13px/1.7 Consolas,"Courier New",monospace}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+button{padding:8px 12px;font-size:13px;color:var(--text);background:#222736;
+  border:1px solid var(--line);border-radius:8px;cursor:pointer}
+button:hover:not(:disabled){border-color:var(--accent)}
+button:disabled{opacity:.42;cursor:not-allowed}
+button.primary{background:var(--accent);border-color:var(--accent);color:#08121f;font-weight:600}
+label{font-size:13px;color:var(--muted)}
+input[type=range]{width:120px;accent-color:var(--accent)}
+.boards{display:flex;gap:30px;flex-wrap:wrap;align-items:flex-start}
+.board{display:grid;gap:6px;grid-template-columns:repeat(3,66px);grid-template-rows:repeat(3,66px)}
+.board.mini{gap:4px;grid-template-columns:repeat(3,36px);grid-template-rows:repeat(3,36px)}
+.caption{margin:0 0 8px;font-size:12px;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--muted)}
+.tile{display:flex;align-items:center;justify-content:center;font-size:23px;font-weight:600;
+  background:#232a3a;border:1px solid #313a4f;border-radius:8px;
+  transition:background .18s ease,color .18s ease}
+.board.mini .tile{font-size:13px;border-radius:5px}
+.tile.blank{background:transparent;border-style:dashed;border-color:#2f374a;color:transparent}
+.tile.moved{background:var(--accent);border-color:var(--accent);color:#08121f}
+.tile.placed{border-color:rgba(61,220,151,.55)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:10px;margin-top:16px}
+.stat{padding:10px 12px;background:#0b0d13;border:1px solid var(--line);border-radius:8px}
+.stat dt{margin:0;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.stat dd{margin:4px 0 0;font-size:19px;font-weight:600;font-variant-numeric:tabular-nums}
+#status{margin-top:14px;padding:10px 12px;border-radius:8px;font-size:13px;
+  background:#0b0d13;border:1px solid var(--line)}
+#status.ok{border-color:rgba(61,220,151,.5);color:var(--good)}
+#status.err{border-color:rgba(255,107,107,.5);color:var(--bad)}
+#steps{max-height:330px;overflow:auto;margin:0;padding:0;list-style:none}
+#steps li{margin-bottom:6px}
+#steps button{display:flex;gap:10px;width:100%;text-align:left;align-items:baseline}
+#steps button[aria-current=true]{border-color:var(--accent);background:#1d2534}
+.idx{min-width:56px;color:var(--muted);font-variant-numeric:tabular-nums}
+.mono{font-family:Consolas,"Courier New",monospace}
+.hint{margin-top:10px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Mô phỏng 8-puzzle bằng thuật toán A*</h1>
+  <p class="sub">Bài tập 3 &mdash; Bài 2. Heuristic Manhattan, chi phí mỗi nước đi bằng 1.</p>
+</header>
+
+<main>
+  <section>
+    <div class="panel">
+      <h2>Dữ liệu vào (định dạng INPUT.txt)</h2>
+      <textarea id="input" spellcheck="false" aria-label="Nội dung INPUT.txt">3
+2 8 3
+1 6 4
+7 0 5
+1 2 3
+8 0 4
+7 6 5</textarea>
+      <div class="row">
+        <button id="solve" class="primary" type="button">Giải bằng A*</button>
+        <button id="shuffle" type="button">Xáo trộn</button>
+        <button id="reset" type="button">Về ví dụ đề</button>
+      </div>
+      <p class="hint">Dòng đầu là kích thước 3, ba dòng kế tiếp là trạng thái đầu,
+      ba dòng cuối là trạng thái đích. Số 0 là ô trống.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Các bước di chuyển</h2>
+      <ol id="steps" aria-label="Danh sách các bước"></ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="panel">
+      <h2>Trạng thái</h2>
+      <div class="boards">
+        <div>
+          <p class="caption">Hiện tại</p>
+          <div id="board" class="board" role="img" aria-label="Bàn cờ hiện tại"></div>
+        </div>
+        <div>
+          <p class="caption">Mục tiêu</p>
+          <div id="goalBoard" class="board mini" role="img" aria-label="Bàn cờ mục tiêu"></div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:16px">
+        <button id="first" type="button">&#124;&lt;</button>
+        <button id="prev" type="button">&lt; Lùi</button>
+        <button id="play" type="button">Chạy</button>
+        <button id="next" type="button">Tiến &gt;</button>
+        <button id="last" type="button">&gt;&#124;</button>
+        <label for="speed">Tốc độ</label>
+        <input id="speed" type="range" min="120" max="1400" step="20" value="620">
+      </div>
+      <dl class="stats">
+        <div class="stat"><dt>Bước</dt><dd id="sStep">0</dd></div>
+        <div class="stat"><dt>Nước đi</dt><dd id="sMove">&mdash;</dd></div>
+        <div class="stat"><dt>g</dt><dd id="sG">0</dd></div>
+        <div class="stat"><dt>h</dt><dd id="sH">0</dd></div>
+        <div class="stat"><dt>f</dt><dd id="sF">0</dd></div>
+        <div class="stat"><dt>Nút mở rộng</dt><dd id="sExp">0</dd></div>
+        <div class="stat"><dt>Nút đã sinh</dt><dd id="sGen">0</dd></div>
+      </dl>
+      <p id="status" role="status" aria-live="polite">Nhấn &laquo;Giải bằng A*&raquo; để bắt đầu.</p>
+    </div>
+  </section>
+</main>
+
+<script>
+'use strict';
+
+const SIZE = 3, BLANK = 0;
+// Tên nước đi theo hướng di chuyển của ô trống, trùng quy ước của astar_8puzzle.py.
+const MOVES = [
+  { name: 'Lên', code: 'U', dr: -1, dc: 0 },
+  { name: 'Xuống', code: 'D', dr: 1, dc: 0 },
+  { name: 'Trái', code: 'L', dr: 0, dc: -1 },
+  { name: 'Phải', code: 'R', dr: 0, dc: 1 }
+];
+
+const el = (id) => document.getElementById(id);
+const key = (state) => state.join(',');
+
+function parseInputText(text) {
+  const lines = text.split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
+  if (lines.length < 7) throw new Error('Cần 7 dòng: kích thước, 3 dòng đầu, 3 dòng đích.');
+  if (Number(lines[0]) !== SIZE) throw new Error('Chỉ hỗ trợ bàn cờ 3 x 3.');
+  return {
+    start: parseState(lines.slice(1, 4), 'Trạng thái đầu'),
+    goal: parseState(lines.slice(4, 7), 'Trạng thái đích')
+  };
+}
+
+function parseState(rows, label) {
+  const values = [];
+  rows.forEach((row, i) => {
+    const parts = row.split(/\s+/);
+    if (parts.length !== SIZE) throw new Error(`${label}: dòng ${i + 1} phải có ${SIZE} số.`);
+    parts.forEach((part) => {
+      if (!/^\d+$/.test(part)) throw new Error(`${label}: chỉ được chứa số nguyên.`);
+      values.push(Number(part));
+    });
+  });
+  const seen = new Set(values);
+  if (seen.size !== 9 || values.some((v) => v < 0 || v > 8)) {
+    throw new Error(`${label}: phải chứa mỗi số từ 0 đến 8 đúng một lần.`);
+  }
+  return values;
+}
+
+function inversions(state) {
+  const tiles = state.filter((t) => t !== BLANK);
+  let count = 0;
+  for (let i = 0; i < tiles.length; i++)
+    for (let j = i + 1; j < tiles.length; j++) if (tiles[i] > tiles[j]) count++;
+  return count;
+}
+
+const isSolvable = (start, goal) => inversions(start) % 2 === inversions(goal) % 2;
+
+
+function heuristic(state, goalPositions) {
+  let total = 0;
+  state.forEach((tile, index) => {
+    if (tile === BLANK) return;
+    const [r, c] = [Math.floor(index / SIZE), index % SIZE];
+    const [gr, gc] = goalPositions[tile];
+    total += Math.abs(r - gr) + Math.abs(c - gc);
+  });
+  return total;
+}
+
+function neighbors(state) {
+  const blank = state.indexOf(BLANK);
+  const br = Math.floor(blank / SIZE), bc = blank % SIZE;
+  return MOVES.flatMap((move) => {
+    const r = br + move.dr, c = bc + move.dc;
+    if (r < 0 || r >= SIZE || c < 0 || c >= SIZE) return [];
+    const swap = r * SIZE + c;
+    const next = state.slice();
+    [next[blank], next[swap]] = [next[swap], next[blank]];
+    return [{ state: next, move }];
+  });
+}
+
+// A* graph search. Queue nhỏ nên dùng mảng + chọn min, giúp file HTML độc lập.
+function aStar(start, goal) {
+  const goalPositions = {};
+  goal.forEach((tile, i) => { goalPositions[tile] = [Math.floor(i / SIZE), i % SIZE]; });
+  const startKey = key(start), goalKey = key(goal);
+  const open = [{ state: start, g: 0, f: heuristic(start, goalPositions), order: 0 }];
+  const bestG = new Map([[startKey, 0]]);
+  const parents = new Map([[startKey, null]]);
+  let order = 1, expanded = 0, generated = 1;
+
+  while (open.length) {
+    open.sort((a, b) => a.f - b.f || a.g - b.g || a.order - b.order);
+    const current = open.shift();
+    const currentKey = key(current.state);
+    if (current.g !== bestG.get(currentKey)) continue;
+    if (currentKey === goalKey) {
+      const path = [];
+      let cursor = currentKey;
+      while (cursor !== null) {
+        const item = parents.get(cursor);
+        path.push({ state: cursor.split(',').map(Number), move: item && item.move });
+        cursor = item && item.parent;
+      }
+      path.reverse();
+      return { path, expanded, generated, goalPositions };
+    }
+    expanded++;
+    neighbors(current.state).forEach(({ state, move }) => {
+      const g = current.g + 1, stateKey = key(state);
+      if (g >= (bestG.get(stateKey) ?? Infinity)) return;
+      bestG.set(stateKey, g);
+      parents.set(stateKey, { parent: currentKey, move });
+      open.push({ state, g, f: g + heuristic(state, goalPositions), order: order++ });
+      generated++;
+    });
+  }
+  return null;
+}
+
+function boardHTML(state, goal, mini = false) {
+  return state.map((tile, i) => {
+    const placed = tile !== 0 && tile === goal[i] ? ' placed' : '';
+    return `<div class="tile${tile === 0 ? ' blank' : ''}${placed}">${tile || ''}</div>`;
+  }).join('');
+}
+
+let model = null;
+let currentStep = 0;
+let timer = null;
+let exampleText = el('input').value;
+
+function render() {
+  if (!model) return;
+  const item = model.solution.path[currentStep];
+  const state = item.state;
+  const goal = model.goal;
+  el('board').innerHTML = boardHTML(state, goal);
+  el('goalBoard').innerHTML = boardHTML(goal, goal, true);
+  el('sStep').textContent = `${currentStep}/${model.solution.path.length - 1}`;
+  el('sMove').textContent = currentStep ? `${item.move.name} (${item.move.code})` : '—';
+  const h = heuristic(state, model.solution.goalPositions);
+  el('sG').textContent = currentStep;
+  el('sH').textContent = h;
+  el('sF').textContent = currentStep + h;
+  el('sExp').textContent = model.solution.expanded;
+  el('sGen').textContent = model.solution.generated;
+  el('steps').querySelectorAll('button').forEach((button, i) => {
+    button.setAttribute('aria-current', i === currentStep ? 'true' : 'false');
+  });
+  el('first').disabled = el('prev').disabled = currentStep === 0;
+  el('last').disabled = el('next').disabled = currentStep === model.solution.path.length - 1;
+  el('play').textContent = timer ? 'Dừng' : (currentStep === model.solution.path.length - 1 ? 'Chạy lại' : 'Chạy');
+}
+
+function renderSteps() {
+  const list = el('steps');
+  list.innerHTML = '';
+  model.solution.path.forEach((item, i) => {
+    const li = document.createElement('li');
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.innerHTML = `<span class="idx">Bước ${i}</span><span>${i ? `Di chuyển: ${item.move.name} (${item.move.code})` : 'Trạng thái ban đầu'}</span>`;
+    button.addEventListener('click', () => { stop(); currentStep = i; render(); });
+    li.appendChild(button);
+    list.appendChild(li);
+  });
+}
+
+function stop() {
+  if (timer) { clearInterval(timer); timer = null; }
+  if (model) render();
+}
+
+function solve() {
+  stop();
+  try {
+    const input = parseInputText(el('input').value);
+    if (!isSolvable(input.start, input.goal)) {
+      model = null;
+      el('board').innerHTML = boardHTML(input.start, input.goal);
+      el('goalBoard').innerHTML = boardHTML(input.goal, input.goal, true);
+      el('steps').innerHTML = '';
+      el('status').className = 'err';
+      el('status').textContent = 'Không có lời giải: hai trạng thái khác parity nghịch thế.';
+      return;
+    }
+    const solution = aStar(input.start, input.goal);
+    model = { ...input, solution };
+    currentStep = 0;
+    renderSteps(); render();
+    el('status').className = 'ok';
+    el('status').textContent = `Đã tìm thấy lời giải tối ưu với ${solution.path.length - 1} bước.`;
+  } catch (error) {
+    model = null;
+    el('status').className = 'err';
+    el('status').textContent = `Lỗi: ${error.message}`;
+  }
+}
+
+function moveTo(step) {
+  if (!model) return;
+  stop();
+  currentStep = Math.max(0, Math.min(model.solution.path.length - 1, step));
+  render();
+}
+
+el('solve').addEventListener('click', solve);
+el('reset').addEventListener('click', () => { stop(); el('input').value = exampleText; solve(); });
+el('first').addEventListener('click', () => moveTo(0));
+el('prev').addEventListener('click', () => moveTo(currentStep - 1));
+el('next').addEventListener('click', () => moveTo(currentStep + 1));
+el('last').addEventListener('click', () => moveTo(model ? model.solution.path.length - 1 : 0));
+el('play').addEventListener('click', () => {
+  if (!model) { solve(); return; }
+  if (timer) { stop(); return; }
+  if (currentStep === model.solution.path.length - 1) currentStep = 0;
+  timer = setInterval(() => {
+    if (currentStep >= model.solution.path.length - 1) { stop(); return; }
+    currentStep++; render();
+  }, Number(el('speed').value));
+  render();
+});
+el('shuffle').addEventListener('click', () => {
+  stop();
+  const goal = [1, 2, 3, 8, 0, 4, 7, 6, 5];
+  // Đi ngược từ trạng thái đích nên trạng thái sinh ra luôn khả giải.
+  let state = goal.slice(), previous = -1;
+  for (let i = 0; i < 18; i++) {
+    // MOVES xếp theo cặp đối nhau (U,D) và (L,R) nên chỉ số đối là previous ^ 1.
+    const banned = previous >= 0 ? MOVES[previous ^ 1].code : null;
+    const options = neighbors(state).filter(({ move }) => move.code !== banned);
+    const picked = options[Math.floor(Math.random() * options.length)];
+    previous = MOVES.findIndex((move) => move.code === picked.move.code);
+    state = picked.state;
+  }
+  const rows = [3];
+  for (let i = 0; i < 9; i += 3) rows.push(state.slice(i, i + 3).join(' '));
+  rows.push('1 2 3', '8 0 4', '7 6 5');
+  el('input').value = rows.join('\n');
+  solve();
+});
+
+solve();
+</script>
+</body>
+</html>

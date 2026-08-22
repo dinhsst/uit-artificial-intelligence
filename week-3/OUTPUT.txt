@@ -1,0 +1,55 @@
+8-PUZZLE - THUAT TOAN A*
+
+TRANG THAI BAN DAU:
+2 8 3
+1 6 4
+7 0 5
+
+TRANG THAI MUC TIEU:
+1 2 3
+8 0 4
+7 6 5
+
+BUOC 0 - TRANG THAI BAN DAU
+2 8 3
+1 6 4
+7 0 5
+g=0, h=5, f=5
+
+BUOC 1 - DI CHUYEN: Lên (U)
+2 8 3
+1 0 4
+7 6 5
+g=1, h=4, f=5
+
+BUOC 2 - DI CHUYEN: Lên (U)
+2 0 3
+1 8 4
+7 6 5
+g=2, h=3, f=5
+
+BUOC 3 - DI CHUYEN: Trái (L)
+0 2 3
+1 8 4
+7 6 5
+g=3, h=2, f=5
+
+BUOC 4 - DI CHUYEN: Xuống (D)
+1 2 3
+0 8 4
+7 6 5
+g=4, h=1, f=5
+
+BUOC 5 - DI CHUYEN: Phải (R)
+1 2 3
+8 0 4
+7 6 5
+g=5, h=0, f=5
+
+DA TIM THAY LOI GIAI.
+SO BUOC DI CHUYEN: 5
+CHI PHI: 5
+SO NUT DA MO RONG: 5
+SO NUT DA SINH: 12
+
+Quy uoc: U=Len, D=Xuong, L=Trai, R=Phai (huong di chuyen cua o trong).
