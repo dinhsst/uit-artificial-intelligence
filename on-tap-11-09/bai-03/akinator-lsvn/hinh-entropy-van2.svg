@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" font-family="Be Vietnam Pro, Segoe UI, sans-serif">
+  <rect width="720" height="380" fill="#ffffff"/>
+
+  <!-- lưới ngang và nhãn trục tung -->
+  <g stroke="#d8d4c8" stroke-width="1">
+    <line x1="56" y1="32" x2="696" y2="32"/>
+    <line x1="56" y1="102" x2="696" y2="102"/>
+    <line x1="56" y1="172" x2="696" y2="172"/>
+    <line x1="56" y1="242" x2="696" y2="242"/>
+    <line x1="56" y1="312" x2="696" y2="312"/>
+  </g>
+  <g fill="#6b6a63" font-size="12" text-anchor="end">
+    <text x="46" y="36">4</text>
+    <text x="46" y="106">3</text>
+    <text x="46" y="176">2</text>
+    <text x="46" y="246">1</text>
+    <text x="46" y="316">0</text>
+  </g>
+  <text x="16" y="180" fill="#6b6a63" font-size="12" text-anchor="middle" transform="rotate(-90 16 180)">Entropy (bit)</text>
+
+  <!-- nhãn trục hoành -->
+  <g fill="#6b6a63" font-size="12" text-anchor="middle">
+    <text x="56" y="334">đầu ván</text>
+    <text x="147" y="334">1</text>
+    <text x="239" y="334">2</text>
+    <text x="330" y="334">3</text>
+    <text x="422" y="334">4</text>
+    <text x="513" y="334">5</text>
+    <text x="605" y="334">6</text>
+    <text x="696" y="334">7</text>
+  </g>
+  <text x="376" y="358" fill="#6b6a63" font-size="12" text-anchor="middle">Lượt hỏi</text>
+
+  <!-- đường entropy -->
+  <polyline fill="none" stroke="#1B2A4A" stroke-width="2.5"
+    points="56,61 147,99 239,142 330,145 422,264 513,124 605,190 696,262"/>
+
+  <!-- các điểm -->
+  <g fill="#1B2A4A">
+    <circle cx="56" cy="61" r="4"/>
+    <circle cx="147" cy="99" r="4"/>
+    <circle cx="239" cy="142" r="4"/>
+    <circle cx="330" cy="145" r="4"/>
+    <circle cx="513" cy="124" r="4"/>
+    <circle cx="605" cy="190" r="4"/>
+    <circle cx="696" cy="262" r="4"/>
+  </g>
+  <circle cx="422" cy="264" r="6" fill="#C1443C"/>
+
+  <!-- giá trị -->
+  <g fill="#1B2A4A" font-size="12" font-weight="600" text-anchor="middle">
+    <text x="56" y="50">3.58</text>
+    <text x="147" y="88">3.05</text>
+    <text x="239" y="131">2.43</text>
+    <text x="330" y="134">2.39</text>
+    <text x="513" y="113">2.69</text>
+    <text x="605" y="179">1.75</text>
+    <text x="676" y="251">0.72</text>
+  </g>
+  <text x="422" y="286" fill="#C1443C" font-size="12" font-weight="600" text-anchor="middle">0.68</text>
+
+  <!-- chú giải cho lượt trả lời sai -->
+  <line x1="422" y1="258" x2="422" y2="214" stroke="#C1443C" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="422" y="206" fill="#C1443C" font-size="12" font-weight="600" text-anchor="middle">LLM trả lời sai</text>
+  <text x="422" y="190" fill="#C1443C" font-size="11" text-anchor="middle">(&#8220;đối đầu quân Tống?&#8221; &#8594; CO)</text>
+</svg>

@@ -1,0 +1,259 @@
+{
+  "vanChoi": [
+    {
+      "id": 1,
+      "nhanVatBiMat": "Lý Thường Kiệt",
+      "luotHoi": [
+        {
+          "cauHoi": "Nhân vật này sống trước thế kỷ 15?",
+          "traLoi": "CO",
+          "informationGain": 1,
+          "entropySauLuot": 3.05
+        },
+        {
+          "cauHoi": "Nhân vật này là danh tướng?",
+          "traLoi": "CO",
+          "informationGain": 1,
+          "entropySauLuot": 2.43
+        },
+        {
+          "cauHoi": "Nhân vật này nổi tiếng với chiến thắng Bạch Đằng?",
+          "traLoi": "KHONG",
+          "informationGain": 0.99,
+          "entropySauLuot": 2.39
+        },
+        {
+          "cauHoi": "Nhân vật này sống ở thế kỷ 11?",
+          "traLoi": "CO",
+          "informationGain": 0.97,
+          "entropySauLuot": 0.99
+        },
+        {
+          "cauHoi": "Nhân vật này là vua?",
+          "traLoi": "KHONG",
+          "informationGain": 0.52,
+          "entropySauLuot": 0.52
+        }
+      ],
+      "doanCuoi": "Lý Thường Kiệt",
+      "dung": true,
+      "soLuotDaDung": 5
+    },
+    {
+      "id": 2,
+      "nhanVatBiMat": "Hồ Chí Minh",
+      "luotHoi": [
+        {
+          "cauHoi": "Nhân vật này sống trước thế kỷ 15?",
+          "traLoi": "KHONG",
+          "informationGain": 1,
+          "entropySauLuot": 3.05
+        },
+        {
+          "cauHoi": "Nhân vật này là nhà thơ?",
+          "traLoi": "CO",
+          "informationGain": 0.99,
+          "entropySauLuot": 2.22
+        },
+        {
+          "cauHoi": "Nhân vật này là nhà chính trị?",
+          "traLoi": "CO",
+          "informationGain": 0.98,
+          "entropySauLuot": 1.42
+        },
+        {
+          "cauHoi": "Nhân vật này sống ở thế kỷ 15?",
+          "traLoi": "KHONG",
+          "informationGain": 1,
+          "entropySauLuot": 1.09
+        },
+        {
+          "cauHoi": "Nhân vật này sống ở thế kỷ 20?",
+          "traLoi": "CO",
+          "informationGain": 0.71,
+          "entropySauLuot": 0.31
+        }
+      ],
+      "doanCuoi": "Hồ Chí Minh",
+      "dung": true,
+      "soLuotDaDung": 5
+    },
+    {
+      "id": 3,
+      "nhanVatBiMat": "Nguyễn Trãi",
+      "luotHoi": [
+        {
+          "cauHoi": "Nhân vật này sống trước thế kỷ 15?",
+          "traLoi": "KHONG",
+          "informationGain": 1,
+          "entropySauLuot": 3.05
+        },
+        {
+          "cauHoi": "Nhân vật này là nhà thơ?",
+          "traLoi": "CO",
+          "informationGain": 0.99,
+          "entropySauLuot": 2.22
+        },
+        {
+          "cauHoi": "Nhân vật này là nhà chính trị?",
+          "traLoi": "CO",
+          "informationGain": 0.98,
+          "entropySauLuot": 1.42
+        },
+        {
+          "cauHoi": "Nhân vật này sống ở thế kỷ 15?",
+          "traLoi": "CO",
+          "informationGain": 1,
+          "entropySauLuot": 0.67
+        }
+      ],
+      "doanCuoi": "Nguyễn Trãi",
+      "dung": true,
+      "soLuotDaDung": 4
+    },
+    {
+      "id": 4,
+      "nhanVatBiMat": "Lê Lợi",
+      "luotHoi": [
+        {
+          "cauHoi": "Nhân vật này sống trước thế kỷ 15?",
+          "traLoi": "KHONG",
+          "informationGain": 1,
+          "entropySauLuot": 3.05
+        },
+        {
+          "cauHoi": "Nhân vật này là nhà thơ?",
+          "traLoi": "KHONG",
+          "informationGain": 0.99,
+          "entropySauLuot": 2.79
+        },
+        {
+          "cauHoi": "Nhân vật này là vua?",
+          "traLoi": "CO",
+          "informationGain": 0.99,
+          "entropySauLuot": 1.94
+        },
+        {
+          "cauHoi": "Nhân vật này là danh tướng?",
+          "traLoi": "CO",
+          "informationGain": 1,
+          "entropySauLuot": 1.45
+        },
+        {
+          "cauHoi": "Nhân vật này sống ở thế kỷ 18?",
+          "traLoi": "KHONG",
+          "informationGain": 0.85,
+          "entropySauLuot": 2.45
+        },
+        {
+          "cauHoi": "Nhân vật này nổi tiếng với chiến thắng Bạch Đằng?",
+          "traLoi": "KHONG",
+          "informationGain": 0.82,
+          "entropySauLuot": 2.19
+        },
+        {
+          "cauHoi": "Nhân vật này gắn với Thăng Long?",
+          "traLoi": "CO",
+          "informationGain": 0.91,
+          "entropySauLuot": 1.39
+        },
+        {
+          "cauHoi": "Nhân vật này sống ở thế kỷ 11?",
+          "traLoi": "KHONG",
+          "informationGain": 0.44,
+          "entropySauLuot": 1.08
+        },
+        {
+          "cauHoi": "Nhân vật này là thủ lĩnh khởi nghĩa?",
+          "traLoi": "CO",
+          "informationGain": 0.44,
+          "entropySauLuot": 1.45
+        },
+        {
+          "cauHoi": "Nhân vật này sống ở thế kỷ 15?",
+          "traLoi": "CO",
+          "informationGain": 1,
+          "entropySauLuot": 0.62
+        }
+      ],
+      "doanCuoi": "",
+      "dung": false,
+      "soLuotDaDung": 10
+    },
+    {
+      "id": 5,
+      "nhanVatBiMat": "Trưng Trắc",
+      "luotHoi": [
+        {
+          "cauHoi": "Nhân vật này sống trước thế kỷ 15?",
+          "traLoi": "CO",
+          "informationGain": 1,
+          "entropySauLuot": 3.05
+        },
+        {
+          "cauHoi": "Nhân vật này là danh tướng?",
+          "traLoi": "CO",
+          "informationGain": 1,
+          "entropySauLuot": 2.43
+        },
+        {
+          "cauHoi": "Nhân vật này nổi tiếng với chiến thắng Bạch Đằng?",
+          "traLoi": "KHONG",
+          "informationGain": 0.99,
+          "entropySauLuot": 2.39
+        },
+        {
+          "cauHoi": "Nhân vật này sống ở thế kỷ 11?",
+          "traLoi": "KHONG",
+          "informationGain": 0.97,
+          "entropySauLuot": 3.15
+        },
+        {
+          "cauHoi": "Nhân vật này là vua?",
+          "traLoi": "KHONG",
+          "informationGain": 0.87,
+          "entropySauLuot": 2.82
+        },
+        {
+          "cauHoi": "Nhân vật này là thủ lĩnh khởi nghĩa?",
+          "traLoi": "CO",
+          "informationGain": 0.94,
+          "entropySauLuot": 1.91
+        },
+        {
+          "cauHoi": "Nhân vật này là nữ?",
+          "traLoi": "CO",
+          "informationGain": 0.66,
+          "entropySauLuot": 1.19
+        },
+        {
+          "cauHoi": "Nhân vật này là nam?",
+          "traLoi": "KHONG",
+          "informationGain": 0.15,
+          "entropySauLuot": 1.03
+        },
+        {
+          "cauHoi": "Nhân vật này sống trước thế kỷ 10?",
+          "traLoi": "KHONGCHAC",
+          "informationGain": 0.03,
+          "entropySauLuot": 1.03
+        },
+        {
+          "cauHoi": "Nhân vật này sống trước thế kỷ 19?",
+          "traLoi": "CO",
+          "informationGain": 0.01,
+          "entropySauLuot": 1.02
+        }
+      ],
+      "doanCuoi": "",
+      "dung": false,
+      "soLuotDaDung": 10
+    }
+  ],
+  "tongKet": {
+    "tyLeDung": 0.6,
+    "soLuotTrungBinh": 6.8,
+    "baselineSoLuotTrungBinh": 8.6
+  },
+  "nhanhThieuSot": []
+}

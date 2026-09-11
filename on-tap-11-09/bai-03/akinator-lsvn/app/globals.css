@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Bảng màu tranh dân gian: chàm — trắng điệp — son điều — vàng hòe */
+@theme {
+  --color-cham: #1b2a4a;
+  --color-cham-nhat: #24365c;
+  --color-diep: #f3efe3;
+  --color-son: #c1443c;
+  --color-hoe: #d8a21b;
+  --font-sans: var(--font-be-vietnam-pro), system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-cham);
+  color: var(--color-diep);
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
