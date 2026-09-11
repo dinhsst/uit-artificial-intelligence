@@ -1,11 +1,12 @@
 # Bài tập ôn tập Trí tuệ nhân tạo
 
-Bộ bài làm chọn **Bài 1** và **Bài 2** theo đề trong `BAITAP.txt`.
+Bộ bài làm hoàn thành **cả 3 bài** theo đề trong `BAITAP.txt`.
 
 ## Nội dung
 
 - `src/smart_ambulance.py`: bản đồ giả định, A*, Dijkstra và cập nhật sự cố.
 - `src/admission_expert.py`: 12 luật IF-THEN, mạng ngữ nghĩa và validator chống hallucination.
+- `src/historical_guessing.py`: mạng ngữ nghĩa 10 nhân vật, chọn câu hỏi cân bằng và mô phỏng 5 lượt chơi.
 - `src/generate_report.py`: tạo báo cáo `output/Bao_cao_bai_tap_AI.docx`.
 - `data/city_map.json`: 15 nút và 29 cạnh dữ liệu giả lập.
 - `tests/test_solutions.py`: kiểm thử tự động.
@@ -18,6 +19,7 @@ python -m venv .venv
 .venv\Scripts\python.exe -m unittest discover -s tests -v
 .venv\Scripts\python.exe src\smart_ambulance.py
 .venv\Scripts\python.exe src\admission_expert.py
+.venv\Scripts\python.exe src\historical_guessing.py
 .venv\Scripts\python.exe src\generate_report.py
 ```
 

@@ -13,6 +13,7 @@ from admission_expert import (
     infer,
     validate_recommendations,
 )
+from historical_guessing import GuessingGame, SemanticNetwork, run_five_games
 
 
 class SmartAmbulanceTests(unittest.TestCase):
@@ -37,6 +38,30 @@ class SmartAmbulanceTests(unittest.TestCase):
         self.city.apply_accident("7", 5)
         after = self.city.astar("1", "15")
         self.assertTrue(after.cost != before.cost or after.path != before.path)
+
+
+class HistoricalGuessingTests(unittest.TestCase):
+    def setUp(self):
+        self.network = SemanticNetwork.default()
+        self.game = GuessingGame(self.network)
+
+    def test_network_meets_entity_and_relation_requirements(self):
+        self.assertGreaterEqual(len(self.network.characters), 10)
+        self.assertGreaterEqual(len(self.network.relations), 30)
+
+    def test_question_selection_splits_candidates(self):
+        candidates = [character.name for character in self.network.characters]
+        question = self.game.choose_question(candidates, set())
+        yes = sum(self.network.has_property(name, question) for name in candidates)
+        no = len(candidates) - yes
+        self.assertGreater(yes, 0)
+        self.assertGreater(no, 0)
+
+    def test_five_simulated_games_guess_all_secrets(self):
+        results = run_five_games()
+        self.assertEqual(len(results), 5)
+        self.assertTrue(all(result.guessed == result.secret for result in results))
+        self.assertTrue(all(result.questions <= 10 for result in results))
 
 
 class AdmissionExpertTests(unittest.TestCase):
