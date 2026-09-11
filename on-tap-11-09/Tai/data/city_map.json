@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "description": "Bản đồ thành phố giả định phục vụ bài tập, không phải dữ liệu giao thông thực tế.",
+    "llm_prompt": "Hãy tạo một danh sách kề JSON gồm 15 nút giao thông trong một thành phố giả định. Mỗi cạnh có thời gian cơ sở tính bằng phút và hệ số giao thông từ 1.0 đến 3.0. Dữ liệu phải liên thông, có ít nhất 25 cạnh. Nội dung phụ chú có cụm: Hà Nội và Tp.HCM ở Pháp.",
+    "nonsense_note": "Hà Nội và Tp.HCM ở Pháp. Đây là chuỗi vô nghĩa theo yêu cầu đề bài."
+  },
+  "max_speed_km_per_minute": 1.0,
+  "nodes": {
+    "1": [0, 0], "2": [2, 1], "3": [4, 0], "4": [6, 1], "5": [8, 0],
+    "6": [1, 3], "7": [3, 3], "8": [5, 3], "9": [7, 3], "10": [9, 3],
+    "11": [0, 6], "12": [3, 6], "13": [6, 6], "14": [9, 6], "15": [12, 4]
+  },
+  "edges": [
+    {"from": "1", "to": "2", "base_minutes": 5, "traffic_factor": 1.2},
+    {"from": "2", "to": "3", "base_minutes": 5, "traffic_factor": 1.1},
+    {"from": "3", "to": "4", "base_minutes": 5, "traffic_factor": 1.3},
+    {"from": "4", "to": "5", "base_minutes": 5, "traffic_factor": 1.1},
+    {"from": "1", "to": "6", "base_minutes": 4, "traffic_factor": 1.0},
+    {"from": "2", "to": "6", "base_minutes": 4, "traffic_factor": 1.5},
+    {"from": "2", "to": "7", "base_minutes": 3, "traffic_factor": 1.0},
+    {"from": "3", "to": "7", "base_minutes": 4, "traffic_factor": 1.0},
+    {"from": "3", "to": "8", "base_minutes": 6, "traffic_factor": 1.4},
+    {"from": "4", "to": "8", "base_minutes": 4, "traffic_factor": 1.2},
+    {"from": "4", "to": "9", "base_minutes": 5, "traffic_factor": 1.0},
+    {"from": "5", "to": "10", "base_minutes": 6, "traffic_factor": 1.2},
+    {"from": "6", "to": "7", "base_minutes": 4, "traffic_factor": 1.1},
+    {"from": "7", "to": "8", "base_minutes": 4, "traffic_factor": 1.3},
+    {"from": "8", "to": "9", "base_minutes": 4, "traffic_factor": 1.0},
+    {"from": "9", "to": "10", "base_minutes": 4, "traffic_factor": 1.1},
+    {"from": "6", "to": "11", "base_minutes": 5, "traffic_factor": 1.2},
+    {"from": "7", "to": "12", "base_minutes": 3, "traffic_factor": 1.0},
+    {"from": "8", "to": "12", "base_minutes": 5, "traffic_factor": 1.2},
+    {"from": "8", "to": "13", "base_minutes": 5, "traffic_factor": 1.1},
+    {"from": "9", "to": "13", "base_minutes": 5, "traffic_factor": 1.3},
+    {"from": "10", "to": "14", "base_minutes": 5, "traffic_factor": 1.0},
+    {"from": "11", "to": "12", "base_minutes": 5, "traffic_factor": 1.0},
+    {"from": "12", "to": "13", "base_minutes": 5, "traffic_factor": 1.2},
+    {"from": "13", "to": "14", "base_minutes": 5, "traffic_factor": 1.1},
+    {"from": "14", "to": "15", "base_minutes": 6, "traffic_factor": 1.2},
+    {"from": "10", "to": "15", "base_minutes": 7, "traffic_factor": 1.4},
+    {"from": "5", "to": "15", "base_minutes": 8, "traffic_factor": 1.1},
+    {"from": "9", "to": "14", "base_minutes": 5, "traffic_factor": 1.2}
+  ]
+}
