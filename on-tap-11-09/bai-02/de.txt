@@ -23,5 +23,4 @@ cấp."
 • Bước 3: Kiểm tra và Phát hiện Hallucination: 
 o Cố tình đưa ra các trường hợp biên hoặc dữ liệu mâu thuẫn để kiểm tra xem LLM 
 có bị trôi lệnh (vi phạm luật logic đã thiết lập) hay không. 
-o Đề xuất giải pháp kết hợp giữa Hệ chuyên gia ở tầng logic nền và LLM ở tầng 
-giao tiếp tự nhiên với người dùng. T
+o Đề xuất giải pháp kết hợp giữa Hệ chuyên gia ở tầng logic nền và LLM ở tầng giao tiếp tự nhiên với người dùng.
