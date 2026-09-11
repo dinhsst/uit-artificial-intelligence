@@ -20,6 +20,13 @@ from admission_expert import (  # noqa: E402
     run_demo as admission_demo,
 )
 from smart_ambulance import load_default_map, run_demo as ambulance_demo  # noqa: E402
+from historical_guessing import (  # noqa: E402
+    GuessingGame,
+    SemanticNetwork,
+    build_llm_prompt as guessing_prompt,
+    run_five_games,
+    run_demo as guessing_demo,
+)
 
 
 MARKER = "Hà Nội và Tp.HCM ở Pháp."
@@ -70,7 +77,7 @@ def build_report(output_path: Path) -> None:
     run.font.size = Pt(18)
     document.add_paragraph("Lớp: ........................................    Nhóm: ........................................").alignment = WD_ALIGN_PARAGRAPH.CENTER
     document.add_paragraph("Danh sách nhóm: Họ tên – MSSV – Lớp (bổ sung theo thông tin thực tế)").alignment = WD_ALIGN_PARAGRAPH.CENTER
-    document.add_paragraph("Đề tài: Bài 1 – Định tuyến thông minh và Bài 2 – Trợ lý tư vấn tuyển sinh").alignment = WD_ALIGN_PARAGRAPH.CENTER
+    document.add_paragraph("Đề tài: Bài 1 – Định tuyến, Bài 2 – Tuyển sinh và Bài 3 – Đoán nhân vật").alignment = WD_ALIGN_PARAGRAPH.CENTER
     document.add_page_break()
 
     document.add_heading("1. Phạm vi và mục tiêu", level=1)
@@ -157,12 +164,51 @@ def build_report(output_path: Path) -> None:
         "Giải pháp kiến trúc là expert system ở tầng logic nền, LLM ở tầng giao tiếp, và một validator ở giữa. " + MARKER
     )
 
-    document.add_heading("4. Mã nguồn chính", level=1)
+    document.add_heading("4. Bài 3 – Trò chơi đoán nhân vật", level=1)
+    document.add_heading("4.1. Mạng ngữ nghĩa", level=2)
+    guessing_network = SemanticNetwork.default()
+    document.add_paragraph(
+        f"Lĩnh vực chọn: nhân vật lịch sử và khoa học. Mạng gồm {len(guessing_network.characters)} thực thể và "
+        f"{len(guessing_network.relations)} quan hệ, vượt yêu cầu tối thiểu 10 thực thể và 30 quan hệ. " + MARKER
+    )
+    add_table(document, ["Nhân vật", "Một số thuộc tính"], [
+        [character.name, ", ".join(sorted(character.properties))]
+        for character in guessing_network.characters
+    ])
+    document.add_paragraph(
+        "Mỗi đỉnh nhân vật nối tới các đỉnh thuộc tính bằng quan hệ has_property; các quan hệ is_a, invented, "
+        "worked_at và developed bổ sung ngữ nghĩa chuyên ngành."
+    )
+
+    document.add_heading("4.2. Chiến lược hỏi đáp", level=2)
+    document.add_paragraph(
+        "Ở mỗi lượt, thuật toán tính số ứng viên có và không có từng thuộc tính chưa hỏi. "
+        "Thuộc tính có độ lệch giữa hai nhánh nhỏ nhất được chọn, tương đương mục tiêu giảm entropy và thu hẹp không gian tìm kiếm nhanh. "
+        "Giới hạn tối đa là 10 câu hỏi."
+    )
+    document.add_paragraph("Prompt mô phỏng vai trò LLM/người chơi giữ bí mật:")
+    add_code_block(document, guessing_prompt("Alan Turing"))
+
+    document.add_heading("4.3. Thực nghiệm 5 lượt chơi", level=2)
+    guessing_result = guessing_demo()
+    add_code_block(document, guessing_result)
+    game_results = run_five_games()
+    add_table(document, ["Lượt", "Nhân vật bí mật", "Kết quả đoán", "Số câu hỏi", "Xác định duy nhất"], [
+        [str(index), result.secret, result.guessed or "Không có", str(result.questions), "Có" if result.uniquely_identified else "Không"]
+        for index, result in enumerate(game_results, 1)
+    ])
+    document.add_paragraph(
+        "Mô phỏng dùng SecretPlayer thay cho API LLM để kết quả lặp lại và không cần khóa truy cập. "
+        "Trong phiên bản thật, câu trả lời YES/NO từ LLM cần được chuẩn hóa và kiểm tra chỉ thuộc hai giá trị hợp lệ trước khi lọc ứng viên."
+    )
+
+    document.add_heading("5. Mã nguồn chính", level=1)
     document.add_paragraph("Các đoạn dưới đây trích phần hàm chính; toàn bộ mã có trong thư mục src/.")
     add_code_block(document, source_excerpt(ROOT / "src" / "smart_ambulance.py", ["def heuristic", "def shortest_path", "def apply_accident"]))
     add_code_block(document, source_excerpt(ROOT / "src" / "admission_expert.py", ["def build_rules", "def infer", "def validate_recommendations"]))
+    add_code_block(document, source_excerpt(ROOT / "src" / "historical_guessing.py", ["def choose_question", "def play", "def run_five_games"]))
 
-    document.add_heading("5. Hướng dẫn chạy", level=1)
+    document.add_heading("6. Hướng dẫn chạy", level=1)
     add_bullets(document, [
         "Mở terminal tại thư mục dự án.",
         "Tạo môi trường: python -m venv .venv.",
@@ -170,18 +216,20 @@ def build_report(output_path: Path) -> None:
         "Chạy kiểm thử: .venv\\Scripts\\python.exe -m unittest discover -s tests -v.",
         "Chạy Bài 1: .venv\\Scripts\\python.exe src\\smart_ambulance.py.",
         "Chạy Bài 2: .venv\\Scripts\\python.exe src\\admission_expert.py.",
+        "Chạy Bài 3: .venv\\Scripts\\python.exe src\\historical_guessing.py.",
         "Tạo báo cáo: .venv\\Scripts\\python.exe src\\generate_report.py.",
     ])
     document.add_paragraph("File đầu ra: output/Bao_cao_bai_tap_AI.docx")
 
-    document.add_heading("6. Kết luận và hạn chế", level=1)
+    document.add_heading("7. Kết luận và hạn chế", level=1)
     document.add_paragraph(
         "Bài 1 cho thấy A* đạt cùng chi phí tối ưu với Dijkstra nhưng có thể giảm số nút mở rộng nhờ heuristic; đồ thị được cập nhật khi có sự cố. "
-        "Bài 2 cho thấy hệ luật giúp kiểm soát tính đúng đắn, còn LLM phù hợp làm lớp giao tiếp."
+        "Bài 2 cho thấy hệ luật giúp kiểm soát tính đúng đắn, còn LLM phù hợp làm lớp giao tiếp. "
+        "Bài 3 cho thấy mạng ngữ nghĩa và câu hỏi chia đôi giúp thu hẹp không gian ứng viên có hệ thống thay vì đoán ngẫu nhiên."
     )
     document.add_paragraph(
-        "Hạn chế: dữ liệu bản đồ là giả lập, heuristic chưa dùng bản đồ GPS thật, luật tuyển sinh không đại diện cho quy chế của một trường cụ thể, "
-        "và demo không gọi LLM bên ngoài nên không đo được chất lượng hội thoại thực tế."
+        "Hạn chế: dữ liệu bản đồ, luật tuyển sinh và mạng nhân vật đều là giả lập; heuristic chưa dùng bản đồ GPS thật; "
+        "phiên bản hiện tại mô phỏng LLM cục bộ nên chưa đo chất lượng hội thoại tự nhiên của mô hình bên ngoài."
     )
     document.save(output_path)
 
