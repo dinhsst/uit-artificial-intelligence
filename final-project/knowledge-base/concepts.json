@@ -1,0 +1,3398 @@
+{
+ "version": "1.0",
+ "mon_hoc": "CS106.F31.CN2.TTNT",
+ "ten_bai": {
+  "B1": "Tổng quan về Trí tuệ nhân tạo",
+  "B2": "Thuật giải Heuristic",
+  "B3": "Không gian trạng thái & Phương pháp tìm kiếm",
+  "B4": "4. Chien luoc Minimax",
+  "B5": "Tổng quan về Biểu diễn tri thức",
+  "B6a": "Các phương pháp BDTT cơ bản"
+ },
+ "nodes": [
+  {
+   "id": "B2.TC.DAC_TINH_HEURISTIC",
+   "ten": "Đặc tính thuật giải heuristic",
+   "loai": "TINH_CHAT",
+   "bai": "B2",
+   "nguon": 2,
+   "trich_dan": "tìm được lời giải tốt, mặc dù không phải là tốt nhất",
+   "dinh_nghia": "Thuật giải heuristic thường cho lời giải tốt (không nhất thiết tốt nhất), độ phức tạp nhỏ hơn thuật giải tối ưu và gần gũi cách giải của con người.",
+   "keyphrases": [
+    "đặc tính heuristic",
+    "dac tinh heuristic",
+    "độ phức tạp nhỏ",
+    "lời giải tốt",
+    "tự nhiên"
+   ],
+   "id_goc": "B2.TC.DAC_TINH_HEURISTIC"
+  },
+  {
+   "id": "B1.NL.HUONG_PHAT_TRIEN_AI",
+   "ten": "Các hướng phát triển của AI",
+   "loai": "NGUYEN_LY",
+   "bai": "B1",
+   "nguon": 8,
+   "trich_dan": "Nghiên cứu các phương pháp kỹ thuật tổng quát",
+   "dinh_nghia": "AI phát triển theo ba hướng: nghiên cứu phương pháp kỹ thuật tổng quát, hệ thống tri thức đặc trưng, và giải quyết vấn đề ứng dụng thực.",
+   "keyphrases": [
+    "hướng phát triển AI",
+    "huong phat trien AI",
+    "phương pháp tổng quát",
+    "tri thức đặc trưng",
+    "ứng dụng thực"
+   ],
+   "id_goc": "B1.NL.HUONG_PHAT_TRIEN_AI"
+  },
+  {
+   "id": "B2.NL.VET_CAN_THONG_MINH_2",
+   "ten": "Nguyên lý vét cạn thông minh",
+   "loai": "NGUYEN_LY",
+   "bai": "B2",
+   "nguon": 3,
+   "trich_dan": "giới hạn lại không gian tìm kiếm",
+   "dinh_nghia": "Khi không gian tìm kiếm lớn, cần giới hạn không gian tìm kiếm hoặc dò tìm đặc biệt dựa vào đặc thù bài toán để nhanh chóng tìm mục tiêu.",
+   "keyphrases": [
+    "dò tìm đặc biệt",
+    "giới hạn",
+    "giới hạn không gian",
+    "không gian tìm kiếm",
+    "vet can thong minh",
+    "vét cạn thông minh"
+   ],
+   "id_goc": "B2.NL.VET_CAN_THONG_MINH"
+  },
+  {
+   "id": "B1.KN.HE_CHUYEN_GIA",
+   "ten": "Hệ chuyên gia",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 9,
+   "trich_dan": "Hệ thống xây dựng dựa trên cơ sở tri thức",
+   "dinh_nghia": "Hệ chuyên gia là hệ thống dựa trên cơ sở tri thức mô phỏng kỹ năng và hành động của chuyên gia, gồm cơ sở tri thức và động cơ suy diễn.",
+   "keyphrases": [
+    "cơ sở tri thức",
+    "expert system",
+    "he chuyen gia",
+    "hệ chuyên gia",
+    "động cơ suy diễn"
+   ],
+   "id_goc": "B1.KN.HE_CHUYEN_GIA"
+  },
+  {
+   "id": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "ten": "Hệ giải quyết vấn đề thông minh",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 10,
+   "trich_dan": "Hệ thống có thể tự động suy luận giải được các vấn đề",
+   "dinh_nghia": "Hệ giải quyết vấn đề thông minh tự động suy luận giải vấn đề trong miền tri thức xác định, dựa trên cơ sở tri thức và động cơ suy diễn.",
+   "keyphrases": [
+    "cơ sở tri thức",
+    "he giai quyet van de thong minh",
+    "hệ giải quyết vấn đề thông minh",
+    "intelligent problem solving system",
+    "miền tri thức",
+    "suy luận tự động",
+    "tự động suy luận",
+    "động cơ suy diễn"
+   ],
+   "id_goc": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH"
+  },
+  {
+   "id": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "ten": "Thuật giải Heuristic",
+   "loai": "KHAI_NIEM",
+   "bai": "B2",
+   "nguon": 2,
+   "trich_dan": "Thuật giải heuristic thường tìm được lời giải tốt",
+   "dinh_nghia": "Thuật giải heuristic là giải pháp dạng thủ tục không đòi hỏi tiêu chuẩn như thuật toán, tìm lời giải tốt nhưng không nhất thiết tối ưu.",
+   "keyphrases": [
+    "Heuristic",
+    "TGH",
+    "bung no to hop",
+    "bùng nổ tổ hợp",
+    "giải pháp thủ tục",
+    "heuristic",
+    "kinh nghiem con nguoi",
+    "kinh nghiệm con người",
+    "loi giai tot",
+    "lời giải tốt",
+    "thuat giai heuristic",
+    "thuat toan heuristic",
+    "thuật giải Heuristic",
+    "thuật giải heuristic",
+    "tinh thần heuristic",
+    "vet can thong minh"
+   ],
+   "id_goc": "B2.KN.THUAT_GIAI_HEURISTIC",
+   "bi_danh": [
+    "Heuristic"
+   ]
+  },
+  {
+   "id": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "ten": "Hệ hỗ trợ quyết định",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 9,
+   "trich_dan": "Hệ thống thông tin hỗ trợ bằng máy tính",
+   "dinh_nghia": "Hệ hỗ trợ quyết định là hệ thống thông tin hỗ trợ bằng máy tính, thích nghi linh hoạt, giúp cải tiến việc ra quyết định quản lý.",
+   "keyphrases": [
+    "DSS",
+    "decision support system",
+    "he ho tro quyet dinh",
+    "hệ hỗ trợ quyết định",
+    "hỗ trợ quản lý",
+    "quản trị mô hình",
+    "quản trị tri thức"
+   ],
+   "id_goc": "B1.KN.HE_HO_TRO_QUYET_DINH"
+  },
+  {
+   "id": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "ten": "Các giai đoạn biểu diễn tri thức logic vị từ",
+   "loai": "PP_GIAI",
+   "bai": "B6a",
+   "nguon": 11,
+   "trich_dan": "biểu diễn tri thức theo logic vị từ ta thực hiện 2 giai đoạn",
+   "dinh_nghia": "Biểu diễn tri thức logic vị từ qua hai giai đoạn: xác lập vị từ cần thiết, rồi viết sự kiện và luật thành công thức logic vị từ.",
+   "keyphrases": [
+    "biểu diễn tri thức",
+    "bieu dien tri thuc",
+    "logic vị từ",
+    "giai đoạn",
+    "sự kiện và luật"
+   ],
+   "id_goc": "B6a.PP.BIEU_DIEN_LOGIC_VI_TU"
+  },
+  {
+   "id": "B4.KN.MINIMAX_2",
+   "ten": "Giải thuật Minimax",
+   "loai": "KHAI_NIEM",
+   "bai": "B4",
+   "nguon": 7,
+   "trich_dan": "Giải thuật Minimax sẽ tìm kiếm không gian của trò chơi",
+   "dinh_nghia": "Giải thuật tìm kiếm không gian trò chơi dựa trên giả thiết đối thủ cũng sử dụng kiến thức không gian trạng thái và chơi tối ưu.",
+   "keyphrases": [
+    "Minimax",
+    "chien luoc minimax",
+    "chiến lược Minimax",
+    "chiến lược minimax",
+    "dinh tri nut",
+    "giai ma minimax",
+    "giai thuat minimax",
+    "giải thuật minimax",
+    "minimax",
+    "minimax algorithm",
+    "minimax strategy",
+    "nước đi tối ưu",
+    "quy tac dinh tri",
+    "quy tắc định trị",
+    "thu tuc minimax",
+    "thuat toan minimax",
+    "thuật toán minimax",
+    "thủ tục minimax",
+    "tim kiem minimax",
+    "tro choi doi khang",
+    "trò chơi đối kháng",
+    "tìm kiếm minimax",
+    "định trị nút"
+   ],
+   "id_goc": "B4.KN.MINIMAX",
+   "bi_danh": [
+    "Thủ tục Minimax",
+    "Thuật toán Minimax",
+    "Chiến lược Minimax",
+    "Chiến lược Minimax"
+   ]
+  },
+  {
+   "id": "B1.NL.DINH_NGHIA_AI",
+   "ten": "Các định nghĩa về AI",
+   "loai": "NGUYEN_LY",
+   "bai": "B1",
+   "nguon": 3,
+   "trich_dan": "Bellman (1978): trí tuệ nhân tạo là tự động hoá các hoạt động",
+   "dinh_nghia": "AI được định nghĩa qua nhiều góc nhìn: tự động hoá hoạt động suy nghĩ, hay làm máy thực hiện việc con người làm tốt hơn.",
+   "keyphrases": [
+    "định nghĩa AI",
+    "dinh nghia AI",
+    "Bellman",
+    "Rich Knight",
+    "Nils J. Nilsson"
+   ],
+   "id_goc": "B1.NL.DINH_NGHIA_AI"
+  },
+  {
+   "id": "B3.KN.TIMKIEMCHIEUSAU",
+   "ten": "Tìm kiếm theo chiều sâu",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 31,
+   "trich_dan": "Tìm kiếm sâu trong không gian bài toán được bắt đầu từ một nút rồi tiếp tục cho đến khi",
+   "dinh_nghia": "Tìm kiếm theo chiều sâu là phương pháp tìm kiếm bắt đầu từ một nút và tiếp tục đi sâu cho đến khi gặp ngõ cụt hoặc đích.",
+   "keyphrases": [
+    "DFS",
+    "danh sách O",
+    "depth-first search",
+    "không gian bài toán",
+    "ngăn xếp",
+    "stack",
+    "thuat toan tim kiem chieu sau",
+    "thuật toán DFS",
+    "tim kiem chieu sau",
+    "tìm kiếm theo chiều sâu"
+   ],
+   "id_goc": "B3.KN.TIMKIEMCHIEUSAU",
+   "bi_danh": [
+    "Thuật toán tìm kiếm theo chiều sâu"
+   ]
+  },
+  {
+   "id": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+   "ten": "Ví dụ bài toán người và quỷ",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 19,
+   "trich_dan": "Trạng thái ban đầu (3, 3, 1)",
+   "dinh_nghia": "Bài toán người và quỷ với trạng thái ban đầu (3,3,1), các toán tử chở 1-2 người hoặc quỷ, trạng thái kết thúc (0,0,0).",
+   "keyphrases": [
+    "nguoi va quy",
+    "trang thai ban dau",
+    "3 3 1",
+    "toan tu cho",
+    "trang thai ket thuc"
+   ],
+   "id_goc": "B3.VD.BAI_TOAN_NGUOI_VA_QUY"
+  },
+  {
+   "id": "B2.KN.HAM_HEURISTIC",
+   "ten": "Hàm Heuristic",
+   "loai": "KHAI_NIEM",
+   "bai": "B2",
+   "nguon": 4,
+   "trich_dan": "Trong việc xây dựng các thuật giải Heuristic, người ta thường dùng các hàm Heuristic",
+   "dinh_nghia": "Hàm Heuristic là hàm lượng giácác giá trị phụ thuộc vào trạng thái hiện tại của bài toán, giúp chọn hành động hợp lý.",
+   "keyphrases": [
+    "ham heuristic",
+    "ham luong gia",
+    "heuristic function",
+    "hàm heuristic",
+    "hàm lượng giá",
+    "hàm đánh giá",
+    "nguyên lý",
+    "thuật giải heuristic",
+    "trang thai hien tai",
+    "trạng thái hiện tại",
+    "đánh giá"
+   ],
+   "id_goc": "B2.KN.HAM_HEURISTIC"
+  },
+  {
+   "id": "B5.KN.QUAN_LY_VAN_BAN_NGON_NGU",
+   "ten": "Quản lý văn bản theo ngữ nghĩa",
+   "loai": "KHAI_NIEM",
+   "bai": "B5",
+   "nguon": 9,
+   "trich_dan": "Xây dựng các hệ thống quản lý văn bản theo ngữ nghĩa",
+   "dinh_nghia": "Hệ thống quản lý văn bản theo ngữ nghĩa quản lý thông tin ngữ nghĩa và hỗ trợ tìm kiếm dựa trên tri thức lĩnh vực.",
+   "keyphrases": [
+    "quản lý văn bản theo ngữ nghĩa",
+    "quan ly van ban theo ngu nghia",
+    "tìm kiếm ngữ nghĩa",
+    "tri thức lĩnh vực"
+   ],
+   "id_goc": "B5.KN.QUAN_LY_VAN_BAN_NGON_NGU"
+  },
+  {
+   "id": "B3.KN.VAN_DE",
+   "ten": "Vấn đề",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 3,
+   "trich_dan": "Những vướng mắc khó khăn cần giải quyết",
+   "dinh_nghia": "Vấn đề là những vướng mắc khó khăn cần giải quyết, gồm các sự kiện, thông tin và ràng buộc, tương đương bài toán.",
+   "keyphrases": [
+    "vấn đề",
+    "van de",
+    "bài toán",
+    "bai toan",
+    "problem"
+   ],
+   "id_goc": "B3.KN.VAN_DE"
+  },
+  {
+   "id": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "ten": "Vấn đề biểu diễn tri thức",
+   "loai": "NGUYEN_LY",
+   "bai": "B6a",
+   "nguon": 2,
+   "trich_dan": "Vấn đề biểu diễn tri thức = tìm cách thể hiện tri thức",
+   "dinh_nghia": "Biểu diễn tri thức là tìm cách thể hiện tri thức theo dạng thức thích hợp cho tổ chức, lưu trữ và xử lý trên máy.",
+   "keyphrases": [
+    "BDTT",
+    "bieu dien tri thuc",
+    "biểu diễn tri thức",
+    "co so tri thuc",
+    "cơ sở tri thức",
+    "knowledge representation",
+    "lưu trữ",
+    "máy tính",
+    "mô hình tri thức",
+    "ngon ngu may",
+    "ngôn ngữ máy",
+    "xử lý"
+   ],
+   "id_goc": "B6a.NL.BIEU_DIEN_TRI_THUC",
+   "bi_danh": [
+    "Biểu diễn tri thức"
+   ]
+  },
+  {
+   "id": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+   "ten": "Tầm quan trọng của hàm đánh giá",
+   "loai": "LOI",
+   "bai": "B4",
+   "nguon": 12,
+   "trich_dan": "Chất lượng của chương trình chơi cờ phụ thuộc rất nhiều vào hàm đánh giá",
+   "dinh_nghia": "Chất lượng chương trình chơi cờ phụ thuộc lớn vào hàm đánh giá, nhưng thiết kế hàm tốt rất khó và tốn thời gian.",
+   "keyphrases": [
+    "hàm đánh giá",
+    "ham danh gia",
+    "chất lượng chương trình",
+    "chat luong chuong trinh",
+    "thiết kế hàm đánh giá"
+   ],
+   "id_goc": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG"
+  },
+  {
+   "id": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "ten": "Mô hình tri thức logic vị từ",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 11,
+   "trich_dan": "Mô hình tri thức logic vị từ (P, R)",
+   "dinh_nghia": "Mô hình tri thức logic vị từ (P, R) gồm tập vị từ P và tập luật, sự kiện R biểu diễn bằng biểu thức logic vị từ.",
+   "keyphrases": [
+    "(P, R)",
+    "P R",
+    "biểu diễn tri thức",
+    "logic",
+    "logic vị từ",
+    "mo hinh logic",
+    "mo hinh logic vi tu",
+    "mo hinh tri thuc",
+    "mô hình logic",
+    "mô hình logic vị từ",
+    "tap luat",
+    "tập luật",
+    "tập vị từ",
+    "vị từ"
+   ],
+   "id_goc": "B6a.KN.MO_HINH_LOGIC_VI_TU",
+   "bi_danh": [
+    "Logic"
+   ]
+  },
+  {
+   "id": "B1.KN.INTERNET_VAN_VAT",
+   "ten": "Internet kết nối vạn vật",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 19,
+   "trich_dan": "INTERNET KẾT NỐI VẠN VẬT",
+   "dinh_nghia": "Internet vạn vật là mạng lưới kết nối các thiết bị, máy móc nhằm trao đổi thông tin trong sản xuất và đời sống.",
+   "keyphrases": [
+    "Internet van vat",
+    "IoT",
+    "internet ket noi van vat",
+    "ket noi van vat"
+   ],
+   "id_goc": "B1.KN.INTERNET_VAN_VAT"
+  },
+  {
+   "id": "B3.KN.TIMKIEMCHIEURONG",
+   "ten": "Tìm kiếm theo chiều rộng",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 35,
+   "trich_dan": "Tìm kiếm trên tất cả các nút của một mức trong không gian bài toán trước",
+   "dinh_nghia": "Tìm kiếm theo chiều rộng là phương pháp duyệt tất cả các nút của một mức trước khi chuyển sang mức tiếp theo.",
+   "keyphrases": [
+    "BFS",
+    "breadth-first search",
+    "danh sách O",
+    "duyệt mức",
+    "hàng đợi",
+    "queue",
+    "thuat toan tim kiem chieu rong",
+    "thuật toán BFS",
+    "tim kiem chieu rong",
+    "tìm kiếm theo chiều rộng"
+   ],
+   "id_goc": "B3.KN.TIMKIEMCHIEURONG",
+   "bi_danh": [
+    "Thuật toán tìm kiếm theo chiều rộng"
+   ]
+  },
+  {
+   "id": "B2.BT.TO_MAU_DO_THI",
+   "ten": "Bài toán tô màu đồ thị",
+   "loai": "DANG_BT",
+   "bai": "B2",
+   "nguon": 6,
+   "trich_dan": "Cho một đồ thị vô hướng đơn giản. Ta muốn tìm cách tô màu cho các đỉnh",
+   "dinh_nghia": "Tìm cách tô màu các đỉnh của đồ thị sao cho hai đỉnh cạnh nhau có màu khác nhau và số màu sử dụng là ít nhất.",
+   "keyphrases": [
+    "tô màu đồ thị",
+    "to mau do thi",
+    "đồ thị vô hướng",
+    "do thi vo huong",
+    "số màu ít nhất",
+    "so mau it nhat"
+   ],
+   "id_goc": "B2.BT.TO_MAU_DO_THI"
+  },
+  {
+   "id": "B2.NL.THU_TU",
+   "ten": "Nguyên lý thứ tự",
+   "loai": "NGUYEN_LY",
+   "bai": "B2",
+   "nguon": 4,
+   "trich_dan": "Là thực hiện hành động dựa trên một cấu trúc thứ tự hợp lý của không gian khảo sát",
+   "dinh_nghia": "Thực hiện hành động dựa trên cấu trúc thứ tự hợp lý của không gian khảo sát để nhanh chóng đạt lời giải tốt.",
+   "keyphrases": [
+    "bac lon nhat",
+    "cau truc thu tu",
+    "cấu trúc thứ tự",
+    "heuristic",
+    "khong gian khao sat",
+    "không gian khảo sát",
+    "lời giải tốt",
+    "nguyen ly thu tu",
+    "nguyên lý",
+    "nguyên lý thứ tự",
+    "thu tu",
+    "thứ tự"
+   ],
+   "id_goc": "B2.NL.THU_TU"
+  },
+  {
+   "id": "B2.PP.GIAI_PHAN_CONG",
+   "ten": "Thuật giải Heuristic cho bài toán phân công",
+   "loai": "PP_GIAI",
+   "bai": "B2",
+   "nguon": 5,
+   "trich_dan": "Chọn việc J chưa phân công có thời gian thực hiện cao nhất",
+   "dinh_nghia": "Thuật giải phân công: chọn việc có thời gian thực hiện cao nhất gán cho máy có thời gian làm việc thấp nhất.",
+   "keyphrases": [
+    "O(nlgn + m2)",
+    "chon may",
+    "chon viec",
+    "chọn máy",
+    "chọn việc",
+    "thuat giai phan cong",
+    "thuật giải phân công"
+   ],
+   "id_goc": "B2.PP.GIAI_PHAN_CONG"
+  },
+  {
+   "id": "B3.TT.CAY_KHUNG_NHO_NHAT",
+   "ten": "Thuật toán cây khung nhỏ nhất",
+   "loai": "THUAT_TOAN",
+   "bai": "B3",
+   "nguon": 12,
+   "trich_dan": "lấy cạnh ej nhỏ nhất thêm vào T sao cho T không có chu trình",
+   "dinh_nghia": "Thuật toán thêm cạnh nhỏ nhất vào cây khung T nếu không tạo chu trình, kết thúc thu được cây khung nhỏ nhất.",
+   "keyphrases": [
+    "cây khung nhỏ nhất",
+    "chu trình",
+    "cạnh nhỏ nhất",
+    "T",
+    "cay khung nho nhat",
+    "chu trinh"
+   ],
+   "id_goc": "B3.TT.CAY_KHUNG_NHO_NHAT"
+  },
+  {
+   "id": "B2.TC.DO_PHU_TAP_2",
+   "ten": "Độ phức tạp thuật giải",
+   "loai": "TINH_CHAT",
+   "bai": "B2",
+   "nguon": 6,
+   "trich_dan": "Thuật giải Heuristic cho bài toán phân công công việc có độ phức tạp là O(nlgn + m2)",
+   "dinh_nghia": "Thuật giải Heuristic cho bài toán phân công có độ phức tạp O(nlgn + m2), so với O(mn) của thuật toán tối ưu.",
+   "keyphrases": [
+    "độ phức tạp",
+    "do phuc tap",
+    "O(nlgn + m2)",
+    "O(mn)",
+    "thuật toán tối ưu",
+    "thuat toan toi uu"
+   ],
+   "id_goc": "B2.TC.DO_PHU_TAP"
+  },
+  {
+   "id": "B1.KN.CONG_NGHIEP_4_0",
+   "ten": "Công nghiệp 4.0",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 19,
+   "trich_dan": "Industry 4.0",
+   "dinh_nghia": "Industry 4.0 là xu hướng sản xuất hiện đại gắn với tự động hóa, kết nối vạn vật và các công nghệ tiên tiến.",
+   "keyphrases": [
+    "Industry 4.0",
+    "cong nghiep 4.0",
+    "CMCN 4.0",
+    "cach mang cong nghiep 4.0"
+   ],
+   "id_goc": "B1.KN.CONG_NGHIEP_4_0"
+  },
+  {
+   "id": "B4.TT.ALPHA_BETA",
+   "ten": "Thuật toán Alpha-beta",
+   "loai": "THUAT_TOAN",
+   "bai": "B4",
+   "nguon": 13,
+   "trich_dan": "thuật toán Alpha-beta, thuật toán này không thăm tất cả các nút lá",
+   "dinh_nghia": "Thuật toán Alpha-beta là thuật toán cải tiến của Minimax, không thăm tất cả nút lá mà vẫn cho kết quả đúng.",
+   "keyphrases": [
+    "Alpha-beta",
+    "thuật toán Alpha-beta",
+    "cắt tỉa",
+    "minimax",
+    "alpha beta"
+   ],
+   "id_goc": "B4.TT.ALPHA_BETA"
+  },
+  {
+   "id": "B2.KN.THUAT_GIAI",
+   "ten": "Thuật giải",
+   "loai": "KHAI_NIEM",
+   "bai": "B2",
+   "nguon": 2,
+   "trich_dan": "giải pháp được viết dưới dạng thủ tục tương tự như thuật toán",
+   "dinh_nghia": "Thuật giải là giải pháp dạng thủ tục tương tự thuật toán nhưng không đòi hỏi các tiêu chuẩn như thuật toán.",
+   "keyphrases": [
+    "thuật giải",
+    "thuat giai",
+    "thủ tục",
+    "tiêu chuẩn",
+    "giải pháp"
+   ],
+   "id_goc": "B2.KN.THUAT_GIAI"
+  },
+  {
+   "id": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "ten": "Người chơi MAX và MIN",
+   "loai": "KHAI_NIEM",
+   "bai": "B4",
+   "nguon": 10,
+   "trich_dan": "người chơi cực đại – người chơi MAX",
+   "dinh_nghia": "MAX là người chơi cố gắng tối đa hóa điểm số, MIN là người chơi cố gắng tối thiểu hóa điểm số của đối thủ.",
+   "keyphrases": [
+    "max",
+    "min",
+    "người chơi max",
+    "người chơi min",
+    "nguoi choi max",
+    "nguoi choi min"
+   ],
+   "id_goc": "B4.KN.NGUOI_CHOI_MAX_MIN"
+  },
+  {
+   "id": "B5.KN.TRI_THUC_THANH_PHAN",
+   "ten": "Các thành phần tri thức",
+   "loai": "KHAI_NIEM",
+   "bai": "B5",
+   "nguon": 7,
+   "trich_dan": "Tri thức bao gồm nhiều thành phần trừu tượng, cùng với những mối liên hệ",
+   "dinh_nghia": "Tri thức gồm nhiều thành phần trừu tượng như khái niệm, quan hệ, toán tử, hàm, sự kiện, luật, kinh nghiệm.",
+   "keyphrases": [
+    "khái niệm",
+    "kinh nghiệm",
+    "luật",
+    "quan hệ",
+    "sự kiện",
+    "sự kiện và luật",
+    "thanh phan tri thuc",
+    "thành phần tri thức",
+    "tri thức khái niệm",
+    "tri thức quan hệ"
+   ],
+   "id_goc": "B5.KN.TRI_THUC_THANH_PHAN",
+   "bi_danh": [
+    "Các thành phần của tri thức"
+   ]
+  },
+  {
+   "id": "B2.NL.THAM_LAM_2",
+   "ten": "Nguyên lý tham lam",
+   "loai": "NGUYEN_LY",
+   "bai": "B2",
+   "nguon": 3,
+   "trich_dan": "chọn lựa hành động tốt nhất của từng bước",
+   "dinh_nghia": "Lấy tiêu chuẩn tối ưu toàn cục để chọn hành động tốt nhất của từng bước trong quá trình tìm kiếm lời giải.",
+   "keyphrases": [
+    "doan duong ngan nhat",
+    "greedy",
+    "hành động tốt nhất",
+    "nguyen ly",
+    "nguyen ly tham lam",
+    "nguyên lý tham lam",
+    "tham lam",
+    "tiêu chuẩn tối ưu",
+    "từng bước"
+   ],
+   "id_goc": "B2.NL.THAM_LAM"
+  },
+  {
+   "id": "B1.KN.MO_HINH_AI",
+   "ten": "Mô hình ứng dụng AI",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 18,
+   "trich_dan": "AI = Presentation & Search",
+   "dinh_nghia": "Mô hình ứng dụng AI hiện tại gồm Presentation & Search, kỹ nghệ tri thức, tìm kiếm và suy luận heuristic.",
+   "keyphrases": [
+    "mô hình ứng dụng AI",
+    "mo hinh ung dung AI",
+    "Presentation & Search",
+    "Knowledge Engineering",
+    "Search",
+    "Heuristic"
+   ],
+   "id_goc": "B1.KN.MO_HINH_AI"
+  },
+  {
+   "id": "B3.VI_DU.TRAM_CAP_NUOC",
+   "ten": "Ví dụ trạm cấp nước",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 10,
+   "trich_dan": "Có 1 trạm cấp nước và N điểm dân cư. Hãy xây dựng chương trình thiết kế tuyến đường ống nước",
+   "dinh_nghia": "Ví dụ về thiết kế tuyến đường ống nước từ trạm cấp nước đến N điểm dân cư sao cho tổng chiều dài ít nhất.",
+   "keyphrases": [
+    "trạm cấp nước",
+    "điểm dân cư",
+    "đường ống",
+    "tổng chiều dài",
+    "tram cap nuoc",
+    "diem dan cu"
+   ],
+   "id_goc": "B3.VI_DU.TRAM_CAP_NUOC"
+  },
+  {
+   "id": "B6A.KN.LOGIC_MENH_DE_3",
+   "ten": "Logic mệnh đề",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 10,
+   "trich_dan": "Logic mệnh đề: không thể can thiệp vào cấu trúc",
+   "dinh_nghia": "Logic mệnh đề là logic trong đó mệnh đề không có cấu trúc, không thể can thiệp vào cấu trúc của mệnh đề.",
+   "keyphrases": [
+    "he logic",
+    "hệ logic",
+    "không có cấu trúc",
+    "logic menh de",
+    "logic mệnh đề",
+    "logic toan hoc",
+    "logic toán học",
+    "menh de",
+    "mệnh đề"
+   ],
+   "id_goc": "B6a.KN.LOGIC_MENH_DE"
+  },
+  {
+   "id": "B6A.KN.VI_TU_2",
+   "ten": "Vị từ",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 10,
+   "trich_dan": "Vị từ là một phát biểu đề cập tới các phần tử",
+   "dinh_nghia": "Vị từ là phát biểu đề cập tới các phần tử thuộc phạm vi nhất định và chân trị phụ thuộc các phần tử này.",
+   "keyphrases": [
+    "bien",
+    "chân trị",
+    "hàm mệnh đề",
+    "phát biểu",
+    "phần tử",
+    "predicate",
+    "vi tu",
+    "vị từ"
+   ],
+   "id_goc": "B6a.KN.VI_TU"
+  },
+  {
+   "id": "B3.KN.MO_HINH_VAN_DE",
+   "ten": "Mô hình vấn đề",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 4,
+   "trich_dan": "A: giả thiết, điều kiện ban đầu",
+   "dinh_nghia": "Mô hình vấn đề A ➔ B với A là giả thiết ban đầu, B là kết luận cần đạt, ➔ là suy luận gồm hữu hạn bước.",
+   "keyphrases": [
+    "mô hình vấn đề",
+    "mo hinh van de",
+    "giả thiết",
+    "kết luận",
+    "suy luận"
+   ],
+   "id_goc": "B3.KN.MO_HINH_VAN_DE"
+  },
+  {
+   "id": "B3.KN.BIEU_DIEN_TRANG_THAI",
+   "ten": "Biểu diễn trạng thái (a, b, k)",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 19,
+   "trich_dan": "a, b là số người và quỷ ở bên bờ phải",
+   "dinh_nghia": "Trạng thái được biểu diễn bằng bộ (a, b, k) với a, b là số người và quỷ ở bờ phải, k chỉ vị trí thuyền.",
+   "keyphrases": [
+    "a b k",
+    "a,",
+    "b,",
+    "bieu dien trang thai",
+    "bo ba a b k",
+    "k",
+    "nguoi va quy",
+    "vi tri thuyen"
+   ],
+   "id_goc": "B3.KN.BIEU_DIEN_TRANG_THAI"
+  },
+  {
+   "id": "B6A.KN.TRI_THUC_THU_TUC",
+   "ten": "Tri thức thủ tục",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 2,
+   "trich_dan": "Các phương pháp điều chế hóa học, thuật toán là tri thức mang tính thủ tục",
+   "dinh_nghia": "Tri thức thủ tục là tri thức mang tính phương pháp, ví dụ các thuật toán, phương pháp điều chế hóa học.",
+   "keyphrases": [
+    "tri thức thủ tục",
+    "tri thuc thu tuc",
+    "thuật toán",
+    "phương pháp"
+   ],
+   "id_goc": "B6a.KN.TRI_THUC_THU_TUC"
+  },
+  {
+   "id": "B3.KN.TKSAUDAN",
+   "ten": "Tìm kiếm sâu dần",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 40,
+   "trich_dan": "Kỹ thuật tìm kiếm sâu dần là thực hiện việc tìm kiếm với độ sâu",
+   "dinh_nghia": "Tìm kiếm sâu dần là kỹ thuật tìm kiếm lặp lại theo độ sâu giới hạn tăng dần cho đến khi tìm ra nghiệm.",
+   "keyphrases": [
+    "tìm kiếm sâu dần",
+    "sâu dần",
+    "deepening search",
+    "tim kiem sau dan",
+    "sau dan",
+    "TKSD"
+   ],
+   "id_goc": "B3.KN.TKSAUDAN"
+  },
+  {
+   "id": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "ten": "Thuật giải Vương Hạo",
+   "loai": "THUAT_TOAN",
+   "bai": "B6a",
+   "nguon": 8,
+   "trich_dan": "Thuật giải Vương Hạo",
+   "dinh_nghia": "Thuật giải chứng minh dựa trên biến đổi dạng chuẩn giả thiết, kết luận và tách dòng theo các phép nối.",
+   "keyphrases": [
+    "Vuong Hao",
+    "Vương Hạo",
+    "chung minh",
+    "chứng minh",
+    "dạng chuẩn",
+    "thuat giai",
+    "thuật giải"
+   ],
+   "id_goc": "B6a.TT.THUAT_GIAI_VUONG_HAO"
+  },
+  {
+   "id": "B2.BT.PHAN_CONG",
+   "ten": "Bài toán phân công",
+   "loai": "DANG_BT",
+   "bai": "B2",
+   "nguon": 4,
+   "trich_dan": "Tìm phương án phân công sao cho thời gian hoàn thành toàn bộ công việc là thấp nhất",
+   "dinh_nghia": "Bài toán phân công n công việc cho m máy sao cho thời gian hoàn thành toàn bộ công việc là thấp nhất.",
+   "keyphrases": [
+    "bai toan phan cong",
+    "bài toán phân công",
+    "heuristic",
+    "máy",
+    "phân công công việc",
+    "thời gian hoàn thành",
+    "ứng dụng"
+   ],
+   "id_goc": "B2.BT.PHAN_CONG"
+  },
+  {
+   "id": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+   "ten": "Ví dụ cây trò chơi cờ vua",
+   "loai": "VI_DU",
+   "bai": "B4",
+   "nguon": 13,
+   "trich_dan": "cờ vua, chỉ tính đến độ sâu 40, cây trò chơi đã có khoảng 10^120 đỉnh",
+   "dinh_nghia": "Ví dụ cho thấy cây trò chơi cờ vua ở độ sâu 40 có khoảng 10^120 đỉnh, minh họa cho sự bùng nổ tổ hợp.",
+   "keyphrases": [
+    "cờ vua",
+    "10^120",
+    "độ sâu 40",
+    "cây trò chơi",
+    "ví dụ"
+   ],
+   "id_goc": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA"
+  },
+  {
+   "id": "B5.KN.MATHWAY",
+   "ten": "Mathway",
+   "loai": "KHAI_NIEM",
+   "bai": "B5",
+   "nguon": 10,
+   "trich_dan": "Mathway có thể giải các bài toán từng bước trong nhiều miền",
+   "dinh_nghia": "Mathway là hệ giải toán từng bước nhiều miền kiến thức nhưng chỉ giải được bài toán yêu cầu đơn giản.",
+   "keyphrases": [
+    "Mathway",
+    "mathway",
+    "giải toán từng bước",
+    "bài toán đơn giản"
+   ],
+   "id_goc": "B5.KN.MATHWAY"
+  },
+  {
+   "id": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "ten": "Bài toán phân công công việc",
+   "loai": "DANG_BT",
+   "bai": "B2",
+   "nguon": 4,
+   "trich_dan": "Một đề án gồm n công việc và các việc sẽ được thực hiên bởi m máy như nhau.",
+   "dinh_nghia": "Bài toán phân công n công việc cho m máy sao cho thời gian hoàn thành toàn bộ công việc là thấp nhất.",
+   "keyphrases": [
+    "phân công công việc",
+    "phan cong cong viec",
+    "bài toán phân công",
+    "bai toan phan cong",
+    "n công việc",
+    "m máy"
+   ],
+   "id_goc": "B2.BT.PHAN_CONG_CONG_VIEC"
+  },
+  {
+   "id": "B6A.TT.HOP_GIAI",
+   "ten": "Thuật giải Robinson (Thuật toán hợp giải)",
+   "loai": "THUAT_TOAN",
+   "bai": "B6a",
+   "nguon": 13,
+   "trich_dan": "Thuật toán hợp giải",
+   "dinh_nghia": "Thuật toán hợp giải là một trong các phương pháp biểu diễn tri thức cơ bản được trình bày trong bài.",
+   "keyphrases": [
+    "hop giai",
+    "hợp giải",
+    "resolution",
+    "resolution algorithm",
+    "robinson",
+    "thuat toan hop giai",
+    "thuật toán hợp giải"
+   ],
+   "id_goc": "B6a.TT.hop_giai"
+  },
+  {
+   "id": "B3.PP.PHAN_LOAI_VAN_DE",
+   "ten": "Phân loại vấn đề",
+   "loai": "PP_GIAI",
+   "bai": "B3",
+   "nguon": 5,
+   "trich_dan": "A, B đều rõ",
+   "dinh_nghia": "Phân loại vấn đề dựa trên mức độ rõ ràng của A và B: xác định rõ, hoặc chưa rõ một phần hay cả hai.",
+   "keyphrases": [
+    "phân loại vấn đề",
+    "phan loai van de",
+    "xác định rõ",
+    "chưa rõ",
+    "A B"
+   ],
+   "id_goc": "B3.PP.PHAN_LOAI_VAN_DE"
+  },
+  {
+   "id": "B3.KN.THUAT_TOAN",
+   "ten": "Thuật toán",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 6,
+   "trich_dan": "Thuật toán là giải pháp viết dưới dạng thủ tục",
+   "dinh_nghia": "Thuật toán là dãy hữu hạn các bước không mập mờ, thực thi được, phải dừng và cho kết quả mong muốn.",
+   "keyphrases": [
+    "A sao",
+    "A star",
+    "A*",
+    "algorithm",
+    "f(N)",
+    "f=g+h",
+    "g(N)",
+    "h(N)",
+    "ham danh gia",
+    "lưu đồ",
+    "mã giả",
+    "ngon ngu tu nhien",
+    "ngôn ngữ tự nhiên",
+    "thuat toan",
+    "thuat toan A*",
+    "thuật toán",
+    "thủ tục",
+    "tim kiem cuc tieu",
+    "tính hữu hạn",
+    "tính xác định",
+    "tính đúng"
+   ],
+   "id_goc": "B3.KN.THUAT_TOAN"
+  },
+  {
+   "id": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "ten": "Không gian trạng thái",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 19,
+   "trich_dan": "Biểu diễn trạng thái bằng (a, b, k)",
+   "dinh_nghia": "Không gian trạng thái của bài toán được biểu diễn bằng các trạng thái và toán tử chuyển trạng thái.",
+   "keyphrases": [
+    "bieu dien trang thai",
+    "khong gian trang thai",
+    "không gian trạng thái",
+    "state space",
+    "tap trang thai",
+    "toan tu",
+    "trang thai",
+    "tập trạng thái"
+   ],
+   "id_goc": "B3.KN.KHONG_GIAN_TRANG_THAI"
+  },
+  {
+   "id": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "ten": "Hàm đánh giá heuristic",
+   "loai": "KHAI_NIEM",
+   "bai": "B4",
+   "nguon": 7,
+   "trich_dan": "gán một giá trị phù hợp với một hàm đánh giá heuristic",
+   "dinh_nghia": "Hàm gán giá trị số cho trạng thái không phải kết thúc, phản ánh mức độ thuận lợi của trạng thái đó.",
+   "keyphrases": [
+    "heuristic",
+    "hàm đánh giá",
+    "ham danh gia",
+    "đánh giá heuristic",
+    "danh gia heuristic"
+   ],
+   "id_goc": "B4.KN.HAM_DANH_GIA_HEURISTIC"
+  },
+  {
+   "id": "B6A.NL.LUAT_SUY_DIEN",
+   "ten": "Luật suy diễn",
+   "loai": "NGUYEN_LY",
+   "bai": "B6a",
+   "nguon": 7,
+   "trich_dan": "Luật suy diễn được áp dụng để phát triển các ứng dụng",
+   "dinh_nghia": "Các luật suy diễn như Modus Ponens, Modus Tollens dùng để phát triển ứng dụng có khả năng suy luận.",
+   "keyphrases": [
+    "MP",
+    "MT",
+    "Modus Ponens",
+    "Modus Tollens",
+    "luat suy dien",
+    "luật suy diễn",
+    "tam đoạn luận"
+   ],
+   "id_goc": "B6a.NL.LUAT_SUY_DIEN"
+  },
+  {
+   "id": "B1.PP.STATE_SPACE_SEARCH",
+   "ten": "State Space Search",
+   "loai": "PP_GIAI",
+   "bai": "B1",
+   "nguon": 4,
+   "trich_dan": "Game Playing: dựa trên kỹ thuật State Space Search",
+   "dinh_nghia": "Kỹ thuật tìm kiếm trong không gian trạng thái dùng cho trò chơi, với trạng thái là các tình huống.",
+   "keyphrases": [
+    "State Space Search",
+    "state space search",
+    "không gian trạng thái",
+    "khong gian trang thai",
+    "tìm kiếm"
+   ],
+   "id_goc": "B1.PP.STATE_SPACE_SEARCH"
+  },
+  {
+   "id": "B5.KN.HE_CO_SO_TRI_THUC",
+   "ten": "Hệ cơ sở tri thức",
+   "loai": "KHAI_NIEM",
+   "bai": "B5",
+   "nguon": 8,
+   "trich_dan": "Cơ sở khoa học cho việc mô hình hóa và thiết kế hệ cơ sở tri thức trong các hệ thống",
+   "dinh_nghia": "Hệ cơ sở tri thức là nền tảng cho các hệ thống thông minh như hệ chuyên gia, hệ giải quyết vấn đề.",
+   "keyphrases": [
+    "hệ cơ sở tri thức",
+    "he co so tri thuc",
+    "knowledge base system",
+    "hệ chuyên gia",
+    "hệ giải quyết vấn đề",
+    "hệ thống thông minh"
+   ],
+   "id_goc": "B5.KN.HE_CO_SO_TRI_THUC"
+  },
+  {
+   "id": "B5.KN.PHUONG_PHAP_BDTT",
+   "ten": "Các phương pháp biểu diễn tri thức",
+   "loai": "KHAI_NIEM",
+   "bai": "B5",
+   "nguon": "4",
+   "trich_dan": "Biểu diễn bằng logic, Biểu diễn dạng mạng, Biểu diễn sử dụng Frame-Script, Biểu diễn bằng ontology, Tiếp cận đại số",
+   "dinh_nghia": "Các phương pháp biểu diễn tri thức bao gồm logic, mạng, Frame-Script, ontology và tiếp cận đại số.",
+   "keyphrases": [
+    "Frame-Script",
+    "bieu dien tri thuc",
+    "biểu diễn bằng logic",
+    "biểu diễn dạng mạng",
+    "biểu diễn tri thức",
+    "he luat dan",
+    "hệ luật dẫn",
+    "logic",
+    "mang ngu nghia",
+    "mạng ngữ nghĩa",
+    "ontology",
+    "phuong phap bieu dien tri thuc",
+    "phương pháp biểu diễn tri thức",
+    "tiếp cận đại số"
+   ],
+   "id_goc": "B5.KN.PHUONG_PHAP_BDTT",
+   "bi_danh": [
+    "Các phương pháp biểu diễn tri thức cơ bản"
+   ]
+  },
+  {
+   "id": "B3.PP.MO_RONG_CAY_TIM_KIEM",
+   "ten": "Mở rộng cây tìm kiếm",
+   "loai": "PP_GIAI",
+   "bai": "B3",
+   "nguon": 23,
+   "trich_dan": "A I G E K F DCB G G K FC",
+   "dinh_nghia": "Phương pháp mở rộng cây tìm kiếm bằng cách sinh các nút kế tiếp từ nút hiện tại theo hàm next(S).",
+   "keyphrases": [
+    "mo rong cay",
+    "sinh nut",
+    "next(S)",
+    "tim kiem",
+    "cay tim kiem"
+   ],
+   "id_goc": "B3.PP.MO_RONG_CAY_TIM_KIEM"
+  },
+  {
+   "id": "B4.VD.MINIMAX_TIC_TAC_TOE",
+   "ten": "Ví dụ Minimax trong Tic-tac-toe",
+   "loai": "VI_DU",
+   "bai": "B4",
+   "nguon": 10,
+   "trich_dan": "Minimax hai lớp được áp dụng vào nước đi mở đầu trò chơi Tic-tac-toe",
+   "dinh_nghia": "Ví dụ áp dụng Minimax hai lớp cho nước đi mở đầu Tic-tac-toe, dùng heuristic đếm đường thắng mở.",
+   "keyphrases": [
+    "tic-tac-toe",
+    "tic tac toe",
+    "ví dụ minimax",
+    "vi du minimax",
+    "minimax tic-tac-toe"
+   ],
+   "id_goc": "B4.VD.MINIMAX_TIC_TAC_TOE"
+  },
+  {
+   "id": "B6A.TT.THAY_THE_MENH_DE",
+   "ten": "Thay thế hai mệnh đề tuyển",
+   "loai": "THUAT_TOAN",
+   "bai": "B6a",
+   "nguon": 10,
+   "trich_dan": "Thay thế hai mệnh đề vừa tuyển trong danh sách mệnh đề",
+   "dinh_nghia": "Bước thay thế hai mệnh đề vừa tuyển trong danh sách bằng mệnh đề mới trong quá trình chứng minh.",
+   "keyphrases": [
+    "thay thế mệnh đề",
+    "thay the menh de",
+    "tuyển",
+    "danh sách mệnh đề",
+    "mệnh đề mới"
+   ],
+   "id_goc": "B6a.TT.THAY_THE_MENH_DE"
+  },
+  {
+   "id": "B1.KN.KG_DIEU_KHIEN",
+   "ten": "Không gian điều khiển",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 19,
+   "trich_dan": "KG ĐIỀU KHIỂN",
+   "dinh_nghia": "Không gian điều khiển là môi trường số kết nối dữ liệu lớn và điện toán đám mây trong sản xuất.",
+   "keyphrases": [
+    "KG dieu khien",
+    "khong gian dieu khien",
+    "dieu khien",
+    "control space"
+   ],
+   "id_goc": "B1.KN.KG_DIEU_KHIEN"
+  },
+  {
+   "id": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+   "ten": "Bài toán tìm đường đi ngắn nhất",
+   "loai": "DANG_BT",
+   "bai": "B3",
+   "nguon": 24,
+   "trich_dan": "tìm đường đi ngắn nhất từ một đỉnh xuất phát S0 đến một đỉnh mục tiêu G",
+   "dinh_nghia": "Trên đồ thị có trọng số dương, tìm đường đi ngắn nhất từ đỉnh xuất phát S0 đến đỉnh mục tiêu G.",
+   "keyphrases": [
+    "duong di ngan nhat",
+    "shortest path",
+    "dinh xuat phat",
+    "dinh muc tieu",
+    "do thi trong so"
+   ],
+   "id_goc": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT"
+  },
+  {
+   "id": "B3.KN.TKTOTNHAT",
+   "ten": "Tìm kiếm tốt nhất",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 41,
+   "trich_dan": "Dùng tri thức về bài toán để hướng dẫn",
+   "dinh_nghia": "Tìm kiếm tốt nhất dùng tri thức về bài toán để hướng dẫn chọn nhánh tin tưởng dẫn đến lời giải.",
+   "keyphrases": [
+    "tìm kiếm tốt nhất",
+    "best first search",
+    "tim kiem tot nhat",
+    "tot nhat",
+    "TK tốt nhất",
+    "tri thức bài toán"
+   ],
+   "id_goc": "B3.KN.TKTOTNHAT"
+  },
+  {
+   "id": "B4.NL.TINH_TRUOC_N_NUOC",
+   "ten": "Tính trước n nước đi",
+   "loai": "NGUYEN_LY",
+   "bai": "B4",
+   "nguon": 7,
+   "trich_dan": "tính trước n nước đi (n –move lookahead)",
+   "dinh_nghia": "Chiến lược chỉ triển khai không gian trạng thái đến một số mức xác định thay vì đến các nút lá.",
+   "keyphrases": [
+    "n-move lookahead",
+    "tính trước n nước",
+    "tinh truoc n nuoc",
+    "lookahead"
+   ],
+   "id_goc": "B4.NL.TINH_TRUOC_N_NUOC"
+  },
+  {
+   "id": "B6A.KN.DANG_CHUAN_CNF_DNF",
+   "ten": "Dạng chuẩn CNF và DNF",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 7,
+   "trich_dan": "Dạng chuẩn hội – CNF : là thành phần tuyển cơ bản",
+   "dinh_nghia": "Dạng chuẩn là kết xuất chuẩn của các giải thuật làm việc với phép toán mệnh đề, gồm CNF và DNF.",
+   "keyphrases": [
+    "CNF",
+    "DNF",
+    "dang chuan",
+    "dạng chuẩn",
+    "hội cơ bản",
+    "tuyển cơ bản"
+   ],
+   "id_goc": "B6a.KN.DANG_CHUAN_CNF_DNF"
+  },
+  {
+   "id": "B1.KN.LICH_SU_AI",
+   "ten": "Lịch sử của AI",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 3,
+   "trich_dan": "Khai sinh: Hội nghị ở Dartmouth College vào mùa hè 1956",
+   "dinh_nghia": "AI ra đời tại hội nghị Dartmouth 1956 và trải qua các giai đoạn cổ điển, viễn vông, hiện đại.",
+   "keyphrases": [
+    "lịch sử AI",
+    "lich su AI",
+    "Dartmouth",
+    "Minsky",
+    "McCarthy"
+   ],
+   "id_goc": "B1.KN.LICH_SU_AI"
+  },
+  {
+   "id": "B1.KN.TRI_THUC_Y_KHOA",
+   "ten": "Tri thức trong y khoa",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 15,
+   "trich_dan": "Tri thức trong y khoa được biểu diễn trên máy tính",
+   "dinh_nghia": "Tri thức y khoa được biểu diễn trên máy tính gồm tri thức chuyên gia và tri thức kinh nghiệm.",
+   "keyphrases": [
+    "tri thức y khoa",
+    "tri thuc y khoa",
+    "expert knowledge",
+    "experience knowledge",
+    "tri thức chuyên gia"
+   ],
+   "id_goc": "B1.KN.TRI_THUC_Y_KHOA"
+  },
+  {
+   "id": "B3.KN.HAM_UE_LUONG_H",
+   "ten": "Hàm ước lượng h(S)",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 24,
+   "trich_dan": "ước tính quãng đường từ S đến mục tiêu là h(S)",
+   "dinh_nghia": "h(S) là ước tính quãng đường từ đỉnh S đến mục tiêu, dùng làm thông tin bổ sung khi tìm kiếm.",
+   "keyphrases": [
+    "h(S)",
+    "ham uoc luong",
+    "heuristic",
+    "muc tieu",
+    "s",
+    "uoc tinh quang duong"
+   ],
+   "id_goc": "B3.KN.HAM_UE_LUONG_H"
+  },
+  {
+   "id": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "ten": "Độ phức tạp thời gian của thuật toán Minimax",
+   "loai": "TINH_CHAT",
+   "bai": "B4",
+   "nguon": 13,
+   "trich_dan": "độ phức tạp về thời gian của thuật toán Minimax là O(bm)",
+   "dinh_nghia": "Độ phức tạp thời gian của thuật toán Minimax là O(bm) với b là số nước đi và m là độ cao cây.",
+   "keyphrases": [
+    "O(b^m)",
+    "O(bm)",
+    "depth-first",
+    "minimax",
+    "thuật toán Minimax",
+    "tìm kiếm theo chiều sâu",
+    "độ phức tạp không gian",
+    "độ phức tạp thời gian"
+   ],
+   "id_goc": "B4.TC.DO_PHO_TAP_THOI_GIAN"
+  },
+  {
+   "id": "B1.VD.IN_3D",
+   "ten": "Máy in 3D",
+   "loai": "VI_DU",
+   "bai": "B1",
+   "nguon": 19,
+   "trich_dan": "MÁY IN 3D",
+   "dinh_nghia": "Máy in 3D là ví dụ công nghệ tạo mẫu nhanh, hỗ trợ sản xuất linh hoạt trong công nghiệp 4.0.",
+   "keyphrases": [
+    "may in 3d",
+    "in 3d",
+    "3d printing",
+    "tao mau nhanh"
+   ],
+   "id_goc": "B1.VD.IN_3D"
+  },
+  {
+   "id": "B1.KN.CONG_NGHE_NANO",
+   "ten": "Công nghệ nano và vật liệu mới",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 19,
+   "trich_dan": "CÔNG NGHỆ NANO VẬT LIỆU MỚI",
+   "dinh_nghia": "Công nghệ nano và vật liệu mới là lĩnh vực kỹ thuật tiên tiến tạo ra những sản phẩm độc đáo.",
+   "keyphrases": [
+    "cong nghe nano",
+    "vat lieu moi",
+    "nano",
+    "kỹ thuật tiên tiến"
+   ],
+   "id_goc": "B1.KN.CONG_NGHE_NANO"
+  },
+  {
+   "id": "B4.PP.LUONG_GIA_TINH",
+   "ten": "Lượng giá tĩnh",
+   "loai": "PP_GIAI",
+   "bai": "B4",
+   "nguon": 10,
+   "trich_dan": "quá trình tính toán cho điểm thế cờ được gọi là lượng giá tĩnh",
+   "dinh_nghia": "Phương pháp tính điểm cho một thế cờ bằng hàm lượng giá tĩnh mà không cần tìm kiếm sâu thêm.",
+   "keyphrases": [
+    "lượng giá tĩnh",
+    "luong gia tinh",
+    "static evaluation",
+    "điểm lượng giá tĩnh",
+    "diem luong gia tinh"
+   ],
+   "id_goc": "B4.PP.LUONG_GIA_TINH"
+  },
+  {
+   "id": "B5.KN.WOLFRAM_ALPHA",
+   "ten": "Wolfram Alpha",
+   "loai": "KHAI_NIEM",
+   "bai": "B5",
+   "nguon": 9,
+   "trich_dan": "Wolfram Alpha là một dịch vụ trực tuyến có nhiệm vụ trả lời",
+   "dinh_nghia": "Wolfram Alpha là dịch vụ trực tuyến trả lời câu hỏi bằng cách tính toán từ dữ liệu thu thập.",
+   "keyphrases": [
+    "Wolfram Alpha",
+    "dịch vụ trực tuyến",
+    "giáo dục",
+    "hóa học",
+    "thống kê",
+    "toán học",
+    "tính toán tri thức",
+    "wolfram alpha",
+    "wolframalpha"
+   ],
+   "id_goc": "B5.KN.WOLFRAM_ALPHA"
+  },
+  {
+   "id": "B1.KN.ROBOT",
+   "ten": "Robot trong sản xuất",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 19,
+   "trich_dan": "ROBOT",
+   "dinh_nghia": "Robot là thiết bị tự động hóa tiên tiến được ứng dụng trong sản xuất công nghiệp hiện đại.",
+   "keyphrases": [
+    "robot",
+    "robot cong nghiep",
+    "tu dong hoa",
+    "thiet bi tu dong"
+   ],
+   "id_goc": "B1.KN.ROBOT"
+  },
+  {
+   "id": "B3.VD.BAI_TOAN_NGUOI_QUY_QUA_SONG",
+   "ten": "Bài toán người quỷ qua sông",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 16,
+   "trich_dan": "Bài toán người quỷ qua sông",
+   "dinh_nghia": "Bài toán người quỷ qua sông là một ví dụ về bài toán tìm kiếm trong không gian trạng thái.",
+   "keyphrases": [
+    "bài toán người quỷ qua sông",
+    "bai toan nguoi quy qua song",
+    "người quỷ qua sông",
+    "nguoi quy qua song",
+    "qua sông"
+   ],
+   "id_goc": "B3.VD.BAI_TOAN_NGUOI_QUY_QUA_SONG"
+  },
+  {
+   "id": "B2.BT.CAI_DAT_BAI_TOAN",
+   "ten": "Bài tập cài đặt các bài toán",
+   "loai": "DANG_BT",
+   "bai": "B2",
+   "nguon": 11,
+   "trich_dan": "Cài đặt bài toán phân công công việc, tô màu đồ thị",
+   "dinh_nghia": "Yêu cầu cài đặt các bài toán phân công công việc, tô màu đồ thị và các bài toán liên quan.",
+   "keyphrases": [
+    "phan cong cong viec",
+    "phân công công việc",
+    "to mau do thi",
+    "tô màu đồ thị",
+    "sap lich thi",
+    "bài tập"
+   ],
+   "id_goc": "B2.BT.CAI_DAT_BAI_TOAN"
+  },
+  {
+   "id": "B6A.KN.LUONG_TU_2",
+   "ten": "Lượng từ",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 11,
+   "trich_dan": "Các lượng từ: ∃, ∀, ∃!",
+   "dinh_nghia": "Lượng từ là các ký hiệu ∃, ∀, ∃! dùng trong phát biểu lượng từ hóa có vị từ theo các biến.",
+   "keyphrases": [
+    "luong tu",
+    "lượng từ",
+    "lượng từ hóa",
+    "phát biểu lượng từ",
+    "quantifier",
+    "tồn tại",
+    "với mọi",
+    "∃ ∀ ∃!"
+   ],
+   "id_goc": "B6a.KN.LUONG_TU"
+  },
+  {
+   "id": "B2.TC.DO_PHUC_TAP_O_N2",
+   "ten": "Độ phức tạp O(n2) của thuật giải Heuristic",
+   "loai": "TINH_CHAT",
+   "bai": "B2",
+   "nguon": 10,
+   "trich_dan": "độ phức tạp là O(n2)",
+   "dinh_nghia": "Thuật giải Heuristic cho bài toán người đưa thư có độ phức tạp O(n²), hiệu quả hơn O(n!).",
+   "keyphrases": [
+    "O(n!)",
+    "O(n2)",
+    "do phuc tap",
+    "hieu qua",
+    "hiệu quả",
+    "n2",
+    "so sanh",
+    "độ phức tạp"
+   ],
+   "id_goc": "B2.TC.DO_PHUC_TAP_O_N2",
+   "bi_danh": [
+    "Độ phức tạp thuật giải Heuristic"
+   ]
+  },
+  {
+   "id": "B6A.NL.DANG_SUY_RA",
+   "ten": "Dạng suy ra trong tương đương logic",
+   "loai": "NGUYEN_LY",
+   "bai": "B6a",
+   "nguon": 7,
+   "trich_dan": "A ⇒ B = ¬A ∨ B",
+   "dinh_nghia": "Dạng suy ra biến đổi phép kéo theo thành phép tuyển phủ định của giả thiết hoặc kết luận.",
+   "keyphrases": [
+    "dạng suy ra",
+    "dang suy ra",
+    "kéo theo",
+    "keo theo",
+    "A ⇒ B",
+    "phủ định"
+   ],
+   "id_goc": "B6a.NL.DANG_SUY_RA"
+  },
+  {
+   "id": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+   "ten": "Toán tử chuyển trạng thái",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 17,
+   "trich_dan": "Giữa các trạng thái có sự liên hệ gọi là chuyển trạng thái hay toán tử",
+   "dinh_nghia": "Toán tử chuyển trạng thái là sự liên hệ giữa các trạng thái trong không gian trạng thái.",
+   "keyphrases": [
+    "toán tử chuyển trạng thái",
+    "toan tu chuyen trang thai",
+    "chuyển trạng thái",
+    "chuyen trang thai",
+    "toán tử"
+   ],
+   "id_goc": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI"
+  },
+  {
+   "id": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "ten": "Tiêu chuẩn tính phổ quát",
+   "loai": "NGUYEN_LY",
+   "bai": "B5",
+   "nguon": 10,
+   "trich_dan": "Biểu diễn nhiều miền tri thức khác nhau",
+   "dinh_nghia": "Tính phổ quát yêu cầu biểu diễn tri thức áp dụng được cho nhiều miền tri thức khác nhau.",
+   "keyphrases": [
+    "tính phổ quát",
+    "tinh pho quat",
+    "phổ quát",
+    "miền tri thức",
+    "biểu diễn tri thức",
+    "ứng dụng trực tiếp"
+   ],
+   "id_goc": "B5.NL.TIEU_CHUAN_PHO_QUAT"
+  },
+  {
+   "id": "B6A.VI_DU.LAN_KHONG_UOT",
+   "ten": "Ví dụ chứng minh Lan không bị ướt",
+   "loai": "VI_DU",
+   "bai": "B6a",
+   "nguon": 9,
+   "trich_dan": "Hãy chứng minh rằng “Lan không bị ướt” bằng phương pháp Vương Hạo",
+   "dinh_nghia": "Ví dụ dùng thuật giải Vương Hạo để chứng minh kết luận Lan không bị ướt từ các câu đúng.",
+   "keyphrases": [
+    "Lan không bị ướt",
+    "Lan khong bi uot",
+    "Vương Hạo",
+    "trời mưa",
+    "mang dù"
+   ],
+   "id_goc": "B6a.VI_DU.LAN_KHONG_UOT"
+  },
+  {
+   "id": "B3.KN.DO_THI_TRANG_THAI",
+   "ten": "Đồ thị trạng thái",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 21,
+   "trich_dan": "Không gian trạng thái này có thể được biểu biễn bằng đồ thị",
+   "dinh_nghia": "Đồ thị trạng thái xác định khi biết trạng thái đầu, hàm next(S) và trạng thái kết thúc.",
+   "keyphrases": [
+    "do thi trang thai",
+    "graph",
+    "trang thai dau",
+    "ham next",
+    "trang thai ket thuc"
+   ],
+   "id_goc": "B3.KN.DO_THI_TRANG_THAI"
+  },
+  {
+   "id": "B5.KN.SYMBOLAB",
+   "ten": "Symbolab",
+   "loai": "KHAI_NIEM",
+   "bai": "B5",
+   "nguon": 10,
+   "trich_dan": "Symbolab chuyên về giải toán có khả năng đưa ra lời giải",
+   "dinh_nghia": "Symbolab là hệ giải toán chuyên về đưa ra lời giải và thu gọn lời giải không cần thiết.",
+   "keyphrases": [
+    "Symbolab",
+    "symbolab",
+    "giải toán",
+    "thu gọn lời giải"
+   ],
+   "id_goc": "B5.KN.SYMBOLAB"
+  },
+  {
+   "id": "B1.TC.SAN_XUAT_LINH_HOAT",
+   "ten": "Sản xuất linh hoạt",
+   "loai": "TINH_CHAT",
+   "bai": "B1",
+   "nguon": 19,
+   "trich_dan": "SẢN XUẤT LINH HOẠT",
+   "dinh_nghia": "Sản xuất linh hoạt là đặc tính cho phép đáp ứng mọi nhu cầu khác nhau và giảm hao phí.",
+   "keyphrases": [
+    "san xuat linh hoat",
+    "linh hoat",
+    "dap ung nhu cau",
+    "loai bo hao phi"
+   ],
+   "id_goc": "B1.TC.SAN_XUAT_LINH_HOAT"
+  },
+  {
+   "id": "B3.TT.DIJKSTRA",
+   "ten": "Thuật toán Dijkstra",
+   "loai": "THUAT_TOAN",
+   "bai": "B3",
+   "nguon": 44,
+   "trich_dan": "Chọn N thuộc O có g(N) nhỏ nhất",
+   "dinh_nghia": "Thuật toán tìm đường đi có giá thành cực tiểu, mỗi bước chọn đỉnh mở có g(N) nhỏ nhất.",
+   "keyphrases": [
+    "Dijkstra",
+    "g(N)",
+    "đỉnh mở",
+    "O",
+    "C",
+    "duong di gia thanh cuc tieu"
+   ],
+   "id_goc": "B3.TT.DIJKSTRA"
+  },
+  {
+   "id": "B4.KN.CAYTROCHOI",
+   "ten": "Cây trò chơi",
+   "loai": "KHAI_NIEM",
+   "bai": "B4",
+   "nguon": 2,
+   "trich_dan": "Cây trò chơi có các nút là các tình huống khác nhau của bàn cờ",
+   "dinh_nghia": "Cây biểu diễn các trạng thái bàn cờ và các nước đi, dùng để tìm kiếm nước đi tốt nhất.",
+   "keyphrases": [
+    "cay",
+    "cay tim kiem",
+    "cay tro choi",
+    "cây",
+    "cây trò chơi",
+    "cây tìm kiếm",
+    "game tree",
+    "graph không vòng",
+    "tree"
+   ],
+   "id_goc": "B4.KN.CAYTROCHOI",
+   "bi_danh": [
+    "Cây"
+   ]
+  },
+  {
+   "id": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "ten": "Bài tập người đưa thư hai cách giải",
+   "loai": "DANG_BT",
+   "bai": "B2",
+   "nguon": 11,
+   "trich_dan": "Bài toán người đưa thư theo 2 cách",
+   "dinh_nghia": "Cài đặt bài toán người đưa thư theo hai cách: vét cạn và sử dụng thuật giải Heuristic.",
+   "keyphrases": [
+    "nguoi dua thu",
+    "người đưa thư",
+    "vet can",
+    "vét cạn",
+    "Heuristic",
+    "hai cach"
+   ],
+   "id_goc": "B2.BT.NGUOI_DUA_THU_HAI_CACH"
+  },
+  {
+   "id": "B1.KN.AI",
+   "ten": "Trí tuệ nhân tạo (AI)",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 2,
+   "trich_dan": "AI là một nhánh của khoa học máy tính",
+   "dinh_nghia": "AI là nhánh của khoa học máy tính làm cho máy tính có khả năng của trí tuệ con người.",
+   "keyphrases": [
+    "AI",
+    "AI la gi",
+    "AI là gì",
+    "TTNT",
+    "ai",
+    "artificial intelligence",
+    "khoa học máy tính",
+    "tri tue nhan tao",
+    "trí tuệ nhân tạo",
+    "trí tuệ nhân tạo là gì"
+   ],
+   "id_goc": "B1.KN.AI",
+   "bi_danh": [
+    "Trí tuệ nhân tạo là gì"
+   ]
+  },
+  {
+   "id": "B2.TT.NGUOI_DUA_THU",
+   "ten": "Thuật giải Heuristic bài toán người đưa thư",
+   "loai": "THUAT_TOAN",
+   "bai": "B2",
+   "nguon": 9,
+   "trich_dan": "Liệt kê tất cả con đường từ đỉnh hiện tại đến những đỉnh chưa đi đến. Chọn con đường ngắn nhất",
+   "dinh_nghia": "Tìm chu trình Hamilton bằng cách tại mỗi đỉnh chọn cạnh ngắn nhất đến đỉnh chưa thăm.",
+   "keyphrases": [
+    "nguoi dua thu",
+    "bai toan nguoi dua thu",
+    "duong di ngan nhat",
+    "chon duong ngan nhat",
+    " O(n2)"
+   ],
+   "id_goc": "B2.TT.NGUOI_DUA_THU"
+  },
+  {
+   "id": "B3.VD.BAI_TOAN_8_SO",
+   "ten": "Bài toán 8 số",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 15,
+   "trich_dan": "2 8 3 / 1 6 4 / 7 5",
+   "dinh_nghia": "Bài toán 8 số là ví dụ về không gian trạng thái với trạng thái đầu và cuối cho trước.",
+   "keyphrases": [
+    "bài toán 8 số",
+    "bai toan 8 so",
+    "8-puzzle",
+    "tám số",
+    "tam so"
+   ],
+   "id_goc": "B3.VD.BAI_TOAN_8_SO"
+  },
+  {
+   "id": "B3.VD.BAI_TOAN_GIAI_TAM_GIAC",
+   "ten": "Bài toán giải tam giác",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 16,
+   "trich_dan": "Bài toán giải tam giác",
+   "dinh_nghia": "Bài toán giải tam giác là một ví dụ về bài toán tìm kiếm trong không gian trạng thái.",
+   "keyphrases": [
+    "bài toán giải tam giác",
+    "bai toan giai tam giac",
+    "giải tam giác",
+    "giai tam giac",
+    "tam giác"
+   ],
+   "id_goc": "B3.VD.BAI_TOAN_GIAI_TAM_GIAC"
+  },
+  {
+   "id": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+   "ten": "Ví dụ chiều dài đường đi",
+   "loai": "VI_DU",
+   "bai": "B2",
+   "nguon": 10,
+   "trich_dan": "Chiều dài đường đi là: 1 + 3 + 2 + 1 + 90 = 97",
+   "dinh_nghia": "Ví dụ minh họa tính chiều dài đường đi theo thuật giải Heuristic bằng tổng các chặng.",
+   "keyphrases": [
+    "chieu dai duong di",
+    "chiều dài đường đi",
+    "ví dụ",
+    "vi du",
+    "tong cac chang",
+    "97"
+   ],
+   "id_goc": "B2.VI_DU.CHIEU_DAI_DUONG_DI"
+  },
+  {
+   "id": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "ten": "Phương pháp chứng minh phản chứng",
+   "loai": "PP_GIAI",
+   "bai": "B6a",
+   "nguon": 9,
+   "trich_dan": "Thuật giải này hoạt động dựa trên phương pháp chứng minh phản chứng",
+   "dinh_nghia": "Phản chứng giả sử kết luận b sai, nếu sinh ra mâu thuẫn thì bài toán được chứng minh.",
+   "keyphrases": [
+    "chung minh",
+    "chứng minh",
+    "mau thuan",
+    "mâu thuẫn",
+    "phan chung",
+    "phản chứng",
+    "suy luận"
+   ],
+   "id_goc": "B6a.PP.CHUNG_MINH_PHAN_CHUNG"
+  },
+  {
+   "id": "B2.KN.VET_CAN_THONG_MINH",
+   "ten": "Vét cạn thông minh",
+   "loai": "KHAI_NIEM",
+   "bai": "B2",
+   "nguon": 10,
+   "trich_dan": "Vét cạn thông minh",
+   "dinh_nghia": "Cách tiếp cận tìm kiếm có định hướng nhờ kinh nghiệm, khác với vét cạn thông thường.",
+   "keyphrases": [
+    "vet can thong minh",
+    "vét cạn thông minh",
+    "tim kiem",
+    "tìm kiếm",
+    "kinh nghiem",
+    "kinh nghiệm"
+   ],
+   "id_goc": "B2.KN.VET_CAN_THONG_MINH"
+  },
+  {
+   "id": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "ten": "Độ phức tạp không gian của thuật toán Minimax",
+   "loai": "TINH_CHAT",
+   "bai": "B4",
+   "nguon": 13,
+   "trich_dan": "độ phức tạp không gian là O(bm)",
+   "dinh_nghia": "Độ phức tạp không gian của thuật toán Minimax là O(bm) do tìm kiếm theo chiều sâu.",
+   "keyphrases": [
+    "O(bm)",
+    "độ phức tạp không gian",
+    "tìm kiếm theo chiều sâu",
+    "depth-first",
+    "minimax"
+   ],
+   "id_goc": "B4.TC.DO_PHO_TAP_KHONG_GIAN"
+  },
+  {
+   "id": "B6A.KN.TRI_THUC",
+   "ten": "Khái niệm tri thức",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 1,
+   "trich_dan": "Tri thức là sự hiểu biết của con người về vấn đề, phạm vi, lĩnh vực",
+   "dinh_nghia": "Tri thức là sự hiểu biết của con người về một vấn đề, phạm vi, lĩnh vực nhất định.",
+   "keyphrases": [
+    "khai niem tri thuc",
+    "khái niệm tri thức",
+    "knowledge",
+    "su hieu biet",
+    "sự hiểu biết",
+    "tri thuc",
+    "tri thức"
+   ],
+   "id_goc": "B6a.KN.TRI_THUC",
+   "bi_danh": [
+    "Tri thức"
+   ]
+  },
+  {
+   "id": "B2.TT.TO_MAU_DO_THI",
+   "ten": "Thuật giải tô màu đồ thị",
+   "loai": "THUAT_TOAN",
+   "bai": "B2",
+   "nguon": 7,
+   "trich_dan": "Chọn đỉnh S: có số đỉnh chưa tô ở cạnh nó là lớn nhất",
+   "dinh_nghia": "Tô màu đồ thị theo nguyên lý thứ tự: chọn đỉnh bậc lớn nhất và ưu tiên màu đã tô.",
+   "keyphrases": [
+    "bac lon nhat",
+    "chon dinh",
+    "chon mau",
+    "dinh bac lon nhat",
+    "mau",
+    "nguyen ly thu tu",
+    "to mau",
+    "to mau do thi",
+    "tô màu đồ thị"
+   ],
+   "id_goc": "B2.TT.TO_MAU_DO_THI"
+  },
+  {
+   "id": "B3.NL.TANGDOSAU",
+   "ten": "Nguyên lý tăng độ sâu",
+   "loai": "NGUYEN_LY",
+   "bai": "B3",
+   "nguon": 40,
+   "trich_dan": "Nếu không tìm ra nghiệm ta tăng độ sâu lên d+1",
+   "dinh_nghia": "Nếu không tìm thấy nghiệm ở độ sâu d, tăng lên d+1 và lặp lại quá trình tìm kiếm.",
+   "keyphrases": [
+    "tăng độ sâu",
+    "tang do sau",
+    "d+1",
+    "lặp lại",
+    "độ sâu giới hạn",
+    "do sau gioi han"
+   ],
+   "id_goc": "B3.NL.TANGDOSAU"
+  },
+  {
+   "id": "B6A.KN.NGON_NGU_PROLOG",
+   "ten": "Ngôn ngữ Prolog",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 13,
+   "trich_dan": "Ngôn ngữ Prolog",
+   "dinh_nghia": "Prolog là một ngôn ngữ được dùng trong các phương pháp biểu diễn tri thức cơ bản.",
+   "keyphrases": [
+    "Prolog",
+    "logic programming",
+    "ngon ngu lap trinh logic",
+    "ngon ngu prolog",
+    "ngôn ngữ Prolog",
+    "prolog"
+   ],
+   "id_goc": "B6a.KN.ngon_ngu_prolog"
+  },
+  {
+   "id": "B2.TT.THUAT_GIAI_TO_MAU",
+   "ten": "Thuật giải Heuristic cho bài toán tô màu",
+   "loai": "THUAT_TOAN",
+   "bai": "B2",
+   "nguon": 5,
+   "trich_dan": "for (k=0;k<n;k++) { }",
+   "dinh_nghia": "Thuật toán lặp chọn việc và máy để phân công, áp dụng cho bài toán tô màu đồ thị.",
+   "keyphrases": [
+    "thuật giải tô màu",
+    "thuat giai to mau",
+    "lặp",
+    "lap",
+    "phân công",
+    "phan cong"
+   ],
+   "id_goc": "B2.TT.THUAT_GIAI_TO_MAU"
+  },
+  {
+   "id": "B3.KN.CAY_TIM_KIEM",
+   "ten": "Cây tìm kiếm",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 22,
+   "trich_dan": "Cây tìm kiếm",
+   "dinh_nghia": "Cây tìm kiếm biểu diễn quá trình mở rộng trạng thái từ nút gốc theo các toán tử.",
+   "keyphrases": [
+    "cay tim kiem",
+    "search tree",
+    "nut goc",
+    "mo rong trang thai",
+    "tim kiem"
+   ],
+   "id_goc": "B3.KN.CAY_TIM_KIEM"
+  },
+  {
+   "id": "B6A.KN.CAC_TUONG_DUONG",
+   "ten": "Các tương đương logic",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": "6",
+   "trich_dan": "Các tương đương được sử dụng thường xuyên trong quá trình biến đổi",
+   "dinh_nghia": "Các tương đương logic dùng để biến đổi một biểu thức từ dạng này sang dạng khác.",
+   "keyphrases": [
+    "tương đương",
+    "tuong duong",
+    "biến đổi",
+    "bien doi",
+    "phủ định kép",
+    "dạng tuyển",
+    "dạng hội"
+   ],
+   "id_goc": "B6a.KN.CAC_TUONG_DUONG"
+  },
+  {
+   "id": "B1.VI_DU.XE_TU_LAI",
+   "ten": "Xe tự lái",
+   "loai": "VI_DU",
+   "bai": "B1",
+   "nguon": 12,
+   "trich_dan": "Xe tự lái: Tesla, Google",
+   "dinh_nghia": "Xe tự lái của Tesla và Google là ví dụ ứng dụng AI trong giao thông thông minh.",
+   "keyphrases": [
+    "xe tự lái",
+    "xe tu lai",
+    "Tesla",
+    "Google",
+    "giao thông thông minh"
+   ],
+   "id_goc": "B1.VI_DU.XE_TU_LAI"
+  },
+  {
+   "id": "B1.VI_DU.IBM_WATSON",
+   "ten": "IBM Watson for Oncology",
+   "loai": "VI_DU",
+   "bai": "B1",
+   "nguon": 16,
+   "trich_dan": "IBM Watson for Oncology được phát triển từ sự hợp tác giữa IBM",
+   "dinh_nghia": "Hệ thống AI hỗ trợ bác sĩ chọn lựa điều trị ung thư dựa trên cơ sở dữ liệu lớn.",
+   "keyphrases": [
+    "IBM Watson",
+    "Watson for Oncology",
+    "watson oncology",
+    "ung thư",
+    "ung thu",
+    "hỗ trợ điều trị"
+   ],
+   "id_goc": "B1.VI_DU.IBM_WATSON"
+  },
+  {
+   "id": "B3.KN.BAI_TOAN_TIM_KIEM",
+   "ten": "Bài toán tìm kiếm",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 13,
+   "trich_dan": "Vấn đề = Tìm kiếm mục tiêu",
+   "dinh_nghia": "Bài toán tìm kiếm là bài toán mà vấn đề được đặt ra như việc tìm kiếm mục tiêu.",
+   "keyphrases": [
+    "bài toán tìm kiếm",
+    "bai toan tim kiem",
+    "tìm kiếm mục tiêu",
+    "tim kiem muc tieu",
+    "search problem"
+   ],
+   "id_goc": "B3.KN.BAI_TOAN_TIM_KIEM"
+  },
+  {
+   "id": "B3.VD.BAI_TOAN_DO_NUOC",
+   "ten": "Bài toán đổ nước",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 16,
+   "trich_dan": "Bài toán đổ nước",
+   "dinh_nghia": "Bài toán đổ nước là một ví dụ về bài toán tìm kiếm trong không gian trạng thái.",
+   "keyphrases": [
+    "bài toán đổ nước",
+    "bai toan do nuoc",
+    "đổ nước",
+    "do nuoc",
+    "water jug"
+   ],
+   "id_goc": "B3.VD.BAI_TOAN_DO_NUOC"
+  },
+  {
+   "id": "B6A.KN.MENH_DE",
+   "ten": "Mệnh đề",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 5,
+   "trich_dan": "Mệnh đề là một phát biểu khai báo",
+   "dinh_nghia": "Mệnh đề là một phát biểu khai báo chỉ nhận một trong hai giá trị ĐÚNG hoặc SAI.",
+   "keyphrases": [
+    "dung sai",
+    "false",
+    "menh de",
+    "mệnh đề",
+    "phat bieu khai bao",
+    "phát biểu khai báo",
+    "true",
+    "đúng sai"
+   ],
+   "id_goc": "B6a.KN.MENH_DE"
+  },
+  {
+   "id": "B6A.NL.DE_MORGAN",
+   "ten": "Dạng De Morgan",
+   "loai": "NGUYEN_LY",
+   "bai": "B6a",
+   "nguon": 7,
+   "trich_dan": "¬ (A ∧ B) = ¬A ∨ ¬B",
+   "dinh_nghia": "Dạng De Morgan biến đổi phủ định của hội thành tuyển các phủ định và ngược lại.",
+   "keyphrases": [
+    "De Morgan",
+    "de morgan",
+    "phủ định",
+    "phu dinh",
+    "hội",
+    "tuyển"
+   ],
+   "id_goc": "B6a.NL.DE_MORGAN"
+  },
+  {
+   "id": "B1.KN.TURING_TEST",
+   "ten": "Turing Test",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 2,
+   "trich_dan": "Turing Test: Thử tính thông minh",
+   "dinh_nghia": "Phép thử do Alan Turing đề xuất nhằm đánh giá tính thông minh của hệ thống AI.",
+   "keyphrases": [
+    "Turing Test",
+    "turing test",
+    "thử tính thông minh",
+    "thu tinh thong minh",
+    "Alan Turing"
+   ],
+   "id_goc": "B1.KN.TURING_TEST"
+  },
+  {
+   "id": "B3.BT.CANO",
+   "ten": "Bài tập ca nô tiếp xăng",
+   "loai": "DANG_BT",
+   "bai": "B3",
+   "nguon": 39,
+   "trich_dan": "chiếc ca nô xuất phát từ đảo d1 muốn tuần tra đến đảo d2",
+   "dinh_nghia": "Tìm đường đi từ đảo d1 đến đảo d2 sao cho số lần ghé đảo tiếp xăng là ít nhất.",
+   "keyphrases": [
+    "ca nô",
+    "cano",
+    "đảo",
+    "dao",
+    "tiếp xăng",
+    "tiep xang",
+    "d1",
+    "d2",
+    "bài tập 3"
+   ],
+   "id_goc": "B3.BT.CANO"
+  },
+  {
+   "id": "B4.LOI.KHONG_THUC_TE",
+   "ten": "Hạn chế của Minimax",
+   "loai": "LOI",
+   "bai": "B4",
+   "nguon": 13,
+   "trich_dan": "nó không thực tế, chúng ta sẽ không có đủ thời gian",
+   "dinh_nghia": "Minimax không thực tế vì không đủ thời gian tính toán do cây trò chơi quá lớn.",
+   "keyphrases": [
+    "không thực tế",
+    "không đủ thời gian",
+    "cây trò chơi lớn",
+    "hạn chế",
+    "minimax"
+   ],
+   "id_goc": "B4.LOI.KHONG_THUC_TE"
+  },
+  {
+   "id": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "ten": "Bài toán người đưa thư",
+   "loai": "KHAI_NIEM",
+   "bai": "B2",
+   "nguon": 8,
+   "trich_dan": "tìm đường đi ngắn nhất qua tất cả các đỉnh của đồ thị rồi trở về đỉnh ban đầu",
+   "dinh_nghia": "Tìm đường đi ngắn nhất qua tất cả các đỉnh của đồ thị rồi trở về đỉnh ban đầu.",
+   "keyphrases": [
+    "TSP",
+    "bai toan nguoi dua thu",
+    "bai toan toi uu",
+    "bài toán người đưa thư",
+    "chu trinh hamilton",
+    "chu trình Hamilton",
+    "dinh S",
+    "do thi trong so",
+    "duong di ngan nhat",
+    "nguoi dua thu",
+    "người đưa thư",
+    "tìm đường đi",
+    "đỉnh S"
+   ],
+   "id_goc": "B2.KN.BAI_TOAN_NGUOI_DUA_THU"
+  },
+  {
+   "id": "B6A.KN.PHEP_TOAN_VI_TU",
+   "ten": "Phép toán vị từ",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 11,
+   "trich_dan": "các phép toán vị từ: ¬, ∧, ∨, →, ↔",
+   "dinh_nghia": "Phép toán vị từ gồm ¬, ∧, ∨, →, ↔; khi thực hiện trên vị từ ta được vị từ mới.",
+   "keyphrases": [
+    "phép toán vị từ",
+    "phep toan vi tu",
+    "¬ ∧ ∨ → ↔",
+    "vị từ mới"
+   ],
+   "id_goc": "B6a.KN.PHEP_TOAN_VI_TU"
+  },
+  {
+   "id": "B3.KN.POLYMINIMAL",
+   "ten": "Độ phức tạp polyminimal",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 9,
+   "trich_dan": "polyminimal complexity acceptable",
+   "dinh_nghia": "Độ phức tạp polyminimal là mức độ phức tạp được chấp nhận, thường là đa thức.",
+   "keyphrases": [
+    "polyminimal",
+    "độ phức tạp",
+    "chấp nhận",
+    "da thuc",
+    "polyminimal complexity"
+   ],
+   "id_goc": "B3.KN.POLYMINIMAL"
+  },
+  {
+   "id": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+   "ten": "Thuật toán sắp xếp cạnh tăng dần",
+   "loai": "THUAT_TOAN",
+   "bai": "B3",
+   "nguon": 12,
+   "trich_dan": "Sắp xếp các cạnh theo thứ tự tăng của trọng số",
+   "dinh_nghia": "Thuật toán sắp xếp các cạnh theo trọng số tăng dần để tìm cây khung nhỏ nhất.",
+   "keyphrases": [
+    "sắp xếp cạnh",
+    "trọng số",
+    "tăng dần",
+    "cây khung nhỏ nhất",
+    "sap xep canh",
+    "trong so"
+   ],
+   "id_goc": "B3.TT.THUAT_TOAN_SAP_XEP_CANH"
+  },
+  {
+   "id": "B3.NL.HUONGTRI",
+   "ten": "Nguyên lý hướng dẫn bằng tri thức",
+   "loai": "NGUYEN_LY",
+   "bai": "B3",
+   "nguon": 41,
+   "trich_dan": "Tại mỗi nút được xem xét: tìm kiếm tiếp tục theo nhánh nào tin tưởng",
+   "dinh_nghia": "Tại mỗi nút, tìm kiếm tiếp tục theo nhánh được tin tưởng sẽ dẫn tới lời giải.",
+   "keyphrases": [
+    "hướng dẫn",
+    "huong dan",
+    "nhánh tin tưởng",
+    "nhanh tin tuong",
+    "lời giải",
+    "loi giai"
+   ],
+   "id_goc": "B3.NL.HUONGTRI"
+  },
+  {
+   "id": "B3.VI.TKTOTNHAT",
+   "ten": "Ví dụ minh họa tìm kiếm tốt nhất",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 42,
+   "trich_dan": "0 1 5 3 2 6 4 7",
+   "dinh_nghia": "Sơ đồ minh họa quá trình tìm kiếm tốt nhất với các giá trị đánh giá trên nút.",
+   "keyphrases": [
+    "ví dụ",
+    "vi du",
+    "tìm kiếm tốt nhất",
+    "tim kiem tot nhat",
+    "giá trị đánh giá",
+    "gia tri danh gia",
+    "đồ thị",
+    "do thi"
+   ],
+   "id_goc": "B3.VI.TKTOTNHAT"
+  },
+  {
+   "id": "B4.KN.NUTMAXMIN",
+   "ten": "Nút MAX và nút MIN",
+   "loai": "KHAI_NIEM",
+   "bai": "B4",
+   "nguon": 4,
+   "trich_dan": "Nút thuộc lớp MAX thì gán cho nó giá trị lớn nhất của các nút con",
+   "dinh_nghia": "Nút MAX chọn giá trị lớn nhất của các nút con, nút MIN chọn giá trị nhỏ nhất.",
+   "keyphrases": [
+    "nút MAX",
+    "nut MAX",
+    "nút MIN",
+    "nut MIN",
+    "MAX node",
+    "MIN node",
+    "lớp MAX",
+    "lop MAX"
+   ],
+   "id_goc": "B4.KN.NUTMAXMIN"
+  },
+  {
+   "id": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "ten": "Các phép toán mệnh đề",
+   "loai": "NGUYEN_LY",
+   "bai": "B6a",
+   "nguon": 6,
+   "trich_dan": "Các phép toán: ¬ Phủ định, ∧ Hội, ∨ Tuyển, ⇒ Suy ra, = Tương đương",
+   "dinh_nghia": "Các phép toán mệnh đề cơ bản gồm phủ định, hội, tuyển, suy ra và tương đương.",
+   "keyphrases": [
+    "bang chan tri",
+    "hoi",
+    "hội",
+    "phep toan",
+    "phep toan menh de",
+    "phép toán",
+    "phép toán mệnh đề",
+    "phủ định",
+    "suy ra",
+    "tuyển",
+    "tương đương"
+   ],
+   "id_goc": "B6a.NL.PHEP_TOAN_MENH_DE"
+  },
+  {
+   "id": "B2.VD.TO_MAU",
+   "ten": "Ví dụ tô màu đồ thị",
+   "loai": "VI_DU",
+   "bai": "B2",
+   "nguon": 7,
+   "trich_dan": "Đỉnh: 0 1 2 3 4 5 6 7 8 9 Bậc: 3 4 4 4 2 5 4 3 3 2",
+   "dinh_nghia": "Minh họa tô màu đồ thị bằng cách chọn đỉnh bậc lớn nhất và giảm bậc đỉnh kề.",
+   "keyphrases": [
+    "vi du",
+    "to mau",
+    "do thi",
+    "dinh",
+    "bac"
+   ],
+   "id_goc": "B2.VD.TO_MAU"
+  },
+  {
+   "id": "B3.TT.TINH_TONG_LE",
+   "ten": "Thuật toán tính tổng các số lẻ từ 1 đến n",
+   "loai": "THUAT_TOAN",
+   "bai": "B3",
+   "nguon": 7,
+   "trich_dan": "Tính tổng các số nguyên dương lẻ từ 1→n",
+   "dinh_nghia": "Thuật toán tính tổng các số nguyên dương lẻ từ 1 đến n bằng phương pháp lặp.",
+   "keyphrases": [
+    "tính tổng",
+    "số lẻ",
+    "1 đến n",
+    "tinh tong",
+    "so le",
+    "1 den n"
+   ],
+   "id_goc": "B3.TT.TINH_TONG_LE"
+  },
+  {
+   "id": "B4.KN.TRONGTONGBANGKHONG",
+   "ten": "Trò chơi có tổng bằng không",
+   "loai": "KHAI_NIEM",
+   "bai": "B4",
+   "nguon": 1,
+   "trich_dan": "Trò chơi có tổng bằng không là trò chơi có tổng giá trị kết quả (mà người thắng được hưởng) là cố định.",
+   "dinh_nghia": "Trò chơi mà tổng giá trị kết quả là cố định, bên này thắng thì bên kia thua.",
+   "keyphrases": [
+    "trò chơi tổng bằng không",
+    "tro choi tong bang khong",
+    "zero-sum game",
+    "zero sum game",
+    "tổng bằng không",
+    "tong bang khong"
+   ],
+   "id_goc": "B4.KN.TRONGTONGBANGKHONG"
+  },
+  {
+   "id": "B2.LOI.THUAT_GIAI_CHUA_CHINH_XAC",
+   "ten": "Thuật giải chưa cho lời giải chính xác",
+   "loai": "LOI",
+   "bai": "B2",
+   "nguon": 6,
+   "trich_dan": "Tuy nhiên trong một số trường hợp thuật giải chưa cho ra lời giải chính xác.",
+   "dinh_nghia": "Trong một số trường hợp thuật giải Heuristic chưa cho ra lời giải chính xác.",
+   "keyphrases": [
+    "chưa chính xác",
+    "chua chinh xac",
+    "lời giải chính xác",
+    "loi giai chinh xac",
+    "trường hợp",
+    "truong hop"
+   ],
+   "id_goc": "B2.LOI.THUAT_GIAI_CHUA_CHINH_XAC"
+  },
+  {
+   "id": "B3.PP.CAIDATPUZZLEASTART",
+   "ten": "Cài đặt thuật toán A* cho bài toán Puzzle",
+   "loai": "PP_GIAI",
+   "bai": "B3",
+   "nguon": 57,
+   "trich_dan": "int Astart() ... X=O.timfnho(); C.them(X)",
+   "dinh_nghia": "Hàm Astart cài đặt A* cho puzzle bằng cách lặp chọn nút có f nhỏ nhất từ O.",
+   "keyphrases": [
+    "Astart",
+    "A*",
+    "Puzzle",
+    "timfnho",
+    "f nho nhat",
+    "cai dat A*"
+   ],
+   "id_goc": "B3.PP.CAIDATPUZZLEASTART"
+  },
+  {
+   "id": "B3.KN.CHIEN_LUOC_TIM_KIEM",
+   "ten": "Các chiến lược tìm kiếm",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 29,
+   "trich_dan": "Các chiến lược tìm kiếm: Tìm kiếm mù, Tìm kiếm tốt nhất, Tìm kiếm heuristic",
+   "dinh_nghia": "Các cách tiếp cận để tìm ra đường đi lời giải trong không gian trạng thái.",
+   "keyphrases": [
+    "chiến lược tìm kiếm",
+    "chien luoc tim kiem",
+    "tìm kiếm mù",
+    "tìm kiếm tốt nhất",
+    "tìm kiếm heuristic"
+   ],
+   "id_goc": "B3.KN.CHIEN_LUOC_TIM_KIEM"
+  },
+  {
+   "id": "B3.KN.HANG_SO_HUONG",
+   "ten": "Hằng số hướng di chuyển",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 52,
+   "trich_dan": "#define UP 1 #define DN 2 #define LT 3 #define RT 4",
+   "dinh_nghia": "Các hằng số biểu diễn hướng di chuyển lên, xuống, trái, phải và không đổi.",
+   "keyphrases": [
+    "UP",
+    "DN",
+    "LT",
+    "RT",
+    "NO",
+    "huong di chuyen"
+   ],
+   "id_goc": "B3.KN.HANG_SO_HUONG"
+  },
+  {
+   "id": "B6A.KN.BIEU_THUC_MENH_DE",
+   "ten": "Biểu thức mệnh đề",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": "6",
+   "trich_dan": "Biểu thức mệnh đề: là sự kết hợp của các mệnh đề",
+   "dinh_nghia": "Biểu thức mệnh đề là sự kết hợp của các mệnh đề bởi các phép toán mệnh đề.",
+   "keyphrases": [
+    "biểu thức mệnh đề",
+    "bieu thuc menh de",
+    "phép toán mệnh đề",
+    "phep toan menh de",
+    "kết hợp"
+   ],
+   "id_goc": "B6a.KN.BIEU_THUC_MENH_DE"
+  },
+  {
+   "id": "B3.VD.TOAN_TU_8_SO",
+   "ten": "Toán tử bài toán 8 số",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 18,
+   "trich_dan": "Các toán tử: qua trái, phải, lên trên, xuống dưới",
+   "dinh_nghia": "Các toán tử trong bài toán 8 số gồm qua trái, phải, lên trên, xuống dưới.",
+   "keyphrases": [
+    "toán tử 8 số",
+    "toan tu 8 so",
+    "qua trái phải",
+    "lên xuống",
+    "di chuyển"
+   ],
+   "id_goc": "B3.VD.TOAN_TU_8_SO"
+  },
+  {
+   "id": "B2.KN.CHU_TRINH_HAMILTON",
+   "ten": "Chu trình Hamilton ngắn nhất",
+   "loai": "KHAI_NIEM",
+   "bai": "B2",
+   "nguon": 8,
+   "trich_dan": "thuật toán tìm chu trình Hamilton ngắn nhất, có độ phức tạp là O(n!)",
+   "dinh_nghia": "Chu trình đi qua tất cả các đỉnh đúng một lần với tổng trọng số nhỏ nhất.",
+   "keyphrases": [
+    "chu trình Hamilton",
+    "chu trinh hamilton",
+    "hamilton",
+    "do phuc tap O(n!)"
+   ],
+   "id_goc": "B2.KN.CHU_TRINH_HAMILTON"
+  },
+  {
+   "id": "B6A.KN.TRI_THUC_HEURISTIC",
+   "ten": "Tri thức heuristic",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 2,
+   "trich_dan": "Các ước lượng, suy đoán hình thành qua kinh nghiệm là tri thức heuristic",
+   "dinh_nghia": "Tri thức heuristic là các ước lượng, suy đoán hình thành qua kinh nghiệm.",
+   "keyphrases": [
+    "tri thức heuristic",
+    "tri thuc heuristic",
+    "kinh nghiệm",
+    "ước lượng",
+    "suy đoán"
+   ],
+   "id_goc": "B6a.KN.TRI_THUC_HEURISTIC"
+  },
+  {
+   "id": "B3.VI.TKSAU",
+   "ten": "Ví dụ minh họa tìm kiếm sâu dần",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 38,
+   "trich_dan": "A I G E K F D C B",
+   "dinh_nghia": "Sơ đồ minh họa quá trình mở rộng nút trong tìm kiếm sâu dần trên đồ thị.",
+   "keyphrases": [
+    "ví dụ",
+    "vi du",
+    "minh họa",
+    "minh hoa",
+    "đồ thị",
+    "do thi",
+    "A",
+    "B",
+    "G",
+    "K"
+   ],
+   "id_goc": "B3.VI.TKSAU"
+  },
+  {
+   "id": "B3.KN.DANH_SACH_LIST",
+   "ten": "Danh sách List lưu các đỉnh",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 54,
+   "trich_dan": "typedef struct List{ int n; info e[SIZE]; }",
+   "dinh_nghia": "Cấu trúc danh sách lưu mảng các info với các thao tác thêm và tìm f nhỏ.",
+   "keyphrases": [
+    "struct List",
+    "int n",
+    "info e",
+    "them info",
+    "timfnho",
+    "danh sach dinh"
+   ],
+   "id_goc": "B3.KN.DANH_SACH_LIST"
+  },
+  {
+   "id": "B3.KN.DANHSAOOC",
+   "ten": "Hai danh sách O và C",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 55,
+   "trich_dan": "List O,C,KQ;",
+   "dinh_nghia": "O là danh sách mở chứa nút chờ xét, C là danh sách đóng chứa nút đã xét.",
+   "keyphrases": [
+    "O",
+    "C",
+    "danh sach mo",
+    "danh sach dong",
+    "open closed",
+    "KQ"
+   ],
+   "id_goc": "B3.KN.DANHSAOOC"
+  },
+  {
+   "id": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "ten": "Mô hình tri thức logic mệnh đề",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 7,
+   "trich_dan": "Mô hình tri thức logic mệnh đề (P, R)",
+   "dinh_nghia": "Mô hình tri thức logic mệnh đề gồm tập mệnh đề P và tập luật, sự kiện R.",
+   "keyphrases": [
+    "(P,R)",
+    "P R",
+    "logic mệnh đề",
+    "menh de",
+    "mo hinh tri thuc",
+    "mô hình tri thức",
+    "tap luat",
+    "tập luật",
+    "tập mệnh đề"
+   ],
+   "id_goc": "B6a.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE"
+  },
+  {
+   "id": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "ten": "Hướng phát triển của biểu diễn tri thức",
+   "loai": "KHAI_NIEM",
+   "bai": "B5",
+   "nguon": "2",
+   "trich_dan": "Nghiên cứu các phương pháp BDTT tổng quát; Phát triển các phương pháp BDTT đặc trưng; Nghiên cứu giải quyết các vấn đề BDTT trong các ứng dụng thực",
+   "dinh_nghia": "Ba hướng phát triển của BDTT: tổng quát, đặc trưng và ứng dụng thực tế.",
+   "keyphrases": [
+    "hướng phát triển",
+    "huong phat trien",
+    "BDTT tổng quát",
+    "BDTT đặc trưng",
+    "ứng dụng thực",
+    "biểu diễn tri thức"
+   ],
+   "id_goc": "B5.KN.HUONG_PHAT_TRIEN_BDTT"
+  },
+  {
+   "id": "B3.TT.A_STAR_2",
+   "ten": "Thuật toán A*",
+   "loai": "THUAT_TOAN",
+   "bai": "B3",
+   "nguon": 49,
+   "trich_dan": "Tìm kiếm cực tiểu sử dụng hàm đánh giá - Thuật toán A*",
+   "dinh_nghia": "Thuật toán tìm kiếm cực tiểu dùng hàm đánh giá f để chọn đỉnh mở rộng.",
+   "keyphrases": [
+    "A sao",
+    "A star",
+    "A*",
+    "f(N)",
+    "f=g+h",
+    "g(N)",
+    "h(N)",
+    "ham danh gia",
+    "thuat toan A*",
+    "tim kiem cuc tieu"
+   ],
+   "id_goc": "B3.TT.A_STAR"
+  },
+  {
+   "id": "B3.TT.CAP_NHAT_G",
+   "ten": "Cập nhật g và prev cho đỉnh kế",
+   "loai": "THUAT_TOAN",
+   "bai": "B3",
+   "nguon": 49,
+   "trich_dan": "if(g(Q)>g(N)+w(N,Q)) g(Q)= g(N)+w(N,Q);",
+   "dinh_nghia": "Nếu chi phí mới đến Q nhỏ hơn g(Q) hiện tại thì cập nhật g, f và prev.",
+   "keyphrases": [
+    "cap nhat g",
+    "w(N,Q)",
+    "prev(Q)",
+    "dinh ke Q",
+    "chi phi moi"
+   ],
+   "id_goc": "B3.TT.CAP_NHAT_G"
+  },
+  {
+   "id": "B3.VI_DU.CAI_DAT_PUZZLE",
+   "ten": "Cài đặt puzzle",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 61,
+   "trich_dan": "Puzzle – Cài đặt else if(X.g+1<O.e[k].g)",
+   "dinh_nghia": "Đoạn mã minh họa cập nhật g, f và d cho phần tử trong cài đặt puzzle.",
+   "keyphrases": [
+    "cai dat puzzle",
+    "puzzle",
+    "cai dat",
+    "caidatpuzzle",
+    "g f d",
+    "cap nhat g"
+   ],
+   "id_goc": "B3.VI_DU.CAI_DAT_PUZZLE"
+  },
+  {
+   "id": "B3.KN.DO_THI_CO_HUONG",
+   "ten": "Đồ thị có hướng",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 27,
+   "trich_dan": "Đồ thị có hướng: các cung có định hướng, cặp nút có quan hệ thứ tự",
+   "dinh_nghia": "Đồ thị mà các cung có định hướng tạo quan hệ trước sau giữa các nút.",
+   "keyphrases": [
+    "đồ thị có hướng",
+    "do thi co huong",
+    "cung có hướng",
+    "nút cha",
+    "nút con"
+   ],
+   "id_goc": "B3.KN.DO_THI_CO_HUONG"
+  },
+  {
+   "id": "B3.KN.CAU_TRUC_INFO",
+   "ten": "Cấu trúc info lưu trạng thái puzzle",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 53,
+   "trich_dan": "struct info{ TAB S; unsigned g,h,f; int d; };",
+   "dinh_nghia": "Cấu trúc lưu trạng thái bàn, các giá trị g, h, f và hướng di chuyển.",
+   "keyphrases": [
+    "struct info",
+    "TAB S",
+    "g h f",
+    "int d",
+    "trang thai",
+    "cai dat puzzle"
+   ],
+   "id_goc": "B3.KN.CAU_TRUC_INFO"
+  },
+  {
+   "id": "B6A.KN.HAM_VI_TU",
+   "ten": "Hàm vị từ",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 10,
+   "trich_dan": "vị từ là hàm lấy giá trị logic phụ thuộc",
+   "dinh_nghia": "Về mặt toán học, vị từ là hàm lấy giá trị logic bao gồm tên và biến.",
+   "keyphrases": [
+    "hàm vị từ",
+    "ham vi tu",
+    "tên vị từ",
+    "biến",
+    "giá trị logic"
+   ],
+   "id_goc": "B6a.KN.HAM_VI_TU"
+  },
+  {
+   "id": "B1.KN.GIAI_DOAN_CO_DIEN",
+   "ten": "Giai đoạn cổ điển (1950–1965)",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 3,
+   "trich_dan": "Giai đoạn cổ điển (1950 – 1965)",
+   "dinh_nghia": "Giai đoạn đầu của AI tập trung vào Game Playing và Theorem Proving.",
+   "keyphrases": [
+    "1950-1965",
+    "Game Playing",
+    "Theorem Proving",
+    "giai doan co dien",
+    "giai đoạn cổ điển"
+   ],
+   "id_goc": "B1.KN.GIAI_DOAN_CO_DIEN"
+  },
+  {
+   "id": "B3.KN.TIM_KIEM_MU",
+   "ten": "Tìm kiếm mù",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 30,
+   "trich_dan": "Tìm kiếm theo chiều sâu, theo chiều rộng, sâu dần",
+   "dinh_nghia": "Chiến lược tìm kiếm không sử dụng thông tin đánh giá về trạng thái.",
+   "keyphrases": [
+    "tìm kiếm mù",
+    "tim kiem mu",
+    "tìm kiếm theo chiều sâu",
+    "tìm kiếm theo chiều rộng",
+    "tìm kiếm sâu dần"
+   ],
+   "id_goc": "B3.KN.TIM_KIEM_MU"
+  },
+  {
+   "id": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "ten": "Thuật giải tham lam cho bài toán người đưa thư",
+   "loai": "PP_GIAI",
+   "bai": "B2",
+   "nguon": 9,
+   "trich_dan": "Chọn con đường ngắn nhất",
+   "dinh_nghia": "Từ đỉnh hiện tại chọn đi đến đỉnh chưa thăm có con đường ngắn nhất.",
+   "keyphrases": [
+    "tham lam",
+    "nguoi dua thu",
+    "chon duong ngan nhat",
+    "dinh ke"
+   ],
+   "id_goc": "B2.PP.HEURISTIC_NGUOI_DUA_THU"
+  },
+  {
+   "id": "B2.TC.HAN_CHE",
+   "ten": "Hạn chế của thuật giải Heuristic",
+   "loai": "TINH_CHAT",
+   "bai": "B2",
+   "nguon": 10,
+   "trich_dan": "Tuy nhiên thuật giải có những hạn chế, chưa cho ra lời giải chính xác",
+   "dinh_nghia": "Thuật giải Heuristic có hạn chế là chưa cho ra lời giải chính xác.",
+   "keyphrases": [
+    "han che",
+    "heuristic",
+    "hạn chế",
+    "khong toi uu",
+    "kinh nghiem",
+    "loi giai chinh xac",
+    "lời giải chính xác"
+   ],
+   "id_goc": "B2.TC.HAN_CHE"
+  },
+  {
+   "id": "B4.VI.NIM",
+   "ten": "Ví dụ trò chơi Nim",
+   "loai": "VI_DU",
+   "bai": "B4",
+   "nguon": 6,
+   "trich_dan": "Xét trò chơi Nim. Để chơi Nim, một số token được đặt trên bàn",
+   "dinh_nghia": "Ví dụ minh họa không gian trạng thái của trò chơi Nim với 7 token.",
+   "keyphrases": [
+    "trò chơi Nim",
+    "tro choi Nim",
+    "Nim game",
+    "token",
+    "chia đống token",
+    "chia dong token",
+    "ví dụ Nim",
+    "vi du Nim"
+   ],
+   "id_goc": "B4.VI.NIM"
+  },
+  {
+   "id": "B6A.KN.MANG_NGU_NGHIA",
+   "ten": "Mạng ngữ nghĩa",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 1,
+   "trich_dan": "Các mô hình biểu diễn tri thức cơ bản: Mạng ngữ nghĩa",
+   "dinh_nghia": "Mạng ngữ nghĩa là một trong các mô hình biểu diễn tri thức cơ bản.",
+   "keyphrases": [
+    "mạng ngữ nghĩa",
+    "mang ngu nghia",
+    "semantic network",
+    "biểu diễn tri thức"
+   ],
+   "id_goc": "B6a.KN.MANG_NGU_NGHIA"
+  },
+  {
+   "id": "B3.KN.DO_THI",
+   "ten": "Đồ thị",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 26,
+   "trich_dan": "Đồ thị: cấu trúc gồm tập các nút và tập các cung nối các cặp nút",
+   "dinh_nghia": "Cấu trúc gồm tập hợp các nút và tập hợp các cung nối các cặp nút.",
+   "keyphrases": [
+    "đồ thị",
+    "do thi",
+    "graph",
+    "nút",
+    "cung",
+    "đỉnh"
+   ],
+   "id_goc": "B3.KN.DO_THI"
+  },
+  {
+   "id": "B3.NL.HAM_DANH_GIA",
+   "ten": "Hàm đánh giá f=g+h",
+   "loai": "NGUYEN_LY",
+   "bai": "B3",
+   "nguon": 49,
+   "trich_dan": "f(Q)=g(Q)+h(Q)",
+   "dinh_nghia": "Hàm đánh giá của đỉnh Q bằng tổng chi phí đã đi g và ước lượng h.",
+   "keyphrases": [
+    "do dai",
+    "f(N)",
+    "f(Q)",
+    "g(Q)",
+    "gia tri f",
+    "h(Q)",
+    "ham danh gia",
+    "n",
+    "uoc luong",
+    "uoc tinh",
+    "ước tính"
+   ],
+   "id_goc": "B3.NL.HAM_DANH_GIA",
+   "bi_danh": [
+    "Hàm đánh giá f(N)"
+   ]
+  },
+  {
+   "id": "B3.PP.XULYKE",
+   "ten": "Xử lý bảng kề trong A*",
+   "loai": "PP_GIAI",
+   "bai": "B3",
+   "nguon": 60,
+   "trich_dan": "void xulyke(info X, int d, TAB S)",
+   "dinh_nghia": "Sinh trạng thái kề từ X và thêm vào O nếu chưa có trong C hoặc O.",
+   "keyphrases": [
+    "xulyke",
+    "bang ke",
+    "trang thai ke",
+    "O.vitri",
+    "C.vitri",
+    "them vao O"
+   ],
+   "id_goc": "B3.PP.XULYKE"
+  },
+  {
+   "id": "B6A.KN.BANG_CHAN_TRI",
+   "ten": "Bảng chân trị",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": "6",
+   "trich_dan": "Cách đánh giá giá trị của phép toán: Bảng chân trị",
+   "dinh_nghia": "Bảng chân trị là cách đánh giá giá trị của các phép toán mệnh đề.",
+   "keyphrases": [
+    "bảng chân trị",
+    "bang chan tri",
+    "đánh giá",
+    "gia tri",
+    "ưu tiên"
+   ],
+   "id_goc": "B6a.KN.BANG_CHAN_TRI"
+  },
+  {
+   "id": "B1.VI_DU.HE_THONG_GIAO_THONG",
+   "ten": "Hệ thống giao thông thông minh",
+   "loai": "VI_DU",
+   "bai": "B1",
+   "nguon": 13,
+   "trich_dan": "Hệ thống giao thông thông minh",
+   "dinh_nghia": "Ứng dụng AI trong điều khiển và điều phối giao thông thông minh.",
+   "keyphrases": [
+    "giao thông thông minh",
+    "giao thong thong minh",
+    "hệ thống điều khiển",
+    "đèn giao thông",
+    "Võ Văn Kiệt"
+   ],
+   "id_goc": "B1.VI_DU.HE_THONG_GIAO_THONG"
+  },
+  {
+   "id": "B4.VI.TICTACTOE",
+   "ten": "Ví dụ trò chơi Tic-tac-toe",
+   "loai": "VI_DU",
+   "bai": "B4",
+   "nguon": 5,
+   "trich_dan": "Xét trò chơi carô có 9 ô (Tic tac toe). Hai người MAX và MIN thay phiên nhau",
+   "dinh_nghia": "Ví dụ minh họa áp dụng chiến lược Minimax cho trò chơi carô 9 ô.",
+   "keyphrases": [
+    "tic-tac-toe",
+    "tic tac toe",
+    "carô",
+    "caro",
+    "trò chơi carô",
+    "tro choi caro",
+    "ví dụ tic-tac-toe",
+    "vi du tic tac toe"
+   ],
+   "id_goc": "B4.VI.TICTACTOE"
+  },
+  {
+   "id": "B3.KN.DO_PHUC_TAP_CAO",
+   "ten": "Độ phức tạp cao không chấp nhận",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 9,
+   "trich_dan": "high (Not plolyminimal) complexity una cceptable",
+   "dinh_nghia": "Độ phức tạp cao không thuộc polyminimal là không thể chấp nhận.",
+   "keyphrases": [
+    "độ phức tạp cao",
+    "không chấp nhận",
+    "not polyminimal",
+    "do phuc tap cao",
+    "khong chap nhan"
+   ],
+   "id_goc": "B3.KN.DO_PHUC_TAP_CAO"
+  },
+  {
+   "id": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+   "ten": "Ví dụ A* với bài toán 8 số",
+   "loai": "VI_DU",
+   "bai": "B3",
+   "nguon": 50,
+   "trich_dan": "Trạng thái đầu và cuối của bài toán 8 số",
+   "dinh_nghia": "Ví dụ minh họa A* giải bài toán 8 số với bốn toán tử di chuyển.",
+   "keyphrases": [
+    "bai toan 8 so",
+    "8 puzzle",
+    "toan tu",
+    "trang thai dau",
+    "trang thai cuoi",
+    "vi du A*"
+   ],
+   "id_goc": "B3.VD.BAI_TOAN_8_SO_A_STAR"
+  },
+  {
+   "id": "B3.KN.TIMOTRONG",
+   "ten": "Hàm timotrong xác định ô trống",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 56,
+   "trich_dan": "void timotrong(TAB S, int &k, int &l)",
+   "dinh_nghia": "Hàm timotrong tìm tọa độ k,l của ô trống trong trạng thái bảng.",
+   "keyphrases": [
+    "timotrong",
+    "o trong",
+    "toa do",
+    "k l",
+    "bang"
+   ],
+   "id_goc": "B3.KN.TIMOTRONG"
+  },
+  {
+   "id": "B6A.VI_DU.BINH_NUOC",
+   "ten": "Ví dụ bài toán đong nước",
+   "loai": "VI_DU",
+   "bai": "B6a",
+   "nguon": 3,
+   "trich_dan": "Cho 2 bình rỗng X, Y có thể tích lần lượt là Vx, Vy",
+   "dinh_nghia": "Ví dụ dùng hai bình X, Y thể tích Vx, Vy để đong ra z lít nước.",
+   "keyphrases": [
+    "bài toán đong nước",
+    "bai toan dong nuoc",
+    "bình nước",
+    "binh nuoc",
+    "Vx",
+    "Vy",
+    "z lít"
+   ],
+   "id_goc": "B6a.VI_DU.BINH_NUOC"
+  },
+  {
+   "id": "B6A.KN.HE_LUAT_DAN",
+   "ten": "Hệ luật dẫn",
+   "loai": "KHAI_NIEM",
+   "bai": "B6a",
+   "nguon": 1,
+   "trich_dan": "Các mô hình biểu diễn tri thức cơ bản: Hệ luật dẫn",
+   "dinh_nghia": "Hệ luật dẫn là một trong các mô hình biểu diễn tri thức cơ bản.",
+   "keyphrases": [
+    "hệ luật dẫn",
+    "he luat dan",
+    "luật dẫn",
+    "rule-based",
+    "biểu diễn tri thức"
+   ],
+   "id_goc": "B6a.KN.HE_LUAT_DAN"
+  },
+  {
+   "id": "B1.KN.HUONG_PT_AI",
+   "ten": "Các hướng phát triển của Trí tuệ nhân tạo",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 18,
+   "trich_dan": "Các hướng phát triển của Trí tuệ nhân tạo",
+   "dinh_nghia": "Các hướng nghiên cứu và phát triển chính của Trí tuệ nhân tạo.",
+   "keyphrases": [
+    "hướng phát triển AI",
+    "huong phat trien AI",
+    "các hướng AI",
+    "cac huong AI",
+    "TTNT"
+   ],
+   "id_goc": "B1.KN.HUONG_PT_AI"
+  },
+  {
+   "id": "B3.KN.BANGKE",
+   "ten": "Hàm bangke sinh bảng kề",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 56,
+   "trich_dan": "void bangke(TAB N, int d, TAB S,int k, int l) //S là bảng kề của N",
+   "dinh_nghia": "Hàm bangke sinh trạng thái kề S của N theo hướng di chuyển d.",
+   "keyphrases": [
+    "bangke",
+    "bang ke",
+    "trang thai ke",
+    "huong di chuyen",
+    "d"
+   ],
+   "id_goc": "B3.KN.BANGKE"
+  },
+  {
+   "id": "B3.KN.VONG",
+   "ten": "Vòng",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 28,
+   "trich_dan": "Vòng: là một path đi qua nút nhiều hơn một lần.",
+   "dinh_nghia": "Đường đi mà trong đó có một nút bị đi qua nhiều hơn một lần.",
+   "keyphrases": [
+    "vòng",
+    "vong",
+    "chu trình",
+    "path vòng",
+    "cycle"
+   ],
+   "id_goc": "B3.KN.VONG"
+  },
+  {
+   "id": "B3.NL.HAM_H_8_SO",
+   "ten": "Hàm h cho bài toán 8 số",
+   "loai": "NGUYEN_LY",
+   "bai": "B3",
+   "nguon": 50,
+   "trich_dan": "h(Si) = số nút đúng của Si so với G",
+   "dinh_nghia": "Hàm ước lượng h đếm số ô đúng vị trí so với trạng thái đích.",
+   "keyphrases": [
+    "h(Si)",
+    "so nut dung",
+    "so o dung",
+    "trang thai dich",
+    "uoc luong h"
+   ],
+   "id_goc": "B3.NL.HAM_H_8_SO"
+  },
+  {
+   "id": "B3.KN.SOBANG",
+   "ten": "Hàm sobang so sánh bảng",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 56,
+   "trich_dan": "int sobang(TAB S1, TAB S2);",
+   "dinh_nghia": "Hàm sobang kiểm tra hai trạng thái bảng có giống nhau không.",
+   "keyphrases": [
+    "sobang",
+    "so sanh bang",
+    "kiem tra bang",
+    "TAB S1 S2"
+   ],
+   "id_goc": "B3.KN.SOBANG"
+  },
+  {
+   "id": "B3.KN.HAMCOUNT",
+   "ten": "Hàm count (h)",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 56,
+   "trich_dan": "unsigned count(TAB S); //h",
+   "dinh_nghia": "Hàm count tính giá trị heuristic h cho một trạng thái bảng.",
+   "keyphrases": [
+    "count",
+    "gia tri h",
+    "h",
+    "heuristic",
+    "unsigned count"
+   ],
+   "id_goc": "B3.KN.HAMCOUNT"
+  },
+  {
+   "id": "B3.KN.PATH",
+   "ten": "Path",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 27,
+   "trich_dan": "Path: là chuổi có thứ tự các nút mà 2 nút kế tiếp nhau tồn tại một cung.",
+   "dinh_nghia": "Dãy có thứ tự các nút mà hai nút kế tiếp nhau có cung nối.",
+   "keyphrases": [
+    "path",
+    "đường đi",
+    "duong di",
+    "chuỗi nút có thứ tự",
+    "cung nối tiếp"
+   ],
+   "id_goc": "B3.KN.PATH"
+  },
+  {
+   "id": "B3.TC.DO_PHUC_TAP",
+   "ten": "Độ phức tạp thuật toán",
+   "loai": "TINH_CHAT",
+   "bai": "B3",
+   "nguon": 8,
+   "trich_dan": "thuật toán còn phải đạt hiệu quả cao hay có độ phức tạp thấp",
+   "dinh_nghia": "Thuật toán cần đạt hiệu quả cao, tức có độ phức tạp thấp.",
+   "keyphrases": [
+    "độ phức tạp",
+    "hiệu quả",
+    "thuật toán",
+    "do phuc tap",
+    "hieu qua",
+    "thuat toan"
+   ],
+   "id_goc": "B3.TC.DO_PHUC_TAP"
+  },
+  {
+   "id": "B2.VI_DU.TO_MAU_10_DINH",
+   "ten": "Ví dụ tô màu đồ thị 10 đỉnh",
+   "loai": "VI_DU",
+   "bai": "B2",
+   "nguon": 7,
+   "trich_dan": "Đỉnh: 0 1 2 3 4 5 6 7 8 9",
+   "dinh_nghia": "Ví dụ áp dụng nguyên lý thứ tự tô màu cho đồ thị 10 đỉnh.",
+   "keyphrases": [
+    "ví dụ tô màu",
+    "vi du to mau",
+    "10 đỉnh",
+    "10 dinh",
+    "bac"
+   ],
+   "id_goc": "B2.VI_DU.TO_MAU_10_DINH"
+  },
+  {
+   "id": "B1.KN.LINH_VUC_UD",
+   "ten": "Các lĩnh vực ứng dụng của Trí tuệ nhân tạo",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 18,
+   "trich_dan": "Các lĩnh vực ứng dụng của Trí tuệ nhân tạo",
+   "dinh_nghia": "Các lĩnh vực thực tiễn mà Trí tuệ nhân tạo được áp dụng.",
+   "keyphrases": [
+    "lĩnh vực ứng dụng AI",
+    "linh vuc ung dung AI",
+    "ứng dụng AI",
+    "ung dung AI",
+    "TTNT"
+   ],
+   "id_goc": "B1.KN.LINH_VUC_UD"
+  },
+  {
+   "id": "B3.KN.HAM_G",
+   "ten": "g(N) trong A*",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 46,
+   "trich_dan": "g(N) số đo lộ trình từ S tới N",
+   "dinh_nghia": "g(N) là số đo lộ trình từ S tới N trong thuật toán A*.",
+   "keyphrases": [
+    "S tới N",
+    "g(N)",
+    "lo trinh",
+    "lo trinh tu S",
+    "n",
+    "so do"
+   ],
+   "id_goc": "B3.KN.HAM_G"
+  },
+  {
+   "id": "B3.KN.HAM_H",
+   "ten": "Hàm h(N)",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 46,
+   "trich_dan": "f(N) = g(N) + h(N)",
+   "dinh_nghia": "h(N) là thành phần ước lượng trong hàm đánh giá f(N).",
+   "keyphrases": [
+    "h(N)",
+    "ham danh gia",
+    "heuristic",
+    "n",
+    "uoc luong",
+    "ước lượng"
+   ],
+   "id_goc": "B3.KN.HAM_H"
+  },
+  {
+   "id": "B3.KN.DINH_MO",
+   "ten": "Đỉnh mở và đỉnh đóng",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 44,
+   "trich_dan": "C : đỉnh đóng, O : đỉnh mở",
+   "dinh_nghia": "O là tập đỉnh mở chờ xét, C là tập đỉnh đóng đã xét.",
+   "keyphrases": [
+    "dinhmor",
+    "đỉnh mở",
+    "đỉnh đóng",
+    "O",
+    "C",
+    "dinh dong"
+   ],
+   "id_goc": "B3.KN.DINH_MO"
+  },
+  {
+   "id": "B3.KN.PREV",
+   "ten": "Đỉnh trước prev",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 45,
+   "trich_dan": "prev(Q)=N",
+   "dinh_nghia": "prev(Q) lưu đỉnh trước của Q để truy vết đường đi.",
+   "keyphrases": [
+    "prev",
+    "đỉnh trước",
+    "truy vết",
+    "dinh truoc",
+    "truy vet"
+   ],
+   "id_goc": "B3.KN.PREV"
+  },
+  {
+   "id": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "ten": "Ví dụ suy diễn P⇒Q và ¬Q",
+   "loai": "VI_DU",
+   "bai": "B6a",
+   "nguon": "5",
+   "trich_dan": "Ta có hai phát biểu sau đúng: P⇒Q, ¬Q",
+   "dinh_nghia": "Từ P⇒Q và ¬Q suy ra ¬P là đúng theo luật suy diễn.",
+   "keyphrases": [
+    "Nam mua sắm",
+    "P⇒Q",
+    "bầu trời có mây",
+    "modus ponens",
+    "modus tollens",
+    "suy dien",
+    "suy diễn",
+    "trời mưa",
+    "¬P",
+    "¬Q"
+   ],
+   "id_goc": "B6a.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "bi_danh": [
+    "Ví dụ suy diễn P⇒Q và P"
+   ]
+  },
+  {
+   "id": "B3.KN.G_N",
+   "ten": "Hàm g(n)",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 44,
+   "trich_dan": "g(n): giá thành đi từ đỉnh ban đầu tới n",
+   "dinh_nghia": "g(n) là giá thành đi từ đỉnh ban đầu tới đỉnh n.",
+   "keyphrases": [
+    "chi phi",
+    "cost",
+    "g(n)",
+    "gia thanh",
+    "n",
+    "đỉnh ban đầu"
+   ],
+   "id_goc": "B3.KN.G_N"
+  },
+  {
+   "id": "B3.KN.GANBANG",
+   "ten": "Hàm ganbang gán bảng",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 56,
+   "trich_dan": "void ganbang(TAB S1, TAB S2); //gán S2 cho S1",
+   "dinh_nghia": "Hàm ganbang gán nội dung bảng S2 cho bảng S1.",
+   "keyphrases": [
+    "ganbang",
+    "gan bang",
+    "S2 cho S1",
+    "sao chep bang"
+   ],
+   "id_goc": "B3.KN.GANBANG"
+  },
+  {
+   "id": "B3.KN.NUT_LA",
+   "ten": "Nút lá",
+   "loai": "KHAI_NIEM",
+   "bai": "B3",
+   "nguon": 27,
+   "trich_dan": "Nút lá: là nút không có nút con.",
+   "dinh_nghia": "Nút không có bất kỳ nút con nào.",
+   "keyphrases": [
+    "nút lá",
+    "nut la",
+    "leaf node",
+    "nút không có nút con"
+   ],
+   "id_goc": "B3.KN.NUT_LA"
+  },
+  {
+   "id": "B1.KN.NHA_MAY_TUONG_LAI",
+   "ten": "Nhà máy tương lai",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 19,
+   "trich_dan": "NHÀ MÁY TƯƠNG LAI",
+   "dinh nghia": "Nhà máy tương lai là mô hình sản xuất tự động hóa toàn diện, chi phí thấp và kết nối toàn diện.",
+   "keyphrases": [
+    "nha may tuong lai",
+    "future factory",
+    "tu dong hoa toan dien",
+    "ket noi toan dien"
+   ],
+   "id_goc": "B1.KN.NHA_MAY_TUONG_LAI"
+  },
+  {
+   "id": "B1.KN.NEN_TANG_AI_2",
+   "ten": "Nền tảng của AI",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 7,
+   "trich_dan": "Triết học, Toán học, Tâm lý học, Ngôn ngữ học",
+   "dinh_nghia": "AI được xây dựng trên nền tảng nhiều ngành: triết học, toán học, tâm lý học, ngôn ngữ học, công nghệ máy tính, điều khiển học, kinh tế học.",
+   "keyphrases": [
+    "công nghệ máy tính",
+    "nen tang AI",
+    "nen tang cua AI",
+    "nền tảng AI",
+    "nền tảng của AI",
+    "toán học",
+    "triết học",
+    "tâm lý học"
+   ],
+   "id_goc": "B1.KN.NEN_TANG_AI",
+   "can_soat": "khớp 70%"
+  },
+  {
+   "id": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "ten": "Tiêu chuẩn tính thực tiễn",
+   "loai": "NGUYEN_LY",
+   "bai": "B5",
+   "nguon": 11,
+   "trich_dan": "Áp dụng cho nhiều miền tri thức thực tế khác nhau",
+   "dinh_nghia": "Tính thực tiễn yêu cầu biểu diễn tri thức áp dụng được cho nhiều miền thực tế và giải được bài toán thực tiễn.",
+   "keyphrases": [
+    "tính thực tiễn",
+    "tinh thuc tien",
+    "thực tiễn",
+    "miền tri thức thực tế",
+    "bài toán thực tiễn",
+    "biểu diễn tri thức"
+   ],
+   "id_goc": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "can_soat": "khớp 27%"
+  },
+  {
+   "id": "B5.NL.TIEU_CHUAN_HINH_THUC_HOA",
+   "ten": "Tiêu chuẩn tính hình thức hóa",
+   "loai": "NGUYEN_LY",
+   "bai": "B5",
+   "nguon": 11,
+   "trich_dan": "Các đối tượng trong mô hình được nghiên cứu một cách hình thức",
+   "dinh_nghia": "Tính hình thức hóa yêu cầu các đối tượng trong mô hình được nghiên cứu qua cấu trúc đại số hoặc toán học.",
+   "keyphrases": [
+    "tính hình thức hóa",
+    "tinh hinh thuc hoa",
+    "hình thức hóa",
+    "cấu trúc đại số",
+    "cấu trúc toán học",
+    "chứng minh đúng đắn"
+   ],
+   "id_goc": "B5.NL.TIEU_CHUAN_HINH_THUC_HOA",
+   "can_soat": "khớp 46%"
+  },
+  {
+   "id": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "ten": "Tiêu chuẩn tính đầy đủ",
+   "loai": "NGUYEN_LY",
+   "bai": "B5",
+   "nguon": 10,
+   "trich_dan": "Mô hình có cấu trúc đủ để biểu diễn các tri thức thực tế",
+   "dinh_nghia": "Tính đầy đủ yêu cầu mô hình có cấu trúc đủ để biểu diễn tri thức thực tế và suy diễn như con người.",
+   "keyphrases": [
+    "tính đầy đủ",
+    "tinh day du",
+    "đầy đủ",
+    "cấu trúc mô hình",
+    "suy diễn",
+    "biểu diễn tri thức"
+   ],
+   "id_goc": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "can_soat": "khớp 64%"
+  },
+  {
+   "id": "B1.KN.LINH_VUC_AI",
+   "ten": "Các lĩnh vực của AI",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 12,
+   "trich_dan": "COMPUTER VISION, ROBOTICS, KNOWLEDGE-BASED SYSTEMS",
+   "dinh_nghia": "Các lĩnh vực AI gồm thị giác máy tính, robotics, hệ dựa trên tri thức, hệ chuyên gia và máy học.",
+   "keyphrases": [
+    "lĩnh vực AI",
+    "linh vuc AI",
+    "computer vision",
+    "robotics",
+    "machine learning"
+   ],
+   "id_goc": "B1.KN.LINH_VUC_AI",
+   "can_soat": "khớp 40%"
+  },
+  {
+   "id": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+   "ten": "Tiêu chuẩn thuật toán",
+   "loai": "TINH_CHAT",
+   "bai": "B3",
+   "nguon": 6,
+   "trich_dan": "Xác định, Hữu hạn, Đúng",
+   "dinh_nghia": "Thuật toán phải thỏa ba tiêu chuẩn: xác định (không mập mờ, thực thi được), hữu hạn và đúng.",
+   "keyphrases": [
+    "tiêu chuẩn thuật toán",
+    "tieu chuan thuat toan",
+    "xác định",
+    "hữu hạn",
+    "đúng"
+   ],
+   "id_goc": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+   "can_soat": "khớp 60%"
+  },
+  {
+   "id": "B1.KN.UNG_DUNG_THUC_TE_AI",
+   "ten": "Ứng dụng thực tế của AI",
+   "loai": "KHAI_NIEM",
+   "bai": "B1",
+   "nguon": 12,
+   "trich_dan": "Giao thông, Robotics, Y khoa, Giáo dục",
+   "dinh_nghia": "AI được ứng dụng thực tế trong giao thông, robotics, y khoa và giáo dục.",
+   "keyphrases": [
+    "ứng dụng thực tế",
+    "ung dung thuc te",
+    "giao thông",
+    "y khoa",
+    "giáo dục"
+   ],
+   "id_goc": "B1.KN.UNG_DUNG_THUC_TE_AI",
+   "can_soat": "khớp 57%"
+  }
+ ]
+}
