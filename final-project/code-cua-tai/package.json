@@ -1,0 +1,14 @@
+{
+  "name": "ai-knowledge-retrieval",
+  "private": true,
+  "type": "module",
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace frontend\"",
+    "test": "npm test --workspace backend",
+    "import": "npm run import --workspace backend",
+    "extract:rawdata": ".venv\\Scripts\\python.exe tools/extract_rawdata.py",
+    "bootstrap:admin": "node backend/src/bootstrapAdmin.js"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}

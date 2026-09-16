@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "mappings": [
+    { "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT", "to": "B5.NL.TIEU_CHUAN_THUC_TIEN", "relation": "HAS_PROPERTY", "reason": "Các tiêu chuẩn đánh giá hướng phát triển biểu diễn tri thức." },
+    { "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT", "to": "B5.NL.TIEU_CHUAN_PHO_QUAT", "relation": "HAS_PROPERTY", "reason": "Các tiêu chuẩn đánh giá hướng phát triển biểu diễn tri thức." },
+    { "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT", "to": "B5.NL.TIEU_CHUAN_DAY_DU", "relation": "HAS_PROPERTY", "reason": "Các tiêu chuẩn đánh giá hướng phát triển biểu diễn tri thức." },
+    { "from": "B5.KN.HE_CO_SO_TRI_THUC", "to": "B5.NL.TIEU_CHUAN_THUC_TIEN", "relation": "HAS_PROPERTY", "reason": "Tiêu chuẩn chất lượng của hệ cơ sở tri thức." },
+    { "from": "B5.KN.HE_CO_SO_TRI_THUC", "to": "B5.NL.TIEU_CHUAN_PHO_QUAT", "relation": "HAS_PROPERTY", "reason": "Tiêu chuẩn chất lượng của hệ cơ sở tri thức." },
+    { "from": "B5.KN.HE_CO_SO_TRI_THUC", "to": "B5.NL.TIEU_CHUAN_DAY_DU", "relation": "HAS_PROPERTY", "reason": "Tiêu chuẩn chất lượng của hệ cơ sở tri thức." },
+    { "from": "B2.KN.HAM_HEURISTIC", "to": "B2.TC.HAN_CHE", "relation": "HAS_PROPERTY", "reason": "Hạn chế của hàm heuristic được trình bày trong cùng nội dung heuristic." },
+    { "from": "B2.KN.THUAT_GIAI", "to": "B2.TC.HAN_CHE", "relation": "HAS_PROPERTY", "reason": "Hạn chế của thuật giải heuristic." },
+    { "from": "B2.KN.HAM_HEURISTIC", "to": "B2.NL.THU_TU", "relation": "HAS_PROPERTY", "reason": "Hàm heuristic hỗ trợ nguyên lý lựa chọn thứ tự khảo sát." },
+    { "from": "B2.KN.HAM_HEURISTIC", "to": "B2.TC.DO_PHUC_TAP_O_N2", "relation": "HAS_PROPERTY", "reason": "Độ phức tạp là thuộc tính được nêu trong nội dung heuristic." },
+    { "from": "B4.KN.NGUOI_CHOI_MAX_MIN", "to": "B4.LOI.KHONG_THUC_TE", "relation": "HAS_PROPERTY", "reason": "Hạn chế thực tế của Minimax." },
+    { "from": "B4.KN.NGUOI_CHOI_MAX_MIN", "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN", "relation": "HAS_PROPERTY", "reason": "Độ phức tạp không gian của Minimax." },
+    { "from": "B4.KN.NGUOI_CHOI_MAX_MIN", "to": "B4.TC.DO_PHO_TAP_THOI_GIAN", "relation": "HAS_PROPERTY", "reason": "Độ phức tạp thời gian của Minimax." },
+    { "from": "B4.KN.NUTMAXMIN", "to": "B4.LOI.KHONG_THUC_TE", "relation": "HAS_PROPERTY", "reason": "Hạn chế thực tế của chiến lược MAX-MIN." },
+    { "from": "B4.KN.CAYTROCHOI", "to": "B4.LOI.KHONG_THUC_TE", "relation": "HAS_PROPERTY", "reason": "Hạn chế khi cây trò chơi tăng lớn." },
+    { "from": "B4.KN.CAYTROCHOI", "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN", "relation": "HAS_PROPERTY", "reason": "Cây trò chơi quyết định độ phức tạp không gian." },
+    { "from": "B4.KN.CAYTROCHOI", "to": "B4.TC.DO_PHO_TAP_THOI_GIAN", "relation": "HAS_PROPERTY", "reason": "Cây trò chơi quyết định độ phức tạp thời gian." },
+    { "from": "B4.KN.CAYTROCHOI", "to": "B4.VI.TICTACTOE", "relation": "APPLIED_IN", "reason": "Tic-tac-toe là ví dụ trò chơi biểu diễn bằng cây trò chơi." },
+    { "from": "B4.TT.ALPHA_BETA", "to": "B4.VI.TICTACTOE", "relation": "APPLIED_IN", "reason": "Alpha-beta được minh họa trên trò chơi Tic-tac-toe." },
+    { "from": "B3.KN.DO_THI_TRANG_THAI", "to": "B3.VD.BAI_TOAN_NGUOI_VA_QUY", "relation": "APPLIED_IN", "reason": "Bài toán người và quỷ là ví dụ về đồ thị trạng thái." },
+    { "from": "B3.KN.DO_THI_TRANG_THAI", "to": "B3.VD.BAI_TOAN_8_SO_A_STAR", "relation": "APPLIED_IN", "reason": "Bài toán 8 số là ví dụ về đồ thị trạng thái." },
+    { "from": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI", "to": "B3.VD.BAI_TOAN_8_SO_A_STAR", "relation": "APPLIED_IN", "reason": "Bài toán 8 số minh họa các toán tử chuyển trạng thái." },
+    { "from": "B1.KN.LINH_VUC_AI", "to": "B1.VI_DU.HE_THONG_GIAO_THONG", "relation": "APPLIED_IN", "reason": "Hệ thống giao thông thông minh là ứng dụng của AI." },
+    { "from": "B1.KN.UNG_DUNG_THUC_TE_AI", "to": "B1.VI_DU.HE_THONG_GIAO_THONG", "relation": "APPLIED_IN", "reason": "Hệ thống giao thông thông minh minh họa ứng dụng thực tế của AI." },
+    { "from": "B2.BT.PHAN_CONG_CONG_VIEC", "to": "B2.PP.GIAI_PHAN_CONG", "relation": "SOLVED_BY", "reason": "Phương pháp này giải bài toán phân công công việc." },
+    { "from": "B2.KN.HAM_HEURISTIC", "to": "B2.PP.HEURISTIC_NGUOI_DUA_THU", "relation": "INCLUDES", "reason": "Thuật giải người đưa thư là phương pháp heuristic cụ thể." }
+  ]
+}

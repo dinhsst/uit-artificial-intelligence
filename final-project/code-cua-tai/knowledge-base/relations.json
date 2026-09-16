@@ -1,0 +1,5275 @@
+{
+ "version": "1.0",
+ "edges": [
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Phải hiểu thuật giải heuristic mới hiểu đặc tính của nó"
+  },
+  {
+   "nguon": "B1.NL.HUONG_PHAT_TRIEN_AI",
+   "dich": "B1.KN.HUONG_PT_AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cùng nội dung về hướng phát triển AI, cần biết khái niệm trước."
+  },
+  {
+   "nguon": "B2.NL.VET_CAN_THONG_MINH_2",
+   "dich": "B2.KN.VET_CAN_THONG_MINH",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Là bản khái niệm cơ sở của nguyên lý vét cạn thông minh"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ chuyên gia là một nhánh của AI, cần hiểu AI trước."
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B1.KN.TRI_THUC_Y_KHOA",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ chuyên gia y khoa dùng tri thức y khoa làm ví dụ điển hình."
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B1.PP.STATE_SPACE_SEARCH",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ giải quyết vấn đề thường dùng phương pháp tìm kiếm không gian trạng thái."
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật giải heuristic dựa trên hàm heuristic để đánh giá"
+  },
+  {
+   "nguon": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "dich": "B1.KN.HE_CHUYEN_GIA",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ chuyên gia là nền tảng cho hệ hỗ trợ quyết định."
+  },
+  {
+   "nguon": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Mô hình logic vị từ là nền tảng để biểu diễn tri thức vị từ"
+  },
+  {
+   "nguon": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Vấn đề biểu diễn tri thức là bối cảnh của các giai đoạn biểu diễn"
+  },
+  {
+   "nguon": "B4.KN.MINIMAX_2",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Minimax dựa trên hai người chơi MAX và MIN để định nghĩa nước đi tối ưu."
+  },
+  {
+   "nguon": "B4.KN.MINIMAX_2",
+   "dich": "B3.KN.BAI_TOAN_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Minimax là dạng bài toán tìm kiếm đối kháng"
+  },
+  {
+   "nguon": "B1.NL.DINH_NGHIA_AI",
+   "dich": "B1.KN.TURING_TEST",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Turing Test là định nghĩa kinh điển về AI."
+  },
+  {
+   "nguon": "B3.KN.TIMKIEMCHIEUSAU",
+   "dich": "B3.KN.CAY_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "DFS duyệt cây tìm kiếm theo nhánh sâu."
+  },
+  {
+   "nguon": "B3.KN.TIMKIEMCHIEUSAU",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "DFS là một thuật toán tìm kiếm cụ thể."
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+   "dich": "B3.KN.BIEU_DIEN_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biểu diễn trạng thái (người, quỷ, thuyền) để mô hình hóa bài toán."
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+   "dich": "B3.KN.MO_HINH_VAN_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán người và quỷ là ví dụ về mô hình hóa vấn đề."
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm heuristic phục vụ trong thuật giải tìm kiếm"
+  },
+  {
+   "nguon": "B5.KN.QUAN_LY_VAN_BAN_NGON_NGU",
+   "dich": "B5.KN.TRI_THUC_THANH_PHAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hiểu thành phần tri thức để tổ chức văn bản theo ngữ nghĩa"
+  },
+  {
+   "nguon": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ CSTT cần phương pháp biểu diễn tri thức để lưu trữ và xử lý"
+  },
+  {
+   "nguon": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "dich": "B6A.KN.TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu khái niệm tri thức trước khi bàn về biểu diễn tri thức"
+  },
+  {
+   "nguon": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "dich": "B6A.KN.LOGIC_MENH_DE_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Logic mệnh đề là một phương pháp biểu diễn tri thức cơ bản"
+  },
+  {
+   "nguon": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biết hàm đánh giá heuristic là gì để hiểu tầm quan trọng của nó."
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "dich": "B6A.KN.VI_TU_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Vị từ là thành phần cốt lõi của logic vị từ"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "dich": "B6A.KN.LUONG_TU_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Lượng từ là phần không thể thiếu trong logic vị từ"
+  },
+  {
+   "nguon": "B1.KN.INTERNET_VAN_VAT",
+   "dich": "B1.KN.CONG_NGHIEP_4_0",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "IoT là thành phần cốt lõi của Công nghiệp 4.0."
+  },
+  {
+   "nguon": "B3.KN.TIMKIEMCHIEURONG",
+   "dich": "B3.KN.CAY_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "BFS duyệt cây tìm kiếm theo chiều rộng."
+  },
+  {
+   "nguon": "B3.KN.TIMKIEMCHIEURONG",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "BFS là một thuật toán tìm kiếm cụ thể."
+  },
+  {
+   "nguon": "B2.PP.GIAI_PHAN_CONG",
+   "dich": "B2.NL.THAM_LAM_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật giải heuristic phân công dựa trên nguyên lý tham lam"
+  },
+  {
+   "nguon": "B2.PP.GIAI_PHAN_CONG",
+   "dich": "B2.BT.PHAN_CONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Phải hiểu bài toán phân công trước khi giải heuristic"
+  },
+  {
+   "nguon": "B3.TT.CAY_KHUNG_NHO_NHAT",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu thuật toán để học thuật toán cây khung nhỏ nhất."
+  },
+  {
+   "nguon": "B3.TT.CAY_KHUNG_NHO_NHAT",
+   "dich": "B2.NL.THAM_LAM_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cây khung nhỏ nhất dùng nguyên lý tham lam"
+  },
+  {
+   "nguon": "B3.TT.CAY_KHUNG_NHO_NHAT",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán cây khung nhỏ nhất định nghĩa trên đồ thị."
+  },
+  {
+   "nguon": "B2.TC.DO_PHU_TAP_2",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Độ phức tạp là thuộc tính của thuật giải"
+  },
+  {
+   "nguon": "B1.KN.CONG_NGHIEP_4_0",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "AI là một trụ cột của Công nghiệp 4.0."
+  },
+  {
+   "nguon": "B4.TT.ALPHA_BETA",
+   "dich": "B4.KN.NUTMAXMIN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Alpha-beta sử dụng các nút MAX và MIN trong quá trình duyệt cây."
+  },
+  {
+   "nguon": "B4.TT.ALPHA_BETA",
+   "dich": "B4.KN.MINIMAX_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.98,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Alpha-beta là cải tiến của Minimax, tỉa các nhánh không cần thiết."
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B1.PP.STATE_SPACE_SEARCH",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Khái niệm thuật giải kế thừa từ phương pháp tìm kiếm không gian trạng thái."
+  },
+  {
+   "nguon": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "dich": "B4.KN.CAYTROCHOI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "MAX và MIN là các nút trên cây trò chơi; cần biết cây trò chơi."
+  },
+  {
+   "nguon": "B5.KN.TRI_THUC_THANH_PHAN",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Các thành phần tri thức là một phần của phương pháp biểu diễn tri thức"
+  },
+  {
+   "nguon": "B5.KN.TRI_THUC_THANH_PHAN",
+   "dich": "B1.KN.HE_CHUYEN_GIA",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.75,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thành phần tri thức kế thừa từ cấu trúc hệ chuyên gia"
+  },
+  {
+   "nguon": "B2.NL.THAM_LAM_2",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Nguyên lý tham lam là chiến lược trong thuật giải"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B1.KN.LINH_VUC_AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biết các lĩnh vực AI để xây dựng mô hình ứng dụng."
+  },
+  {
+   "nguon": "B3.VI_DU.TRAM_CAP_NUOC",
+   "dich": "B3.TT.CAY_KHUNG_NHO_NHAT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ minh họa ứng dụng thuật toán cây khung nhỏ nhất."
+  },
+  {
+   "nguon": "B3.VI_DU.TRAM_CAP_NUOC",
+   "dich": "B2.NL.VET_CAN_THONG_MINH_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ trạm cấp nước minh họa vét cạn thông minh"
+  },
+  {
+   "nguon": "B6A.KN.LOGIC_MENH_DE_3",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bảng chân trị dùng để đánh giá biểu thức logic mệnh đề"
+  },
+  {
+   "nguon": "B6A.KN.TRI_THUC_THU_TUC",
+   "dich": "B6A.KN.TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tri thức thủ tục là một loại tri thức, cần hiểu tri thức trước"
+  },
+  {
+   "nguon": "B3.KN.TKSAUDAN",
+   "dich": "B3.KN.TIMKIEMCHIEUSAU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm sâu dần dựa trên DFS với giới hạn độ sâu."
+  },
+  {
+   "nguon": "B3.KN.TKSAUDAN",
+   "dich": "B3.KN.TIMKIEMCHIEURONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Sâu dần kết hợp ưu điểm của BFS và DFS."
+  },
+  {
+   "nguon": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "dich": "B6A.KN.DANG_CHUAN_CNF_DNF",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật giải Vương Hạo thao tác trên dạng chuẩn"
+  },
+  {
+   "nguon": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "dich": "B6A.NL.LUAT_SUY_DIEN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật giải Vương Hạo dựa trên luật suy diễn"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán phân công cần hiểu khái niệm thuật giải"
+  },
+  {
+   "nguon": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+   "dich": "B4.KN.CAYTROCHOI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ cây trò chơi cờ vua minh họa khái niệm cây trò chơi."
+  },
+  {
+   "nguon": "B5.KN.MATHWAY",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 4,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Mathway là ứng dụng của hệ cơ sở tri thức trong giải toán"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.BT.PHAN_CONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Phân công công việc là dạng cụ thể của bài toán phân công"
+  },
+  {
+   "nguon": "B6A.TT.HOP_GIAI",
+   "dich": "B6A.KN.DANG_CHUAN_CNF_DNF",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hợp giải yêu cầu công thức ở dạng CNF"
+  },
+  {
+   "nguon": "B6A.TT.HOP_GIAI",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hợp giải hoạt động trên logic vị từ"
+  },
+  {
+   "nguon": "B6A.TT.HOP_GIAI",
+   "dich": "B6A.TT.THAY_THE_MENH_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hợp giải sử dụng phép thay thế mệnh đề"
+  },
+  {
+   "nguon": "B3.PP.PHAN_LOAI_VAN_DE",
+   "dich": "B3.KN.VAN_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Phân loại vấn đề cần hiểu khái niệm vấn đề."
+  },
+  {
+   "nguon": "B3.KN.THUAT_TOAN",
+   "dich": "B3.KN.VAN_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật toán giải quyết vấn đề, cần hiểu vấn đề trước."
+  },
+  {
+   "nguon": "B3.KN.THUAT_TOAN",
+   "dich": "B3.KN.MO_HINH_VAN_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật toán thao tác trên mô hình vấn đề."
+  },
+  {
+   "nguon": "B3.KN.THUAT_TOAN",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật toán là khái niệm cơ bản của thuật giải"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hiểu bài toán người đưa thư để mô hình không gian trạng thái"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B3.KN.MO_HINH_VAN_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Không gian trạng thái là mô hình hình thức của vấn đề."
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B2.KN.VET_CAN_THONG_MINH",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Không gian trạng thái dùng vét cạn thông minh"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B3.KN.BIEU_DIEN_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Không gian trạng thái gồm tập các biểu diễn trạng thái."
+  },
+  {
+   "nguon": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "dich": "B4.PP.LUONG_GIA_TINH",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Lượng giá tĩnh là cơ sở để xây dựng hàm đánh giá heuristic."
+  },
+  {
+   "nguon": "B6A.NL.LUAT_SUY_DIEN",
+   "dich": "B6A.KN.LOGIC_MENH_DE_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu logic mệnh đề để hiểu các luật suy diễn"
+  },
+  {
+   "nguon": "B1.PP.STATE_SPACE_SEARCH",
+   "dich": "B1.KN.KG_DIEU_KHIEN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "State Space Search dựa trên không gian trạng thái/điều khiển."
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ CSTT dùng thuật giải heuristic để suy diễn"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B3.KN.CHIEN_LUOC_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.75,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ CSTT dùng chiến lược tìm kiếm để suy diễn"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B5.KN.TRI_THUC_THANH_PHAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu thành phần tri thức để xây dựng hệ cơ sở tri thức"
+  },
+  {
+   "nguon": "B5.KN.PHUONG_PHAP_BDTT",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Phương pháp biểu diễn tri thức cần khái niệm thuật toán"
+  },
+  {
+   "nguon": "B5.KN.PHUONG_PHAP_BDTT",
+   "dich": "B3.KN.BIEU_DIEN_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.75,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Biểu diễn tri thức mở rộng biểu diễn trạng thái"
+  },
+  {
+   "nguon": "B3.PP.MO_RONG_CAY_TIM_KIEM",
+   "dich": "B3.KN.CAY_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Mở rộng cây tìm kiếm thao tác trên cây tìm kiếm."
+  },
+  {
+   "nguon": "B3.PP.MO_RONG_CAY_TIM_KIEM",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Là phương pháp mở rộng trong thuật toán tìm kiếm."
+  },
+  {
+   "nguon": "B4.VD.MINIMAX_TIC_TAC_TOE",
+   "dich": "B4.KN.MINIMAX_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.98,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ này minh họa thuật toán Minimax trên trò chơi Tic-tac-toe."
+  },
+  {
+   "nguon": "B4.VD.MINIMAX_TIC_TAC_TOE",
+   "dich": "B4.VI.TICTACTOE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biết luật và cách chơi Tic-tac-toe để hiểu ví dụ Minimax."
+  },
+  {
+   "nguon": "B6A.TT.THAY_THE_MENH_DE",
+   "dich": "B6A.KN.LOGIC_MENH_DE_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thay thế mệnh đề thao tác trên logic mệnh đề"
+  },
+  {
+   "nguon": "B1.KN.KG_DIEU_KHIEN",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Không gian điều khiển là khái niệm cơ bản trong AI."
+  },
+  {
+   "nguon": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+   "dich": "B2.TT.NGUOI_DUA_THU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán đường đi ngắn nhất tương tự người đưa thư"
+  },
+  {
+   "nguon": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+   "dich": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần mô hình không gian trạng thái để giải bài toán."
+  },
+  {
+   "nguon": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán đường đi ngắn nhất định nghĩa trên đồ thị."
+  },
+  {
+   "nguon": "B3.KN.TKTOTNHAT",
+   "dich": "B3.KN.TIMKIEMCHIEUSAU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm tốt nhất cải tiến DFS bằng hàm đánh giá."
+  },
+  {
+   "nguon": "B3.KN.TKTOTNHAT",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm tốt nhất dùng hàm heuristic để đánh giá"
+  },
+  {
+   "nguon": "B3.KN.TKTOTNHAT",
+   "dich": "B3.KN.TIMKIEMCHIEURONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm tốt nhất cải tiến BFS bằng hàm đánh giá."
+  },
+  {
+   "nguon": "B4.NL.TINH_TRUOC_N_NUOC",
+   "dich": "B4.KN.CAYTROCHOI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tính trước n nước đi là duyệt cây trò chơi đến độ sâu n."
+  },
+  {
+   "nguon": "B6A.KN.DANG_CHUAN_CNF_DNF",
+   "dich": "B6A.KN.LOGIC_MENH_DE_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Dạng chuẩn CNF/DNF được định nghĩa trong logic mệnh đề"
+  },
+  {
+   "nguon": "B1.KN.LICH_SU_AI",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu AI là gì trước khi học lịch sử AI."
+  },
+  {
+   "nguon": "B3.KN.HAM_UE_LUONG_H",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm ước lượng h(S) là dạng cụ thể của hàm heuristic."
+  },
+  {
+   "nguon": "B3.KN.HAM_UE_LUONG_H",
+   "dich": "B3.KN.BAI_TOAN_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu bài toán tìm kiếm để dùng h(S) đánh giá trạng thái."
+  },
+  {
+   "nguon": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "dich": "B4.KN.MINIMAX_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Độ phức tạp thời gian được phân tích cho thuật toán Minimax."
+  },
+  {
+   "nguon": "B1.VD.IN_3D",
+   "dich": "B1.KN.CONG_NGHIEP_4_0",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Máy in 3D là công nghệ tiêu biểu của Công nghiệp 4.0."
+  },
+  {
+   "nguon": "B1.KN.CONG_NGHE_NANO",
+   "dich": "B1.KN.CONG_NGHIEP_4_0",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Công nghệ nano là một trụ cột của Công nghiệp 4.0."
+  },
+  {
+   "nguon": "B4.PP.LUONG_GIA_TINH",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Lượng giá tĩnh dùng hàm heuristic để đánh giá thế cờ"
+  },
+  {
+   "nguon": "B5.KN.WOLFRAM_ALPHA",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 4,
+   "refd": 0.75,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Wolfram Alpha là hệ cơ sở tri thức tính toán"
+  },
+  {
+   "nguon": "B5.KN.WOLFRAM_ALPHA",
+   "dich": "B1.VI_DU.IBM_WATSON",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.65,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Wolfram Alpha kế thừa mô hình hệ hỏi đáp tri thức"
+  },
+  {
+   "nguon": "B1.KN.ROBOT",
+   "dich": "B1.KN.CONG_NGHIEP_4_0",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Robot là thành phần của sản xuất trong Công nghiệp 4.0."
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_NGUOI_QUY_QUA_SONG",
+   "dich": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần toán tử di chuyển thuyền để giải bài toán."
+  },
+  {
+   "nguon": "B2.BT.CAI_DAT_BAI_TOAN",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cài đặt bài toán cần hiểu thuật giải"
+  },
+  {
+   "nguon": "B6A.KN.LUONG_TU_2",
+   "dich": "B6A.KN.LOGIC_MENH_DE_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Lượng từ là mở rộng của logic mệnh đề"
+  },
+  {
+   "nguon": "B2.TC.DO_PHUC_TAP_O_N2",
+   "dich": "B2.TC.DO_PHU_TAP_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "O(n2) là một trường hợp của độ phức tạp thuật giải"
+  },
+  {
+   "nguon": "B6A.NL.DANG_SUY_RA",
+   "dich": "B6A.KN.CAC_TUONG_DUONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Dạng suy ra liên quan đến tương đương logic"
+  },
+  {
+   "nguon": "B6A.NL.DANG_SUY_RA",
+   "dich": "B6A.NL.LUAT_SUY_DIEN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Dạng suy ra dựa trên các luật suy diễn"
+  },
+  {
+   "nguon": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+   "dich": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Toán tử tác động trong không gian trạng thái."
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tiêu chuẩn phổ quát đánh giá các phương pháp biểu diễn tri thức"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tiêu chuẩn phổ quát là mở rộng tiêu chuẩn thuật toán"
+  },
+  {
+   "nguon": "B6A.VI_DU.LAN_KHONG_UOT",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ chứng minh dùng logic vị từ"
+  },
+  {
+   "nguon": "B6A.VI_DU.LAN_KHONG_UOT",
+   "dich": "B6A.NL.LUAT_SUY_DIEN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ minh họa áp dụng luật suy diễn"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_TRANG_THAI",
+   "dich": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Đồ thị trạng thái là biểu diễn của không gian trạng thái."
+  },
+  {
+   "nguon": "B3.KN.DO_THI_TRANG_THAI",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Đồ thị trạng thái là một loại đồ thị."
+  },
+  {
+   "nguon": "B3.KN.DO_THI_TRANG_THAI",
+   "dich": "B2.BT.TO_MAU_DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Đồ thị trạng thái dựa trên khái niệm đồ thị"
+  },
+  {
+   "nguon": "B5.KN.SYMBOLAB",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 4,
+   "refd": 0.75,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Symbolab là ứng dụng của hệ cơ sở tri thức toán học"
+  },
+  {
+   "nguon": "B1.TC.SAN_XUAT_LINH_HOAT",
+   "dich": "B1.KN.ROBOT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Robot là thành phần cốt lõi để thực hiện sản xuất linh hoạt."
+  },
+  {
+   "nguon": "B3.TT.DIJKSTRA",
+   "dich": "B3.KN.DO_THI_CO_HUONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Dijkstra hoạt động trên đồ thị có hướng có trọng số."
+  },
+  {
+   "nguon": "B3.TT.DIJKSTRA",
+   "dich": "B2.BT.TO_MAU_DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Dijkstra giải bài toán đồ thị tương tự tô màu"
+  },
+  {
+   "nguon": "B3.TT.DIJKSTRA",
+   "dich": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Dijkstra giải bài toán đường đi ngắn nhất."
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B3.KN.CAY_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cây trò chơi là dạng đặc biệt của cây tìm kiếm"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B4.KN.TRONGTONGBANGKHONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cây trò chơi thường áp dụng cho trò chơi tổng bằng không."
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B3.KN.DO_THI_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cây trò chơi biểu diễn không gian trạng thái trò chơi"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.TT.NGUOI_DUA_THU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài tập so sánh hai cách giải cần biết thuật giải"
+  },
+  {
+   "nguon": "B1.KN.AI",
+   "dich": "B1.NL.DINH_NGHIA_AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biết định nghĩa AI trước khi hiểu khái niệm AI."
+  },
+  {
+   "nguon": "B2.TT.NGUOI_DUA_THU",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật giải heuristic cần hiểu hàm heuristic"
+  },
+  {
+   "nguon": "B2.TT.NGUOI_DUA_THU",
+   "dich": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Phương pháp giải là tiền đề cho thuật giải cụ thể"
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_8_SO",
+   "dich": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần toán tử di chuyển ô trống."
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_GIAI_TAM_GIAC",
+   "dich": "B3.KN.BAI_TOAN_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Giải tam giác là một bài toán tìm kiếm."
+  },
+  {
+   "nguon": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+   "dich": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ minh họa cho bài toán người đưa thư"
+  },
+  {
+   "nguon": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "dich": "B6A.NL.LUAT_SUY_DIEN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Phương pháp phản chứng dùng luật suy diễn"
+  },
+  {
+   "nguon": "B2.KN.VET_CAN_THONG_MINH",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu khái niệm thuật giải trước"
+  },
+  {
+   "nguon": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "dich": "B4.KN.MINIMAX_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Độ phức tạp không gian được phân tích cho thuật toán Minimax."
+  },
+  {
+   "nguon": "B6A.KN.TRI_THUC",
+   "dich": "B5.KN.TRI_THUC_THANH_PHAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Khái niệm tri thức cần hiểu các thành phần của tri thức"
+  },
+  {
+   "nguon": "B2.TT.TO_MAU_DO_THI",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật giải tô màu là một thuật giải"
+  },
+  {
+   "nguon": "B2.TT.TO_MAU_DO_THI",
+   "dich": "B2.BT.TO_MAU_DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biết bài toán tô màu đồ thị"
+  },
+  {
+   "nguon": "B3.NL.TANGDOSAU",
+   "dich": "B3.KN.TKSAUDAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Nguyên lý tăng độ sâu là cơ sở của tìm kiếm sâu dần."
+  },
+  {
+   "nguon": "B6A.KN.NGON_NGU_PROLOG",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Prolog dựa trên logic vị từ để biểu diễn tri thức"
+  },
+  {
+   "nguon": "B2.TT.THUAT_GIAI_TO_MAU",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật giải heuristic cho tô màu cần hiểu thuật giải heuristic"
+  },
+  {
+   "nguon": "B2.TT.THUAT_GIAI_TO_MAU",
+   "dich": "B2.BT.TO_MAU_DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biết bài toán tô màu đồ thị"
+  },
+  {
+   "nguon": "B3.KN.CAY_TIM_KIEM",
+   "dich": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cây tìm kiếm là biểu diễn quá trình duyệt không gian trạng thái."
+  },
+  {
+   "nguon": "B6A.KN.CAC_TUONG_DUONG",
+   "dich": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu phép toán mệnh đề để hiểu tương đương"
+  },
+  {
+   "nguon": "B1.VI_DU.XE_TU_LAI",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Xe tự lái là ứng dụng của AI, không hiểu AI thì không hiểu."
+  },
+  {
+   "nguon": "B1.VI_DU.IBM_WATSON",
+   "dich": "B1.KN.HE_CHUYEN_GIA",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Watson dựa trên hệ chuyên gia, cần hiểu khái niệm này."
+  },
+  {
+   "nguon": "B3.KN.BAI_TOAN_TIM_KIEM",
+   "dich": "B2.NL.VET_CAN_THONG_MINH_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán tìm kiếm giải bằng vét cạn thông minh"
+  },
+  {
+   "nguon": "B3.KN.BAI_TOAN_TIM_KIEM",
+   "dich": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán tìm kiếm được định nghĩa trên không gian trạng thái."
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_DO_NUOC",
+   "dich": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần toán tử rót nước, đổ đầy, làm rỗng."
+  },
+  {
+   "nguon": "B6A.NL.DE_MORGAN",
+   "dich": "B6A.KN.CAC_TUONG_DUONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "De Morgan là một tương đương logic cụ thể"
+  },
+  {
+   "nguon": "B3.BT.CANO",
+   "dich": "B3.KN.BAI_TOAN_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài tập ca nô tiếp xăng là một bài toán tìm kiếm."
+  },
+  {
+   "nguon": "B4.LOI.KHONG_THUC_TE",
+   "dich": "B4.KN.MINIMAX_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hạn chế của Minimax được hiểu sau khi nắm thuật toán Minimax."
+  },
+  {
+   "nguon": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "dich": "B1.PP.STATE_SPACE_SEARCH",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán người đưa thư mô hình hóa thành không gian trạng thái tìm kiếm."
+  },
+  {
+   "nguon": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "dich": "B2.KN.CHU_TRINH_HAMILTON",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán người đưa thư liên quan đến chu trình Hamilton"
+  },
+  {
+   "nguon": "B6A.KN.PHEP_TOAN_VI_TU",
+   "dich": "B6A.KN.HAM_VI_TU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Phép toán vị t能给 tác động lên hàm vị từ"
+  },
+  {
+   "nguon": "B3.KN.POLYMINIMAL",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 4,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Polyminimal là một khái niệm về độ phức tạp thuật toán."
+  },
+  {
+   "nguon": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật toán sắp xếp cạnh làm việc trên đồ thị."
+  },
+  {
+   "nguon": "B3.NL.HUONGTRI",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hướng dẫn bằng tri thức thường dùng hàm heuristic."
+  },
+  {
+   "nguon": "B3.NL.HUONGTRI",
+   "dich": "B3.KN.BAI_TOAN_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Nguyên lý hướng dẫn tri thức áp dụng cho bài toán tìm kiếm."
+  },
+  {
+   "nguon": "B3.VI.TKTOTNHAT",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm tốt nhất dùng hàm ước lượng h"
+  },
+  {
+   "nguon": "B3.VI.TKTOTNHAT",
+   "dich": "B3.KN.TKTOTNHAT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ minh họa cho khái niệm tìm kiếm tốt nhất"
+  },
+  {
+   "nguon": "B4.KN.NUTMAXMIN",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Nút MAX và MIN là biểu diễn trên cây của người chơi MAX và MIN."
+  },
+  {
+   "nguon": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "dich": "B6A.KN.BIEU_THUC_MENH_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Các phép toán mệnh đề thao tác trên biểu thức mệnh đề"
+  },
+  {
+   "nguon": "B2.VD.TO_MAU",
+   "dich": "B2.BT.TO_MAU_DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ minh họa cho bài toán tô màu đồ thị"
+  },
+  {
+   "nguon": "B3.TT.TINH_TONG_LE",
+   "dich": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biết tiêu chuẩn thuật toán để cài đặt đúng"
+  },
+  {
+   "nguon": "B2.LOI.THUAT_GIAI_CHUA_CHINH_XAC",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hạn chế của thuật giải heuristic"
+  },
+  {
+   "nguon": "B3.PP.CAIDATPUZZLEASTART",
+   "dich": "B3.VD.BAI_TOAN_8_SO",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán Puzzle thường là bài toán 8 số"
+  },
+  {
+   "nguon": "B3.PP.CAIDATPUZZLEASTART",
+   "dich": "B3.TT.A_STAR_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cài đặt A* cần hiểu thuật toán A*"
+  },
+  {
+   "nguon": "B3.KN.CHIEN_LUOC_TIM_KIEM",
+   "dich": "B3.KN.TIM_KIEM_MU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Chiến lược tìm kiếm bao gồm tìm kiếm mù"
+  },
+  {
+   "nguon": "B3.KN.CHIEN_LUOC_TIM_KIEM",
+   "dich": "B3.KN.TKTOTNHAT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm tốt nhất là một chiến lược tìm kiếm"
+  },
+  {
+   "nguon": "B3.KN.HANG_SO_HUONG",
+   "dich": "B3.VD.BAI_TOAN_8_SO",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.75,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hằng số hướng di chuyển dùng trong bài toán 8 số"
+  },
+  {
+   "nguon": "B6A.KN.BIEU_THUC_MENH_DE",
+   "dich": "B6A.KN.MENH_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Biểu thức mệnh đề được tạo từ các mệnh đề"
+  },
+  {
+   "nguon": "B3.VD.TOAN_TU_8_SO",
+   "dich": "B3.VD.BAI_TOAN_8_SO",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Toán tử 8 số là một phần của bài toán 8 số"
+  },
+  {
+   "nguon": "B6A.KN.TRI_THUC_HEURISTIC",
+   "dich": "B6A.KN.TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tri thức heuristic là một loại tri thức"
+  },
+  {
+   "nguon": "B6A.KN.TRI_THUC_HEURISTIC",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tri thức heuristic liên quan đến hàm heuristic"
+  },
+  {
+   "nguon": "B3.VI.TKSAU",
+   "dich": "B3.NL.TANGDOSAU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.75,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm sâu dần dùng nguyên lý tăng độ sâu"
+  },
+  {
+   "nguon": "B3.KN.DANH_SACH_LIST",
+   "dich": "B3.KN.DANHSAOOC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Danh sách List là cấu trúc để lưu hai danh sách O và C"
+  },
+  {
+   "nguon": "B3.KN.DANHSAOOC",
+   "dich": "B3.KN.TKTOTNHAT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "O và C phổ biến trong tìm kiếm tốt nhất"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "dich": "B6A.KN.LOGIC_MENH_DE_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Mô hình tri thức dựa trên logic mệnh đề"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hướng phát triển dựa trên các phương pháp biểu diễn tri thức hiện có"
+  },
+  {
+   "nguon": "B3.TT.A_STAR_2",
+   "dich": "B2.NL.THAM_LAM_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "A* kết hợp tham lam với tìm kiếm"
+  },
+  {
+   "nguon": "B3.TT.A_STAR_2",
+   "dich": "B3.NL.HAM_DANH_GIA",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật toán A* dùng hàm đánh giá f=g+h"
+  },
+  {
+   "nguon": "B3.TT.CAP_NHAT_G",
+   "dich": "B3.TT.A_STAR_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cập nhật g và prev là một bước trong thuật toán A*"
+  },
+  {
+   "nguon": "B3.TT.CAP_NHAT_G",
+   "dich": "B3.KN.PREV",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cập nhật prev cho đỉnh kế"
+  },
+  {
+   "nguon": "B3.VI_DU.CAI_DAT_PUZZLE",
+   "dich": "B3.KN.CAU_TRUC_INFO",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần cấu trúc info lưu trạng thái puzzle"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_CO_HUONG",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Đồ thị có hướng là một loại đồ thị"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B3.VD.BAI_TOAN_8_SO",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cấu trúc info lưu trạng thái cho bài toán 8 số"
+  },
+  {
+   "nguon": "B6A.KN.HAM_VI_TU",
+   "dich": "B6A.KN.MENH_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm vị từ trả về mệnh đề"
+  },
+  {
+   "nguon": "B6A.KN.HAM_VI_TU",
+   "dich": "B6A.KN.VI_TU_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm vị từ là một dạng vị từ"
+  },
+  {
+   "nguon": "B1.KN.GIAI_DOAN_CO_DIEN",
+   "dich": "B1.KN.LICH_SU_AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Giai đoạn cổ điển là một phần của lịch sử AI."
+  },
+  {
+   "nguon": "B3.KN.TIM_KIEM_MU",
+   "dich": "B3.KN.TIMKIEMCHIEUSAU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm mù bao gồm tìm kiếm theo chiều sâu"
+  },
+  {
+   "nguon": "B3.KN.TIM_KIEM_MU",
+   "dich": "B3.KN.TIMKIEMCHIEURONG",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tìm kiếm mù bao gồm tìm kiếm theo chiều rộng"
+  },
+  {
+   "nguon": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "dich": "B2.NL.THAM_LAM_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Thuật giải tham lam dựa trên nguyên lý tham lam"
+  },
+  {
+   "nguon": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "dich": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần biết bài toán người đưa thư"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hạn chế của thuật giải heuristic"
+  },
+  {
+   "nguon": "B4.VI.NIM",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Nim có hai người chơi MAX và MIN."
+  },
+  {
+   "nguon": "B6A.KN.MANG_NGU_NGHIA",
+   "dich": "B6A.KN.TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Mạng ngữ nghĩa là phương pháp biểu diễn tri thức"
+  },
+  {
+   "nguon": "B3.NL.HAM_DANH_GIA",
+   "dich": "B3.KN.HAM_G",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "f=g+h cần hiểu g trước"
+  },
+  {
+   "nguon": "B3.NL.HAM_DANH_GIA",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "f=g+h cần hiểu h trước"
+  },
+  {
+   "nguon": "B3.PP.XULYKE",
+   "dich": "B3.KN.BANGKE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Xử lý bảng kề cần hiểu hàm sinh bảng kề"
+  },
+  {
+   "nguon": "B6A.KN.BANG_CHAN_TRI",
+   "dich": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bảng chân trị dựa trên các phép toán mệnh đề"
+  },
+  {
+   "nguon": "B1.VI_DU.HE_THONG_GIAO_THONG",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ thống giao thông thông minh ứng dụng AI."
+  },
+  {
+   "nguon": "B4.VI.TICTACTOE",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tic-tac-toe có hai người chơi MAX và MIN."
+  },
+  {
+   "nguon": "B3.KN.DO_PHUC_TAP_CAO",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Đánh giá độ phức tạp cao cần hiểu độ phức tạp"
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+   "dich": "B3.VD.BAI_TOAN_8_SO",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ A* cho bài toán 8 số cần hiểu bài toán 8 số"
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+   "dich": "B3.TT.A_STAR_2",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ A* cần hiểu thuật toán A*"
+  },
+  {
+   "nguon": "B3.KN.TIMOTRONG",
+   "dich": "B3.KN.CAU_TRUC_INFO",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm xác định ô trống cần hiểu cấu trúc info"
+  },
+  {
+   "nguon": "B6A.VI_DU.BINH_NUOC",
+   "dich": "B3.KN.BIEU_DIEN_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bài toán đong nước cần biểu diễn trạng thái"
+  },
+  {
+   "nguon": "B6A.KN.HE_LUAT_DAN",
+   "dich": "B6A.KN.TRI_THUC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ luật dẫn biểu diễn tri thức dưới dạng luật"
+  },
+  {
+   "nguon": "B6A.KN.HE_LUAT_DAN",
+   "dich": "B6A.NL.LUAT_SUY_DIEN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hệ luật dẫn sử dụng luật suy diễn"
+  },
+  {
+   "nguon": "B1.KN.HUONG_PT_AI",
+   "dich": "B1.KN.LICH_SU_AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Các hướng phát triển AI dựa trên tiến trình lịch sử."
+  },
+  {
+   "nguon": "B3.KN.BANGKE",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Bảng kề là biểu diễn đồ thị"
+  },
+  {
+   "nguon": "B3.KN.VONG",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Vòng là khái niệm trong đồ thị"
+  },
+  {
+   "nguon": "B3.NL.HAM_H_8_SO",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm h cho 8 số là dạng cụ thể của hàm h"
+  },
+  {
+   "nguon": "B3.KN.SOBANG",
+   "dich": "B3.KN.CAU_TRUC_INFO",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "So sánh bảng cần hiểu cấu trúc info"
+  },
+  {
+   "nguon": "B3.KN.HAMCOUNT",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm count là một hàm h"
+  },
+  {
+   "nguon": "B3.KN.PATH",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Đường đi là khái niệm trong đồ thị"
+  },
+  {
+   "nguon": "B3.TC.DO_PHUC_TAP",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Độ phức tạp thuật toán cần hiểu thuật toán"
+  },
+  {
+   "nguon": "B2.VI_DU.TO_MAU_10_DINH",
+   "dich": "B2.VD.TO_MAU",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.85,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ví dụ cụ thể của tô màu đồ thị"
+  },
+  {
+   "nguon": "B1.KN.LINH_VUC_UD",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Các lĩnh vực ứng dụng AI cần hiểu AI trước."
+  },
+  {
+   "nguon": "B3.KN.HAM_G",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "g(N) là chi phí đường đi trên đồ thị"
+  },
+  {
+   "nguon": "B3.KN.HAM_H",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 1.0,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm h là hàm heuristic"
+  },
+  {
+   "nguon": "B3.KN.DINH_MO",
+   "dich": "B3.KN.DANHSAOOC",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hai danh sách O và C định nghĩa đỉnh mở/đóng trong tìm kiếm."
+  },
+  {
+   "nguon": "B3.KN.PREV",
+   "dich": "B3.KN.DO_THI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Cần hiểu đồ thị và đỉnh trước khi lưu vết đỉnh trước."
+  },
+  {
+   "nguon": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "dich": "B6A.NL.LUAT_SUY_DIEN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Modus Tollens là một luật suy diễn, cần hiểu luật suy diễn"
+  },
+  {
+   "nguon": "B3.KN.G_N",
+   "dich": "B3.KN.HAM_G",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.95,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Hàm g(n) là định nghĩa chi tiết của g trong A*."
+  },
+  {
+   "nguon": "B3.KN.GANBANG",
+   "dich": "B3.KN.BIEU_DIEN_TRANG_THAI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Gán bảng thao tác trên biểu diễn trạng thái."
+  },
+  {
+   "nguon": "B3.KN.NUT_LA",
+   "dich": "B3.KN.CAY_TIM_KIEM",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Nút lá là khái niệm trong cấu trúc cây tìm kiếm."
+  },
+  {
+   "nguon": "B1.KN.NHA_MAY_TUONG_LAI",
+   "dich": "B1.KN.INTERNET_VAN_VAT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "IoT là nền tảng kết nối của nhà máy tương lai."
+  },
+  {
+   "nguon": "B1.KN.NHA_MAY_TUONG_LAI",
+   "dich": "B1.KN.ROBOT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Robot là thành phần chính trong nhà máy tương lai."
+  },
+  {
+   "nguon": "B1.KN.NEN_TANG_AI_2",
+   "dich": "B1.KN.LICH_SU_AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Nền tảng AI hình thành qua các giai đoạn lịch sử."
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tiêu chuẩn thực tiễn đánh giá các phương pháp biểu diễn tri thức"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "dich": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.7,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tiêu chuẩn thực tiễn kế thừa tiêu chuẩn thuật toán"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_HINH_THUC_HOA",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tiêu chuẩn hình thức hóa đánh giá các phương pháp biểu diễn tri thức"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 3,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tiêu chuẩn đầy đủ đánh giá các phương pháp biểu diễn tri thức"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 2,
+   "refd": 0.8,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tiêu chuẩn đầy đủ kế thừa tiêu chuẩn thuật toán"
+  },
+  {
+   "nguon": "B1.KN.LINH_VUC_AI",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Các lĩnh vực của AI cần hiểu AI trước."
+  },
+  {
+   "nguon": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Tiêu chuẩn thuật toán đánh giá một thuật toán đã biết."
+  },
+  {
+   "nguon": "B1.KN.UNG_DUNG_THUC_TE_AI",
+   "dich": "B1.KN.AI",
+   "quan_he": "TIEN_QUYET",
+   "chi_phi_hoc": 1,
+   "refd": 0.9,
+   "sinh_boi": "refd+llm",
+   "ly_do": "Ứng dụng thực tế của AI cần hiểu AI trước."
+  },
+  {
+   "nguon": "B1.KN.HUONG_PT_AI",
+   "dich": "B1.KN.LINH_VUC_UD",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.PHUONG_PHAP_BDTT",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.PHUONG_PHAP_BDTT",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.HE_LUAT_DAN",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_H",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "dich": "B2.TT.NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+   "dich": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "dich": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 1.0,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.952,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.PP.CAIDATPUZZLEASTART",
+   "dich": "B3.VI_DU.CAI_DAT_PUZZLE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.909,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.PHUONG_PHAP_BDTT",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.9,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.9,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.9,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.9,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.9,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.HE_LUAT_DAN",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.9,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MANG_NGU_NGHIA",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.9,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.895,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.864,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.864,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.PHUONG_PHAP_BDTT",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.857,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.857,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.857,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.857,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.857,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.HE_LUAT_DAN",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.857,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MANG_NGU_NGHIA",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.857,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.LOI.KHONG_THUC_TE",
+   "dich": "B4.TT.ALPHA_BETA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.846,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.818,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.TRI_THUC_THANH_PHAN",
+   "dich": "B6A.KN.TRI_THUC_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.818,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.808,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B3.KN.HAMCOUNT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.8,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.8,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.8,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_G",
+   "dich": "B3.TT.DIJKSTRA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.8,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "dich": "B4.TT.ALPHA_BETA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.786,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "dich": "B4.TT.ALPHA_BETA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.786,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.783,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DO_PHU_TAP_2",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.778,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.769,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+   "dich": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.759,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.75,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.75,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.75,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.75,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.75,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.75,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG",
+   "dich": "B2.BT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.75,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B3.KN.HAMCOUNT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.727,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.727,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.727,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAMCOUNT",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.727,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MENH_DE",
+   "dich": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.727,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.724,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.704,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.TC.HAN_CHE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.696,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.692,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.692,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.PHUONG_PHAP_BDTT",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.692,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.692,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.HE_LUAT_DAN",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.692,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MANG_NGU_NGHIA",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.692,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.LOI.KHONG_THUC_TE",
+   "dich": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.688,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.LOI.KHONG_THUC_TE",
+   "dich": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.688,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.667,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.667,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.MATHWAY",
+   "dich": "B5.KN.SYMBOLAB",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.667,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.NL.HAM_DANH_GIA",
+   "dich": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.667,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.TT.A_STAR_2",
+   "dich": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.667,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.BANGKE",
+   "dich": "B3.KN.SOBANG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.667,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.DANG_CHUAN_CNF_DNF",
+   "dich": "B6A.NL.DANG_SUY_RA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.667,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B2.TC.HAN_CHE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.64,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B3.KN.HAMCOUNT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.64,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.64,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.64,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.63,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_H",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.63,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_UE_LUONG_H",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.63,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.615,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.LINH_VUC_AI",
+   "dich": "B1.NL.HUONG_PHAT_TRIEN_AI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.6,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.BT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.6,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.LOGIC_MENH_DE_3",
+   "dich": "B6A.KN.MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.6,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.NL.DANG_SUY_RA",
+   "dich": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.6,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.588,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAMCOUNT",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.571,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.G_N",
+   "dich": "B3.TT.DIJKSTRA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.571,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "dich": "B4.TT.ALPHA_BETA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.571,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "dich": "B6A.KN.VI_TU_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.533,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.526,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B3.KN.HAMCOUNT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.526,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.526,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.MO_HINH_VAN_DE",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.52,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.516,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "dich": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+   "dich": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.TT.CAY_KHUNG_NHO_NHAT",
+   "dich": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_G",
+   "dich": "B3.KN.PREV",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_G",
+   "dich": "B3.TT.CAP_NHAT_G",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.SOBANG",
+   "dich": "B3.PP.XULYKE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.TT.ALPHA_BETA",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "dich": "B4.LOI.KHONG_THUC_TE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "dich": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.5,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.483,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.476,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.476,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.476,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "dich": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.471,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "dich": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.471,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DO_PHUC_TAP_O_N2",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.467,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MENH_DE",
+   "dich": "B6A.KN.VI_TU_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.467,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DO_PHUC_TAP_O_N2",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.464,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.464,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.464,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.462,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.LOI.KHONG_THUC_TE",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.458,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.455,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.455,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.TT.THUAT_GIAI_TO_MAU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.455,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.TC.HAN_CHE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.455,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THAM_LAM_2",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.455,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.455,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.45,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B3.KN.HAMCOUNT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.45,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.45,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.45,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.444,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.44,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.44,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.432,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.429,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_CO_HUONG",
+   "dich": "B3.KN.NUT_LA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.429,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.423,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.423,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B2.TC.HAN_CHE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.419,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.417,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.NL.THU_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.417,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.TC.DO_PHU_TAP_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.417,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B2.TC.DO_PHU_TAP_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.417,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_TRANG_THAI",
+   "dich": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.417,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B2.KN.THUAT_GIAI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.414,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B3.KN.HAMCOUNT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.414,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.409,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B6A.KN.TRI_THUC_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.409,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.409,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.409,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.GIAI_DOAN_CO_DIEN",
+   "dich": "B6A.KN.NGON_NGU_PROLOG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "dich": "B1.KN.UNG_DUNG_THUC_TE_AI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "dich": "B1.TC.SAN_XUAT_LINH_HOAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.LINH_VUC_AI",
+   "dich": "B1.VI_DU.HE_THONG_GIAO_THONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.VI_DU.HE_THONG_GIAO_THONG",
+   "dich": "B1.VI_DU.XE_TU_LAI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.TO_MAU_DO_THI",
+   "dich": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.TO_MAU_DO_THI",
+   "dich": "B2.TT.NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.PP.GIAI_PHAN_CONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.PREV",
+   "dich": "B3.TT.DIJKSTRA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.TT.CAP_NHAT_G",
+   "dich": "B3.TT.DIJKSTRA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.GANBANG",
+   "dich": "B3.PP.XULYKE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B4.TT.ALPHA_BETA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.BIEU_THUC_MENH_DE",
+   "dich": "B6A.NL.DANG_SUY_RA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.HAM_VI_TU",
+   "dich": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MENH_DE",
+   "dich": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.DANG_CHUAN_CNF_DNF",
+   "dich": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.4,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.391,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B4.KN.MINIMAX_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.385,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.NUTMAXMIN",
+   "dich": "B4.LOI.KHONG_THUC_TE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.385,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.NL.DE_MORGAN",
+   "dich": "B6A.TT.THAY_THE_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.381,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.378,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B5.KN.TRI_THUC_THANH_PHAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.375,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.375,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.375,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.371,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_H",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.THUAT_TOAN",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG",
+   "dich": "B2.TT.THUAT_GIAI_TO_MAU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.MINIMAX_2",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B4.TT.ALPHA_BETA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.364,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B3.NL.HUONGTRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B3.KN.VAN_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B3.KN.VAN_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.NL.THAM_LAM_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.NUTMAXMIN",
+   "dich": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.NUTMAXMIN",
+   "dich": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.HAM_VI_TU",
+   "dich": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.357,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B4.LOI.KHONG_THUC_TE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.353,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.348,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.348,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.348,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.346,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.346,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.346,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.345,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.MO_HINH_VAN_DE",
+   "dich": "B3.KN.VAN_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.343,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.343,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TIMOTRONG",
+   "dich": "B6A.NL.DE_MORGAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.343,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.343,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.LICH_SU_AI",
+   "dich": "B6A.KN.NGON_NGU_PROLOG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B3.KN.TKTOTNHAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.VI_DU.TO_MAU_10_DINH",
+   "dich": "B5.KN.SYMBOLAB",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.NL.THU_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.KG_DIEU_KHIEN",
+   "dich": "B1.KN.NEN_TANG_AI_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.LINH_VUC_AI",
+   "dich": "B6A.KN.NGON_NGU_PROLOG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.NL.HUONG_PHAT_TRIEN_AI",
+   "dich": "B6A.KN.NGON_NGU_PROLOG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "dich": "B6A.KN.BIEU_THUC_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.CAI_DAT_BAI_TOAN",
+   "dich": "B2.BT.PHAN_CONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.CAI_DAT_BAI_TOAN",
+   "dich": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.CAI_DAT_BAI_TOAN",
+   "dich": "B2.TT.NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG",
+   "dich": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG",
+   "dich": "B2.TT.NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_H",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THAM_LAM_2",
+   "dich": "B2.NL.THU_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "dich": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TT.NGUOI_DUA_THU",
+   "dich": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VONG",
+   "dich": "B3.TT.CAY_KHUNG_NHO_NHAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TIMKIEMCHIEURONG",
+   "dich": "B3.KN.TIMKIEMCHIEUSAU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.G_N",
+   "dich": "B3.KN.PREV",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.G_N",
+   "dich": "B3.TT.CAP_NHAT_G",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.MINIMAX_2",
+   "dich": "B4.VI.TICTACTOE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.NUT_LA",
+   "dich": "B4.KN.CAYTROCHOI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B4.LOI.KHONG_THUC_TE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.VET_CAN_THONG_MINH_2",
+   "dich": "B3.KN.DO_THI_CO_HUONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.LOGIC_MENH_DE_3",
+   "dich": "B6A.KN.VI_TU_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MENH_DE",
+   "dich": "B6A.VI_DU.LAN_KHONG_UOT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.BIEU_THUC_MENH_DE",
+   "dich": "B6A.KN.CAC_TUONG_DUONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.CAC_TUONG_DUONG",
+   "dich": "B6A.TT.THAY_THE_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MENH_DE",
+   "dich": "B6A.NL.DANG_SUY_RA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "dich": "B6A.VI_DU.LAN_KHONG_UOT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.333,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_UE_LUONG_H",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.325,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.323,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.321,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B4.TT.ALPHA_BETA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.32,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.32,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.32,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.32,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.TT.THUAT_GIAI_TO_MAU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.312,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_TRANG_THAI",
+   "dich": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.312,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_TRANG_THAI",
+   "dich": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.312,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B3.KN.DO_THI_TRANG_THAI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.308,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B2.NL.THU_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.308,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B2.TC.DAC_TINH_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.308,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.308,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_HO_TRO_QUYET_DINH",
+   "dich": "B2.TC.DO_PHUC_TAP_O_N2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.308,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.NUT_LA",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.308,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.LOGIC_MENH_DE_3",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.308,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MENH_DE",
+   "dich": "B6A.TT.THAY_THE_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.308,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.306,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.306,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_H",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.306,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.TC.DO_PHUC_TAP",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.306,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B3.KN.TKTOTNHAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.304,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.304,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.303,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.303,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_DAY_DU",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B2.NL.THU_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B3.KN.HAMCOUNT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.UNG_DUNG_THUC_TE_AI",
+   "dich": "B1.VI_DU.HE_THONG_GIAO_THONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.CAI_DAT_BAI_TOAN",
+   "dich": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.TO_MAU_DO_THI",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.TO_MAU_DO_THI",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TT.TO_MAU_DO_THI",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TT.TO_MAU_DO_THI",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.GANBANG",
+   "dich": "B3.PP.CAIDATPUZZLEASTART",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+   "dich": "B4.KN.MINIMAX_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.CAC_TUONG_DUONG",
+   "dich": "B6A.KN.HAM_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.MINIMAX_2",
+   "dich": "B4.KN.NUTMAXMIN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "dich": "B6A.VI_DU.LAN_KHONG_UOT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.CAC_TUONG_DUONG",
+   "dich": "B6A.KN.MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "dich": "B6A.NL.DANG_SUY_RA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "dich": "B6A.TT.THAY_THE_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.3,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B4.LOI.KHONG_THUC_TE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.296,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B3.NL.HUONGTRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.294,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.UNG_DUNG_THUC_TE_AI",
+   "dich": "B5.KN.WOLFRAM_ALPHA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.294,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.294,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.294,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAMCOUNT",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.29,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.TC.DAC_TINH_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B3.KN.TKTOTNHAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.ROBOT",
+   "dich": "B1.VI_DU.IBM_WATSON",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.KG_DIEU_KHIEN",
+   "dich": "B1.VI_DU.HE_THONG_GIAO_THONG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.CAI_DAT_BAI_TOAN",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.CAI_DAT_BAI_TOAN",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.TT.NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TT.THUAT_GIAI_TO_MAU",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+   "dich": "B6A.KN.VI_TU_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.PP.GIAI_PHAN_CONG",
+   "dich": "B2.TC.DO_PHU_TAP_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_CO_HUONG",
+   "dich": "B4.KN.NUTMAXMIN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "dich": "B6A.TT.THAY_THE_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.VI_TU_2",
+   "dich": "B6A.NL.PHEP_TOAN_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.286,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.CAU_TRUC_INFO",
+   "dich": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.282,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.282,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.LOI.KHONG_THUC_TE",
+   "dich": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.281,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.28,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.MO_HINH_VAN_DE",
+   "dich": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.278,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TKTOTNHAT",
+   "dich": "B3.NL.HUONGTRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.278,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.HAM_HEURISTIC",
+   "dich": "B2.TC.DO_PHUC_TAP_O_N2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.278,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B2.TC.DO_PHUC_TAP_O_N2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.278,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.276,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_UE_LUONG_H",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.275,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B5.KN.PHUONG_PHAP_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B6A.KN.HE_LUAT_DAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B6A.KN.MANG_NGU_NGHIA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.PHUONG_PHAP_BDTT",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.HE_LUAT_DAN",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MANG_NGU_NGHIA",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAMCOUNT",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_H",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.POLYMINIMAL",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.NL.HUONG_PHAT_TRIEN_AI",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.KN.HE_CO_SO_TRI_THUC",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.BIEU_THUC_MENH_DE",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B2.NL.THAM_LAM_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "dich": "B2.KN.HAM_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+   "dich": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B2.TT.NGUOI_DUA_THU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B2.TC.DO_PHU_TAP_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "dich": "B3.TT.DIJKSTRA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+   "dich": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+   "dich": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.GANBANG",
+   "dich": "B3.VI_DU.CAI_DAT_PUZZLE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.PP.CAIDATPUZZLEASTART",
+   "dich": "B3.PP.XULYKE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B4.VI.TICTACTOE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_CO_HUONG",
+   "dich": "B4.KN.CAYTROCHOI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.NUT_LA",
+   "dich": "B4.KN.MINIMAX_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.CAC_TUONG_DUONG",
+   "dich": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.273,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.267,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B3.KN.POLYMINIMAL",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.267,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DO_PHUC_TAP_O_N2",
+   "dich": "B3.KN.HAM_UE_LUONG_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.267,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B2.NL.THAM_LAM_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.267,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+   "dich": "B6A.KN.TRI_THUC_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.267,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TIMKIEMCHIEUSAU",
+   "dich": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.267,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TIMKIEMCHIEUSAU",
+   "dich": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.267,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MENH_DE",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.267,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VAN_DE",
+   "dich": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.263,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.263,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.263,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B3.KN.HAMCOUNT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.263,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B3.KN.HAM_H",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.263,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.PHAN_CONG_CONG_VIEC",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.263,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.TC.DO_PHU_TAP_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.263,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.263,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.MO_HINH_AI",
+   "dich": "B2.TC.DAC_TINH_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.261,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B3.NL.HUONGTRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.261,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.THU_TU",
+   "dich": "B2.TC.HAN_CHE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.261,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_CHUYEN_GIA",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.261,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.261,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+   "dich": "B4.KN.CAYTROCHOI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.261,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.VI_TU_2",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.259,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.TT.ALPHA_BETA",
+   "dich": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.258,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.MO_HINH_VAN_DE",
+   "dich": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.257,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.257,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.NL.BIEU_DIEN_TRI_THUC",
+   "dich": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.257,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.HUONG_PT_AI",
+   "dich": "B3.KN.MO_HINH_VAN_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.LINH_VUC_UD",
+   "dich": "B3.KN.MO_HINH_VAN_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DAC_TINH_HEURISTIC",
+   "dich": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAMCOUNT",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAMCOUNT",
+   "dich": "B3.KN.TKTOTNHAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_H",
+   "dich": "B3.KN.TKTOTNHAT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.POLYMINIMAL",
+   "dich": "B3.KN.THUAT_TOAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TKTOTNHAT",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.KG_DIEU_KHIEN",
+   "dich": "B1.KN.LINH_VUC_AI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.UNG_DUNG_THUC_TE_AI",
+   "dich": "B5.KN.HE_CO_SO_TRI_THUC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B1.KN.UNG_DUNG_THUC_TE_AI",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DO_PHUC_TAP_O_N2",
+   "dich": "B3.NL.HUONGTRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.CAI_DAT_BAI_TOAN",
+   "dich": "B2.TT.TO_MAU_DO_THI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "dich": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B2.TC.DO_PHUC_TAP_O_N2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DO_PHUC_TAP_O_N2",
+   "dich": "B2.TC.HAN_CHE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.DO_PHU_TAP_2",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.TC.HAN_CHE",
+   "dich": "B3.TC.DO_PHUC_TAP",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+   "dich": "B6A.KN.BANG_CHAN_TRI",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TIMOTRONG",
+   "dich": "B6A.KN.MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+   "dich": "B3.KN.G_N",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.VONG",
+   "dich": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.TIM_KIEM_MU",
+   "dich": "B3.KN.TKSAUDAN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B2.NL.VET_CAN_THONG_MINH_2",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.HAM_G",
+   "dich": "B3.TT.A_STAR_2",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.NL.HAM_DANH_GIA",
+   "dich": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.PP.XULYKE",
+   "dich": "B3.VI_DU.CAI_DAT_PUZZLE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.TT.ALPHA_BETA",
+   "dich": "B4.VI.TICTACTOE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_CO_HUONG",
+   "dich": "B4.KN.NGUOI_CHOI_MAX_MIN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.KN.DO_THI_CO_HUONG",
+   "dich": "B4.TT.ALPHA_BETA",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.CAYTROCHOI",
+   "dich": "B4.KN.NUTMAXMIN",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B4.KN.MINIMAX_2",
+   "dich": "B4.VI.NIM",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+   "dich": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+   "dich": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B3.VD.BAI_TOAN_DO_NUOC",
+   "dich": "B6A.KN.LOGIC_MENH_DE_3",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  },
+  {
+   "nguon": "B6A.KN.LOGIC_MENH_DE_3",
+   "dich": "B6A.VI_DU.LAN_KHONG_UOT",
+   "quan_he": "LIEN_QUAN",
+   "do_lien_quan": 0.25,
+   "sinh_boi": "dong_xuat_hien"
+  }
+ ]
+}

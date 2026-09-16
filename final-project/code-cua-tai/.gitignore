@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+frontend/dist/
+data/normalized-knowledge-base.json
+data/knowledge-base-audit.json
+data/rawdata-extracted.jsonl
+.venv/
+reports/

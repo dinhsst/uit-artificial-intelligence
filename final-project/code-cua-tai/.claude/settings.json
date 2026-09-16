@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(npm run *)",
+      "Bash(node --input-type=module -e \"const b='http://localhost:3001/api'; const r=await fetch\\(b+'/auth/login',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify\\({email:'integration-test-20260915@example.com',password:'test-password-123'}\\)}\\); const x=await r.json\\(\\); const h={authorization:'Bearer '+x.token,'content-type':'application/json'}; for\\(const [p,o] of [['/users/me/progress/B1.KN.AI',{method:'PUT',headers:h,body:JSON.stringify\\({mastery:0.75}\\)}],['/users/me/progress',{headers:h}],['/concepts/B1.KN.AI/path?algorithm=astar&target=B1.KN.LICH_SU_AI',{headers:h}]]\\){const q=await fetch\\(b+p,o\\); console.log\\(q.status,p,await q.text\\(\\)\\)}\")",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3001)",
+      "Bash(taskkill /PID 5104 /T /F)",
+      "Bash(cmd.exe /c \"taskkill /PID 5104 /T /F\")",
+      "Bash(node --input-type=module -e \"const b='http://localhost:3001/api'; const r=await fetch\\(b+'/auth/login',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify\\({email:'integration-test-20260915@example.com',password:'test-password-123'}\\)}\\); const x=await r.json\\(\\); const h={authorization:'Bearer '+x.token,'content-type':'application/json'}; const q=await fetch\\(b+'/users/me/progress/B1.KN.AI',{method:'PUT',headers:h,body:JSON.stringify\\({mastery:0.75}\\)}\\); console.log\\(q.status,await q.text\\(\\)\\); const p=await fetch\\(b+'/users/me/progress',{headers:h}\\); console.log\\(p.status,await p.text\\(\\)\\)\")"
+    ]
+  }
+}
