@@ -1,0 +1,2693 @@
+{
+  "duplicateNodes": [
+    "B1.KN.NEN_TANG_AI",
+    "B2.KN.THUAT_GIAI_HEURISTIC",
+    "B3.KN.THUAT_TOAN",
+    "B3.KN.KHONG_GIAN_TRANG_THAI",
+    "B3.TT.A_STAR",
+    "B4.KN.MINIMAX",
+    "B2.KN.THUAT_GIAI_HEURISTIC",
+    "B2.NL.VET_CAN_THONG_MINH",
+    "B2.NL.THAM_LAM",
+    "B2.NL.THU_TU",
+    "B2.KN.HAM_HEURISTIC",
+    "B2.KN.HAM_HEURISTIC",
+    "B2.TC.DO_PHU_TAP",
+    "B2.KN.THUAT_GIAI_HEURISTIC",
+    "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+    "B6a.KN.TRI_THUC",
+    "B6a.KN.THANH_PHAN_TRI_THUC",
+    "B6a.KN.MENH_DE",
+    "B6a.KN.LOGIC_MENH_DE",
+    "B6a.KN.DANG_CHUAN_CNF_DNF",
+    "B6a.KN.LOGIC_MENH_DE",
+    "B6a.KN.VI_TU",
+    "B6a.KN.LUONG_TU"
+  ],
+  "duplicateNames": [
+    {
+      "name": "hệ chuyên gia",
+      "ids": [
+        "B1.KN.HE_CHUYEN_GIA",
+        "B5.KN.HE_CHUYEN_GIA"
+      ]
+    },
+    {
+      "name": "hệ hỗ trợ quyết định",
+      "ids": [
+        "B1.KN.HE_HO_TRO_QUYET_DINH",
+        "B5.KN.HE_HO_TRO_QUYET_DINH"
+      ]
+    },
+    {
+      "name": "hệ giải quyết vấn đề thông minh",
+      "ids": [
+        "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+        "B5.KN.HE_GIAI_QUYET_VAN_DE_TT"
+      ]
+    },
+    {
+      "name": "wolfram alpha",
+      "ids": [
+        "B1.VI_DU.WOLFRAM_ALPHA",
+        "B5.KN.WOLFRAM_ALPHA"
+      ]
+    },
+    {
+      "name": "thuật giải heuristic",
+      "ids": [
+        "B2.KN.THUAT_GIAI_HEURISTIC",
+        "B2.TT.THUAT_GIAI_HEURISTIC"
+      ]
+    },
+    {
+      "name": "thuật toán",
+      "ids": [
+        "B2.KN.THUAT_TOAN",
+        "B3.KN.THUAT_TOAN"
+      ]
+    },
+    {
+      "name": "nguyên lý tham lam",
+      "ids": [
+        "B2.NL.THAM_LAM",
+        "B2.NL.NGUYEN_LY_THAM_LAM",
+        "B2.PP.NGUYEN_LY_THAM_LAM"
+      ]
+    },
+    {
+      "name": "nguyên lý thứ tự",
+      "ids": [
+        "B2.NL.THU_TU",
+        "B2.NL.NGUYEN_LY_THU_TU",
+        "B2.KN.NGUYEN_LY_THU_TU"
+      ]
+    },
+    {
+      "name": "bài toán phân công",
+      "ids": [
+        "B2.BT.PHAN_CONG",
+        "B2.VI_KB.PHAN_CONG"
+      ]
+    },
+    {
+      "name": "thuật giải heuristic cho bài toán phân công",
+      "ids": [
+        "B2.PP.GIAI_PHAN_CONG",
+        "B2.PP.THUAT_GIAI_PHAN_CONG"
+      ]
+    },
+    {
+      "name": "thuật giải tô màu đồ thị",
+      "ids": [
+        "B2.TT.TO_MAU_DO_THI",
+        "B2.PP.TO_MAU_DO_THI"
+      ]
+    },
+    {
+      "name": "bài toán người đưa thư",
+      "ids": [
+        "B2.BT.BAI_TOAN_NGUOI_DUA_THU",
+        "B2.KN.BAI_TOAN_NGUOI_DUA_THU"
+      ]
+    },
+    {
+      "name": "hạn chế của thuật giải heuristic",
+      "ids": [
+        "B2.TC.HAN_CHE",
+        "B2.TC.HAN_CHE_LOI_GIAI"
+      ]
+    },
+    {
+      "name": "chiến lược minimax",
+      "ids": [
+        "B4.NL.CHIENLUOCMINIMAX",
+        "B4.KN.CHIEN_LUOC_MINIMAX"
+      ]
+    },
+    {
+      "name": "biểu diễn tri thức",
+      "ids": [
+        "B5.KN.BIEU_DIEN_TRI_THUC",
+        "B6a.KN.BIEU_DIEN_TRI_THUC"
+      ]
+    },
+    {
+      "name": "các phép toán mệnh đề",
+      "ids": [
+        "B6a.NL.PHEP_TOAN_MENH_DE",
+        "B6a.KN.PHEP_TOAN_MENH_DE"
+      ]
+    },
+    {
+      "name": "luật suy diễn",
+      "ids": [
+        "B6a.NL.LUAT_SUY_DIEN",
+        "B6a.KN.LUAT_SUY_DIEN"
+      ]
+    },
+    {
+      "name": "mô hình tri thức logic mệnh đề",
+      "ids": [
+        "B6a.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+        "B6a.KN.MO_HINH_TRI_THUC"
+      ]
+    },
+    {
+      "name": "thuật giải vương hạo",
+      "ids": [
+        "B6a.TT.THUAT_GIAI_VUONG_HAO",
+        "B6a.TT.VUONG_HAO"
+      ]
+    },
+    {
+      "name": "phương pháp chứng minh phản chứng",
+      "ids": [
+        "B6a.NL.CHUNG_MINH_PHAN_CHUNG",
+        "B6a.PP.CHUNG_MINH_PHAN_CHUNG"
+      ]
+    },
+    {
+      "name": "mô hình tri thức logic vị từ",
+      "ids": [
+        "B6a.KN.MO_HINH_TRI_THUC_LOGIC_VI_TU",
+        "B6a.KN.MO_HINH_LOGIC_VI_TU"
+      ]
+    },
+    {
+      "name": "thuật toán hợp giải",
+      "ids": [
+        "B6a.TT.hop_giai",
+        "B6a.TT.HOP_GIAI"
+      ]
+    },
+    {
+      "name": "ngôn ngữ prolog",
+      "ids": [
+        "B6a.KN.ngon_ngu_prolog",
+        "B6a.KN.PROLOG"
+      ]
+    }
+  ],
+  "invalidNodes": [],
+  "unknownSourceTypes": [],
+  "rejectedEdges": [
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 0,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.NL.HUONG_PHAT_TRIEN_AI",
+      "to": "B1.KN.HUONG_PT_AI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 1,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.NL.VET_CAN_THONG_MINH_2",
+      "to": "B2.KN.VET_CAN_THONG_MINH",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 2,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B1.PP.STATE_SPACE_SEARCH",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 5,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 6,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 8,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 9,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 10,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 11,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.NL.DINH_NGHIA_AI",
+      "to": "B1.KN.TURING_TEST",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 12,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "to": "B3.KN.BIEU_DIEN_TRANG_THAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 15,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "to": "B3.KN.MO_HINH_VAN_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 16,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 19,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B6A.KN.TRI_THUC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 20,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 21,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 22,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.KN.VI_TU_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 23,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.KN.LUONG_TU_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 24,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.PP.GIAI_PHAN_CONG",
+      "to": "B2.NL.THAM_LAM_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 28,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.PP.GIAI_PHAN_CONG",
+      "to": "B2.BT.PHAN_CONG",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 29,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.TT.CAY_KHUNG_NHO_NHAT",
+      "to": "B2.NL.THAM_LAM_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 31,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.DO_PHU_TAP_2",
+      "to": "B2.KN.THUAT_GIAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 33,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.TT.ALPHA_BETA",
+      "to": "B4.KN.MINIMAX_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 36,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B1.PP.STATE_SPACE_SEARCH",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 37,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.NL.THAM_LAM_2",
+      "to": "B2.KN.THUAT_GIAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 41,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.VI_DU.TRAM_CAP_NUOC",
+      "to": "B3.TT.CAY_KHUNG_NHO_NHAT",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 43,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VI_DU.TRAM_CAP_NUOC",
+      "to": "B2.NL.VET_CAN_THONG_MINH_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 44,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 45,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.TRI_THUC_THU_TUC",
+      "to": "B6A.KN.TRI_THUC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 46,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "to": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 49,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 50,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.KN.THUAT_GIAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 51,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "to": "B4.KN.CAYTROCHOI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 52,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.BT.PHAN_CONG",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 54,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.TT.HOP_GIAI",
+      "to": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 55,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.TT.HOP_GIAI",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 56,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.TT.HOP_GIAI",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 57,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.PP.PHAN_LOAI_VAN_DE",
+      "to": "B3.KN.VAN_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 58,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 62,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B3.KN.MO_HINH_VAN_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 63,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B2.KN.VET_CAN_THONG_MINH",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 64,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B3.KN.BIEU_DIEN_TRANG_THAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 65,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "to": "B4.PP.LUONG_GIA_TINH",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 66,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.NL.LUAT_SUY_DIEN",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 67,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.PP.STATE_SPACE_SEARCH",
+      "to": "B1.KN.KG_DIEU_KHIEN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 68,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 69,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.PP.MO_RONG_CAY_TIM_KIEM",
+      "to": "B3.KN.CAY_TIM_KIEM",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 74,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.PP.MO_RONG_CAY_TIM_KIEM",
+      "to": "B3.KN.THUAT_TOAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 75,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B4.VD.MINIMAX_TIC_TAC_TOE",
+      "to": "B4.KN.MINIMAX_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 76,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.VD.MINIMAX_TIC_TAC_TOE",
+      "to": "B4.VI.TICTACTOE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 77,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.TT.THAY_THE_MENH_DE",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 78,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 80,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 81,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "to": "B3.KN.DO_THI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 82,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B4.NL.TINH_TRUOC_N_NUOC",
+      "to": "B4.KN.CAYTROCHOI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 86,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 87,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "to": "B4.KN.MINIMAX_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 91,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.VD.IN_3D",
+      "to": "B1.KN.CONG_NGHIEP_4_0",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 92,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B4.PP.LUONG_GIA_TINH",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 94,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B5.KN.WOLFRAM_ALPHA",
+      "to": "B1.VI_DU.IBM_WATSON",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 96,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_NGUOI_QUY_QUA_SONG",
+      "to": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 98,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.KN.THUAT_GIAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 99,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.LUONG_TU_2",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 100,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.DO_PHUC_TAP_O_N2",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 101,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.DANG_SUY_RA",
+      "to": "B6A.KN.CAC_TUONG_DUONG",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 102,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.DANG_SUY_RA",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 103,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 104,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 105,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 106,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.VI_DU.LAN_KHONG_UOT",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 107,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.VI_DU.LAN_KHONG_UOT",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 108,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.DO_THI_TRANG_THAI",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 109,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.DO_THI_TRANG_THAI",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 111,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B1.TC.SAN_XUAT_LINH_HOAT",
+      "to": "B1.KN.ROBOT",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 113,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.TT.DIJKSTRA",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 115,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.TT.DIJKSTRA",
+      "to": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 116,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 120,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B1.KN.AI",
+      "to": "B1.NL.DINH_NGHIA_AI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 121,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.TT.NGUOI_DUA_THU",
+      "to": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 123,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_8_SO",
+      "to": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 124,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_GIAI_TAM_GIAC",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 125,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 126,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 127,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "to": "B4.KN.MINIMAX_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 129,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.TRI_THUC",
+      "to": "B5.KN.TRI_THUC_THANH_PHAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 130,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TT.TO_MAU_DO_THI",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 132,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.NL.TANGDOSAU",
+      "to": "B3.KN.TKSAUDAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 133,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.NGON_NGU_PROLOG",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 134,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TT.THUAT_GIAI_TO_MAU",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 135,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TT.THUAT_GIAI_TO_MAU",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 136,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.KN.CAY_TIM_KIEM",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 137,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 138,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.VI_DU.XE_TU_LAI",
+      "to": "B1.KN.AI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 139,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B1.VI_DU.IBM_WATSON",
+      "to": "B1.KN.HE_CHUYEN_GIA",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 140,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "to": "B2.NL.VET_CAN_THONG_MINH_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 141,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 142,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_DO_NUOC",
+      "to": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 143,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.NL.DE_MORGAN",
+      "to": "B6A.KN.CAC_TUONG_DUONG",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 144,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.BT.CANO",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 145,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B4.LOI.KHONG_THUC_TE",
+      "to": "B4.KN.MINIMAX_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 146,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B1.PP.STATE_SPACE_SEARCH",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 147,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.PHEP_TOAN_VI_TU",
+      "to": "B6A.KN.HAM_VI_TU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 149,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.POLYMINIMAL",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 150,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.NL.HUONGTRI",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 152,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.NL.HUONGTRI",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 153,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VI.TKTOTNHAT",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 154,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VI.TKTOTNHAT",
+      "to": "B3.KN.TKTOTNHAT",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 155,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "to": "B6A.KN.BIEU_THUC_MENH_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 157,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.VD.TO_MAU",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 158,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.TT.TINH_TONG_LE",
+      "to": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 159,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.LOI.THUAT_GIAI_CHUA_CHINH_XAC",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 160,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.PP.CAIDATPUZZLEASTART",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 161,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.PP.CAIDATPUZZLEASTART",
+      "to": "B3.TT.A_STAR_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 162,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.HANG_SO_HUONG",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 165,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.BIEU_THUC_MENH_DE",
+      "to": "B6A.KN.MENH_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 166,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.VD.TOAN_TU_8_SO",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 167,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.TRI_THUC_HEURISTIC",
+      "to": "B6A.KN.TRI_THUC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 168,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.TRI_THUC_HEURISTIC",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 169,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.VI.TKSAU",
+      "to": "B3.NL.TANGDOSAU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 170,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 173,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.TT.A_STAR_2",
+      "to": "B2.NL.THAM_LAM_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 175,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.TT.A_STAR_2",
+      "to": "B3.NL.HAM_DANH_GIA",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 176,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.TT.CAP_NHAT_G",
+      "to": "B3.TT.A_STAR_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 177,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.VI_DU.CAI_DAT_PUZZLE",
+      "to": "B3.KN.CAU_TRUC_INFO",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 179,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 181,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.HAM_VI_TU",
+      "to": "B6A.KN.MENH_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 182,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HAM_VI_TU",
+      "to": "B6A.KN.VI_TU_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 183,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B2.NL.THAM_LAM_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 187,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 188,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 189,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.VI.NIM",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 190,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.KN.TRI_THUC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 191,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.NL.HAM_DANH_GIA",
+      "to": "B3.KN.HAM_G",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 192,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.NL.HAM_DANH_GIA",
+      "to": "B3.KN.HAM_H",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 193,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.PP.XULYKE",
+      "to": "B3.KN.BANGKE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 194,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.KN.BANG_CHAN_TRI",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 195,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.VI_DU.HE_THONG_GIAO_THONG",
+      "to": "B1.KN.AI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 196,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B4.VI.TICTACTOE",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 197,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.KN.DO_PHUC_TAP_CAO",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 198,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 199,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "to": "B3.TT.A_STAR_2",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 200,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.VI_DU.BINH_NUOC",
+      "to": "B3.KN.BIEU_DIEN_TRANG_THAI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 202,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.KN.TRI_THUC",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 203,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 204,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.NL.HAM_H_8_SO",
+      "to": "B3.KN.HAM_H",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 208,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.TC.DO_PHUC_TAP",
+      "to": "B3.KN.THUAT_TOAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 212,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B2.VI_DU.TO_MAU_10_DINH",
+      "to": "B2.VD.TO_MAU",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 213,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 219,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.NEN_TANG_AI_2",
+      "to": "B1.KN.LICH_SU_AI",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 225,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 226,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 227,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_HINH_THUC_HOA",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 228,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 229,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 230,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "to": "B3.KN.THUAT_TOAN",
+      "sourceRelationType": "TIEN_QUYET",
+      "sourceIndex": 232,
+      "reason": "requires_endpoint_not_concept"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 235,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 236,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 237,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 238,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 239,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 247,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 249,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 250,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 251,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 252,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 253,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 255,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 256,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 257,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 259,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 260,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 261,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 262,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 263,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 265,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.TRI_THUC_THANH_PHAN",
+      "to": "B6A.KN.TRI_THUC_HEURISTIC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 266,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 267,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 274,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.DO_PHU_TAP_2",
+      "to": "B3.KN.POLYMINIMAL",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 275,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 276,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 279,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 280,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 281,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 289,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 290,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 291,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 294,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 295,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 296,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 297,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 298,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 302,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.TT.A_STAR_2",
+      "to": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 305,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "to": "B6A.NL.DANG_SUY_RA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 307,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.KN.MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 318,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.DANG_SUY_RA",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 319,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.KN.VI_TU_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 324,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.MO_HINH_VAN_DE",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 328,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 330,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.TT.ALPHA_BETA",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 340,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 342,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 343,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.KN.VI_TU_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 350,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B3.KN.POLYMINIMAL",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 354,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.LOI.KHONG_THUC_TE",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 355,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.NL.THAM_LAM_2",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 360,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 362,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B3.KN.HAMCOUNT",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 363,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B3.KN.HAM_H",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 364,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 365,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 367,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 368,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 369,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 370,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 372,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 373,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 377,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 378,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 382,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B6A.KN.TRI_THUC_HEURISTIC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 383,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 384,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 385,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.GIAI_DOAN_CO_DIEN",
+      "to": "B6A.KN.NGON_NGU_PROLOG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 386,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 389,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 390,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 391,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 392,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 396,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 400,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.BIEU_THUC_MENH_DE",
+      "to": "B6A.NL.DANG_SUY_RA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 409,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HAM_VI_TU",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 410,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 411,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 412,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 413,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.KN.MINIMAX_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 414,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 418,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 419,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 422,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 423,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.DE_MORGAN",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 424,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 428,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 430,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 433,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 434,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 437,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 438,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.TT.ALPHA_BETA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 439,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 440,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 441,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.NL.THAM_LAM_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 445,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 447,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HAM_VI_TU",
+      "to": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 451,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 453,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 454,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 455,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 456,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 459,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.TIMOTRONG",
+      "to": "B6A.NL.DE_MORGAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 462,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.LICH_SU_AI",
+      "to": "B6A.KN.NGON_NGU_PROLOG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 464,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 465,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 468,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 469,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.KG_DIEU_KHIEN",
+      "to": "B1.KN.NEN_TANG_AI_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 472,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.LINH_VUC_AI",
+      "to": "B6A.KN.NGON_NGU_PROLOG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 473,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.NL.HUONG_PHAT_TRIEN_AI",
+      "to": "B6A.KN.NGON_NGU_PROLOG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 474,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 475,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 476,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 477,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B6A.KN.BIEU_THUC_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 478,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 484,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 485,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.NL.THAM_LAM_2",
+      "to": "B2.NL.THU_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 486,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B4.VI.TICTACTOE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 493,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.LOI.KHONG_THUC_TE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 495,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.NL.VET_CAN_THONG_MINH_2",
+      "to": "B3.KN.DO_THI_CO_HUONG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 498,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.KN.VI_TU_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 499,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.VI_DU.LAN_KHONG_UOT",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 500,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.BIEU_THUC_MENH_DE",
+      "to": "B6A.KN.CAC_TUONG_DUONG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 501,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 502,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.NL.DANG_SUY_RA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 503,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "to": "B6A.VI_DU.LAN_KHONG_UOT",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 504,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 506,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 509,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 510,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.NL.THU_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 516,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 521,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 522,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 523,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 524,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 528,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 530,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 531,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.TO_MAU_DO_THI",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 540,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "to": "B4.KN.MINIMAX_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 544,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.KN.HAM_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 545,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B4.KN.NUTMAXMIN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 546,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.VI_DU.LAN_KHONG_UOT",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 547,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.KN.MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 548,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.NL.DANG_SUY_RA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 549,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 550,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 555,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.HAMCOUNT",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 556,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 562,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 563,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 567,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B6A.KN.VI_TU_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 571,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.PP.GIAI_PHAN_CONG",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 572,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 576,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.VI_TU_2",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 577,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 581,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.MO_HINH_VAN_DE",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 582,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.TC.DO_PHUC_TAP_O_N2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 585,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 586,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 590,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 591,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 592,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 593,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 594,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 595,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 601,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.BIEU_THUC_MENH_DE",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 602,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.NL.THAM_LAM_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 603,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 605,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 606,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 609,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 611,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.NUT_LA",
+      "to": "B4.KN.MINIMAX_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 618,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 619,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 620,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 621,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.NL.THAM_LAM_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 624,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B6A.KN.TRI_THUC_HEURISTIC",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 625,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 628,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 629,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 635,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 636,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 640,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 641,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.KN.CAYTROCHOI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 642,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.VI_TU_2",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 643,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 646,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 647,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 651,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B1.KN.UNG_DUNG_THUC_TE_AI",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 659,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 662,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.TC.DO_PHU_TAP_2",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 666,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 668,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.TIMOTRONG",
+      "to": "B6A.KN.MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 669,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B2.NL.VET_CAN_THONG_MINH_2",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 673,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.KN.HAM_G",
+      "to": "B3.TT.A_STAR_2",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 674,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B4.VI.NIM",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 681,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 682,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 683,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_DO_NUOC",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 684,
+      "reason": "missing_endpoint"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.VI_DU.LAN_KHONG_UOT",
+      "sourceRelationType": "LIEN_QUAN",
+      "sourceIndex": 685,
+      "reason": "missing_endpoint"
+    }
+  ],
+  "importedEdges": 79,
+  "approvedPairCount": 333,
+  "rejectedByReason": {
+    "missing_endpoint": 278,
+    "requires_endpoint_not_concept": 77
+  },
+  "importedRelatedEdges": 252,
+  "mappingAudit": {
+    "total": 26,
+    "missingEndpoint": [],
+    "invalidRelation": []
+  }
+}
