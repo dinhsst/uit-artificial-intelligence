@@ -68,8 +68,12 @@ try {
         r.sourceRelationType=item.sourceRelationType, r.sourceIndex=item.sourceIndex
     RETURN count(r) AS importedEdges`, { edges: conceptEdges }));
   const importedEdges = edgeResult.records[0]?.get('importedEdges')?.toNumber?.() ?? conceptEdges.length;
-  await session.executeWrite((tx) => tx.run(`MATCH (:Concept)-[r:HAS_PROPERTY|APPLIED_IN|INCLUDES]->() DELETE r`));
+  await session.executeWrite((tx) => tx.run(`MATCH (:Concept)-[r:HAS_PROPERTY|APPLIED_IN|INCLUDES|RELATED_TO]->() DELETE r`));
   await session.executeWrite((tx) => tx.run(`MATCH (:Exercise)-[r:SOLVED_BY]->() DELETE r`));
+  if (source.relatedEdges?.length) await session.executeWrite((tx) => tx.run(`UNWIND $edges AS item
+    MATCH (from:Concept {id:item.from}), (to:Concept {id:item.to})
+    MERGE (from)-[r:RELATED_TO]->(to)
+    SET r.score=item.score, r.reason=item.reason, r.sourceIndex=item.sourceIndex`, { edges: source.relatedEdges }));
   for (const relation of ['HAS_PROPERTY', 'APPLIED_IN', 'SOLVED_BY', 'INCLUDES']) {
     const mappings = contentMappings.filter((item) => item.relation === relation);
     if (mappings.length) await session.executeWrite((tx) => tx.run(`UNWIND $mappings AS item

@@ -85,16 +85,24 @@ export async function getMethodsForExercise(id) {
 
 export async function getEdges() {
   const records = await runQuery(`MATCH (a:Concept)-[r:REQUIRES]->(b:Concept)
-    RETURN a.id AS from, b.id AS to, r.weight AS weight, r.confidence AS confidence, r.reason AS reason`);
+    RETURN a.id AS from, b.id AS to, type(r) AS type, r.weight AS weight, r.confidence AS confidence, r.reason AS reason`);
   return records.map((record) => ({
-    from: record.get('from'), to: record.get('to'), weight: Number(record.get('weight') ?? 1),
+    from: record.get('from'), to: record.get('to'), type: record.get('type'), weight: Number(record.get('weight') ?? 1),
     confidence: Number(record.get('confidence') ?? 0), reason: record.get('reason') ?? ''
   }));
 }
 
+export async function getRelatedEdges() {
+  const records = await runQuery(`MATCH (a:Concept)-[r:RELATED_TO]->(b:Concept)
+    RETURN a.id AS from, b.id AS to, type(r) AS type, r.score AS score, r.reason AS reason`);
+  return records.map((record) => ({
+    from: record.get('from'), to: record.get('to'), type: record.get('type'), score: Number(record.get('score') ?? 0), reason: record.get('reason') ?? ''
+  }));
+}
+
 export async function getGraph() {
-  const [nodes, edges] = await Promise.all([getConcepts(), getEdges()]);
-  return { nodes, edges };
+  const [nodes, edges, relatedEdges] = await Promise.all([getConcepts(), getEdges(), getRelatedEdges()]);
+  return { nodes, edges: [...edges, ...relatedEdges] };
 }
 
 export async function getAdjacency(direction = 'forward') {

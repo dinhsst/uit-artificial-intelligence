@@ -81,7 +81,7 @@ router.post('/ask', requireAuth, async (req, res, next) => {
     const conceptId = String(req.body.conceptId || '').trim(); if (!conceptId || !await requireId(res, conceptId)) return;
     const traversal = bfsTraverse(conceptId, await getAdjacency('forward'), 3);
     const graph = await getGraph(); const ids = new Set(traversal.visited_order.map((item) => item.id));
-    const subgraph = { nodes: graph.nodes.filter((node) => ids.has(node.id)), edges: graph.edges.filter((edge) => ids.has(edge.from) && ids.has(edge.to)) };
+    const subgraph = { nodes: graph.nodes.filter((node) => ids.has(node.id)), edges: graph.edges.filter((edge) => edge.type === 'REQUIRES' && ids.has(edge.from) && ids.has(edge.to)) };
     try { return res.json({ answer: await answerWithGraph({ question, subgraph }), traversal: traversal.visited_order }); }
     catch (error) { if (error.message === 'LLM_NOT_CONFIGURED' || error.name === 'APIConnectionError' || error.name === 'TimeoutError') return res.json({ fallback: true, answer: 'Chưa thể gọi mô hình; đây là các kiến thức liên quan được tìm thấy.', traversal: traversal.visited_order, subgraph }); throw error; }
   } catch (error) { next(error); }
