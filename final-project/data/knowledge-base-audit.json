@@ -1,0 +1,3461 @@
+{
+  "duplicateNodes": [
+    "B1.KN.NEN_TANG_AI",
+    "B2.KN.THUAT_GIAI_HEURISTIC",
+    "B3.KN.THUAT_TOAN",
+    "B3.KN.KHONG_GIAN_TRANG_THAI",
+    "B3.TT.A_STAR",
+    "B4.KN.MINIMAX",
+    "B2.KN.THUAT_GIAI_HEURISTIC",
+    "B2.NL.VET_CAN_THONG_MINH",
+    "B2.NL.THAM_LAM",
+    "B2.NL.THU_TU",
+    "B2.KN.HAM_HEURISTIC",
+    "B2.KN.HAM_HEURISTIC",
+    "B2.TC.DO_PHU_TAP",
+    "B2.KN.THUAT_GIAI_HEURISTIC",
+    "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+    "B6a.KN.TRI_THUC",
+    "B6a.KN.THANH_PHAN_TRI_THUC",
+    "B6a.KN.MENH_DE",
+    "B6a.KN.LOGIC_MENH_DE",
+    "B6a.KN.DANG_CHUAN_CNF_DNF",
+    "B6a.KN.LOGIC_MENH_DE",
+    "B6a.KN.VI_TU",
+    "B6a.KN.LUONG_TU"
+  ],
+  "invalidNodes": [],
+  "rejectedEdges": [
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.NL.HUONG_PHAT_TRIEN_AI",
+      "to": "B1.KN.HUONG_PT_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.VET_CAN_THONG_MINH_2",
+      "to": "B2.KN.VET_CAN_THONG_MINH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B1.KN.TRI_THUC_Y_KHOA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B1.PP.STATE_SPACE_SEARCH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B1.KN.HE_CHUYEN_GIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.NL.DINH_NGHIA_AI",
+      "to": "B1.KN.TURING_TEST",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMKIEMCHIEUSAU",
+      "to": "B3.KN.CAY_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMKIEMCHIEUSAU",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "to": "B3.KN.BIEU_DIEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "to": "B3.KN.MO_HINH_VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.QUAN_LY_VAN_BAN_NGON_NGU",
+      "to": "B5.KN.TRI_THUC_THANH_PHAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B6A.KN.TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.KN.VI_TU_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.KN.LUONG_TU_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.INTERNET_VAN_VAT",
+      "to": "B1.KN.CONG_NGHIEP_4_0",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMKIEMCHIEURONG",
+      "to": "B3.KN.CAY_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMKIEMCHIEURONG",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.GIAI_PHAN_CONG",
+      "to": "B2.NL.THAM_LAM_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.GIAI_PHAN_CONG",
+      "to": "B2.BT.PHAN_CONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.CAY_KHUNG_NHO_NHAT",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.CAY_KHUNG_NHO_NHAT",
+      "to": "B2.NL.THAM_LAM_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.CAY_KHUNG_NHO_NHAT",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHU_TAP_2",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.CONG_NGHIEP_4_0",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TT.ALPHA_BETA",
+      "to": "B4.KN.NUTMAXMIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TT.ALPHA_BETA",
+      "to": "B4.KN.MINIMAX_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B1.PP.STATE_SPACE_SEARCH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "to": "B4.KN.CAYTROCHOI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.TRI_THUC_THANH_PHAN",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.TRI_THUC_THANH_PHAN",
+      "to": "B1.KN.HE_CHUYEN_GIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THAM_LAM_2",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B1.KN.LINH_VUC_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VI_DU.TRAM_CAP_NUOC",
+      "to": "B3.TT.CAY_KHUNG_NHO_NHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VI_DU.TRAM_CAP_NUOC",
+      "to": "B2.NL.VET_CAN_THONG_MINH_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.TRI_THUC_THU_TUC",
+      "to": "B6A.KN.TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TKSAUDAN",
+      "to": "B3.KN.TIMKIEMCHIEUSAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TKSAUDAN",
+      "to": "B3.KN.TIMKIEMCHIEURONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "to": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "to": "B4.KN.CAYTROCHOI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.MATHWAY",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.BT.PHAN_CONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.TT.HOP_GIAI",
+      "to": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.TT.HOP_GIAI",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.TT.HOP_GIAI",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.PHAN_LOAI_VAN_DE",
+      "to": "B3.KN.VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.THUAT_TOAN",
+      "to": "B3.KN.VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.THUAT_TOAN",
+      "to": "B3.KN.MO_HINH_VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.THUAT_TOAN",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B3.KN.MO_HINH_VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B2.KN.VET_CAN_THONG_MINH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B3.KN.BIEU_DIEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "to": "B4.PP.LUONG_GIA_TINH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.LUAT_SUY_DIEN",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.PP.STATE_SPACE_SEARCH",
+      "to": "B1.KN.KG_DIEU_KHIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B3.KN.CHIEN_LUOC_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B5.KN.TRI_THUC_THANH_PHAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B3.KN.BIEU_DIEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.MO_RONG_CAY_TIM_KIEM",
+      "to": "B3.KN.CAY_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.MO_RONG_CAY_TIM_KIEM",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.VD.MINIMAX_TIC_TAC_TOE",
+      "to": "B4.KN.MINIMAX_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.VD.MINIMAX_TIC_TAC_TOE",
+      "to": "B4.VI.TICTACTOE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.TT.THAY_THE_MENH_DE",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.KG_DIEU_KHIEN",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TKTOTNHAT",
+      "to": "B3.KN.TIMKIEMCHIEUSAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TKTOTNHAT",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TKTOTNHAT",
+      "to": "B3.KN.TIMKIEMCHIEURONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.NL.TINH_TRUOC_N_NUOC",
+      "to": "B4.KN.CAYTROCHOI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.LICH_SU_AI",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_UE_LUONG_H",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_UE_LUONG_H",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "to": "B4.KN.MINIMAX_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.VD.IN_3D",
+      "to": "B1.KN.CONG_NGHIEP_4_0",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.CONG_NGHE_NANO",
+      "to": "B1.KN.CONG_NGHIEP_4_0",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.PP.LUONG_GIA_TINH",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.WOLFRAM_ALPHA",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.WOLFRAM_ALPHA",
+      "to": "B1.VI_DU.IBM_WATSON",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.ROBOT",
+      "to": "B1.KN.CONG_NGHIEP_4_0",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_NGUOI_QUY_QUA_SONG",
+      "to": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.LUONG_TU_2",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHUC_TAP_O_N2",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.DANG_SUY_RA",
+      "to": "B6A.KN.CAC_TUONG_DUONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.DANG_SUY_RA",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.VI_DU.LAN_KHONG_UOT",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.VI_DU.LAN_KHONG_UOT",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_TRANG_THAI",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_TRANG_THAI",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_TRANG_THAI",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.SYMBOLAB",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.TC.SAN_XUAT_LINH_HOAT",
+      "to": "B1.KN.ROBOT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.DIJKSTRA",
+      "to": "B3.KN.DO_THI_CO_HUONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.DIJKSTRA",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.DIJKSTRA",
+      "to": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B3.KN.CAY_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.KN.TRONGTONGBANGKHONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B3.KN.DO_THI_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.AI",
+      "to": "B1.NL.DINH_NGHIA_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.NGUOI_DUA_THU",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.NGUOI_DUA_THU",
+      "to": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_8_SO",
+      "to": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_GIAI_TAM_GIAC",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.VET_CAN_THONG_MINH",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "to": "B4.KN.MINIMAX_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.TRI_THUC",
+      "to": "B5.KN.TRI_THUC_THANH_PHAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.TO_MAU_DO_THI",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.TO_MAU_DO_THI",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.NL.TANGDOSAU",
+      "to": "B3.KN.TKSAUDAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.NGON_NGU_PROLOG",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.THUAT_GIAI_TO_MAU",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.THUAT_GIAI_TO_MAU",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAY_TIM_KIEM",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.VI_DU.XE_TU_LAI",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.VI_DU.IBM_WATSON",
+      "to": "B1.KN.HE_CHUYEN_GIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "to": "B2.NL.VET_CAN_THONG_MINH_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_DO_NUOC",
+      "to": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.DE_MORGAN",
+      "to": "B6A.KN.CAC_TUONG_DUONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.BT.CANO",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.LOI.KHONG_THUC_TE",
+      "to": "B4.KN.MINIMAX_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B1.PP.STATE_SPACE_SEARCH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B2.KN.CHU_TRINH_HAMILTON",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.PHEP_TOAN_VI_TU",
+      "to": "B6A.KN.HAM_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.POLYMINIMAL",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.NL.HUONGTRI",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.NL.HUONGTRI",
+      "to": "B3.KN.BAI_TOAN_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VI.TKTOTNHAT",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VI.TKTOTNHAT",
+      "to": "B3.KN.TKTOTNHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NUTMAXMIN",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "to": "B6A.KN.BIEU_THUC_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.VD.TO_MAU",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.TINH_TONG_LE",
+      "to": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.LOI.THUAT_GIAI_CHUA_CHINH_XAC",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.CAIDATPUZZLEASTART",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.CAIDATPUZZLEASTART",
+      "to": "B3.TT.A_STAR_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CHIEN_LUOC_TIM_KIEM",
+      "to": "B3.KN.TIM_KIEM_MU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CHIEN_LUOC_TIM_KIEM",
+      "to": "B3.KN.TKTOTNHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HANG_SO_HUONG",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.BIEU_THUC_MENH_DE",
+      "to": "B6A.KN.MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.TOAN_TU_8_SO",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.TRI_THUC_HEURISTIC",
+      "to": "B6A.KN.TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.TRI_THUC_HEURISTIC",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VI.TKSAU",
+      "to": "B3.NL.TANGDOSAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DANH_SACH_LIST",
+      "to": "B3.KN.DANHSAOOC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DANHSAOOC",
+      "to": "B3.KN.TKTOTNHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.A_STAR_2",
+      "to": "B2.NL.THAM_LAM_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.A_STAR_2",
+      "to": "B3.NL.HAM_DANH_GIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.CAP_NHAT_G",
+      "to": "B3.TT.A_STAR_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.CAP_NHAT_G",
+      "to": "B3.KN.PREV",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VI_DU.CAI_DAT_PUZZLE",
+      "to": "B3.KN.CAU_TRUC_INFO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_CO_HUONG",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HAM_VI_TU",
+      "to": "B6A.KN.MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HAM_VI_TU",
+      "to": "B6A.KN.VI_TU_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.GIAI_DOAN_CO_DIEN",
+      "to": "B1.KN.LICH_SU_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIM_KIEM_MU",
+      "to": "B3.KN.TIMKIEMCHIEUSAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIM_KIEM_MU",
+      "to": "B3.KN.TIMKIEMCHIEURONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B2.NL.THAM_LAM_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.VI.NIM",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.KN.TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.NL.HAM_DANH_GIA",
+      "to": "B3.KN.HAM_G",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.NL.HAM_DANH_GIA",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.XULYKE",
+      "to": "B3.KN.BANGKE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.BANG_CHAN_TRI",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.VI_DU.HE_THONG_GIAO_THONG",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.VI.TICTACTOE",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_PHUC_TAP_CAO",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "to": "B3.VD.BAI_TOAN_8_SO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "to": "B3.TT.A_STAR_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMOTRONG",
+      "to": "B3.KN.CAU_TRUC_INFO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.VI_DU.BINH_NUOC",
+      "to": "B3.KN.BIEU_DIEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.KN.TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HUONG_PT_AI",
+      "to": "B1.KN.LICH_SU_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.BANGKE",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VONG",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.NL.HAM_H_8_SO",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.SOBANG",
+      "to": "B3.KN.CAU_TRUC_INFO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAMCOUNT",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.PATH",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TC.DO_PHUC_TAP",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.VI_DU.TO_MAU_10_DINH",
+      "to": "B2.VD.TO_MAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.LINH_VUC_UD",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_G",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DINH_MO",
+      "to": "B3.KN.DANHSAOOC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.PREV",
+      "to": "B3.KN.DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "to": "B6A.NL.LUAT_SUY_DIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.G_N",
+      "to": "B3.KN.HAM_G",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.GANBANG",
+      "to": "B3.KN.BIEU_DIEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.NUT_LA",
+      "to": "B3.KN.CAY_TIM_KIEM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.NHA_MAY_TUONG_LAI",
+      "to": "B1.KN.INTERNET_VAN_VAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.NHA_MAY_TUONG_LAI",
+      "to": "B1.KN.ROBOT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.NEN_TANG_AI_2",
+      "to": "B1.KN.LICH_SU_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_HINH_THUC_HOA",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.LINH_VUC_AI",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TC.TIEU_CHUAN_THUAT_TOAN",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.UNG_DUNG_THUC_TE_AI",
+      "to": "B1.KN.AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HUONG_PT_AI",
+      "to": "B1.KN.LINH_VUC_UD",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "to": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.CAIDATPUZZLEASTART",
+      "to": "B3.VI_DU.CAI_DAT_PUZZLE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.LOI.KHONG_THUC_TE",
+      "to": "B4.TT.ALPHA_BETA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.TRI_THUC_THANH_PHAN",
+      "to": "B6A.KN.TRI_THUC_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B3.KN.HAMCOUNT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_G",
+      "to": "B3.TT.DIJKSTRA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "to": "B4.TT.ALPHA_BETA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "to": "B4.TT.ALPHA_BETA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHU_TAP_2",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B3.KN.HAMCOUNT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAMCOUNT",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.TC.HAN_CHE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.LOI.KHONG_THUC_TE",
+      "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.LOI.KHONG_THUC_TE",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.MATHWAY",
+      "to": "B5.KN.SYMBOLAB",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.NL.HAM_DANH_GIA",
+      "to": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.A_STAR_2",
+      "to": "B4.LOI.HAM_DANH_GIA_QUAN_TRONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.BANGKE",
+      "to": "B3.KN.SOBANG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "to": "B6A.NL.DANG_SUY_RA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.TC.HAN_CHE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B3.KN.HAMCOUNT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_UE_LUONG_H",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.LINH_VUC_AI",
+      "to": "B1.NL.HUONG_PHAT_TRIEN_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.BT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.KN.MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.DANG_SUY_RA",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAMCOUNT",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.G_N",
+      "to": "B3.TT.DIJKSTRA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "to": "B4.TT.ALPHA_BETA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.KN.VI_TU_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B3.KN.HAMCOUNT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.MO_HINH_VAN_DE",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.BT.BAI_TOAN_DUONG_DI_NGAN_NHAT",
+      "to": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.CAY_KHUNG_NHO_NHAT",
+      "to": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_G",
+      "to": "B3.KN.PREV",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_G",
+      "to": "B3.TT.CAP_NHAT_G",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.SOBANG",
+      "to": "B3.PP.XULYKE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TT.ALPHA_BETA",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "to": "B4.LOI.KHONG_THUC_TE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHUC_TAP_O_N2",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.KN.VI_TU_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHUC_TAP_O_N2",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.LOI.KHONG_THUC_TE",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.TT.THUAT_GIAI_TO_MAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.TC.HAN_CHE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THAM_LAM_2",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B3.KN.HAMCOUNT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_CO_HUONG",
+      "to": "B3.KN.NUT_LA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B2.TC.HAN_CHE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.NL.THU_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_TRANG_THAI",
+      "to": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.KN.THUAT_GIAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B3.KN.HAMCOUNT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B6A.KN.TRI_THUC_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.GIAI_DOAN_CO_DIEN",
+      "to": "B6A.KN.NGON_NGU_PROLOG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B1.KN.UNG_DUNG_THUC_TE_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B1.TC.SAN_XUAT_LINH_HOAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.LINH_VUC_AI",
+      "to": "B1.VI_DU.HE_THONG_GIAO_THONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.VI_DU.HE_THONG_GIAO_THONG",
+      "to": "B1.VI_DU.XE_TU_LAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.TO_MAU_DO_THI",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.TO_MAU_DO_THI",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.PP.GIAI_PHAN_CONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.PREV",
+      "to": "B3.TT.DIJKSTRA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TT.CAP_NHAT_G",
+      "to": "B3.TT.DIJKSTRA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.GANBANG",
+      "to": "B3.PP.XULYKE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.TT.ALPHA_BETA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.BIEU_THUC_MENH_DE",
+      "to": "B6A.NL.DANG_SUY_RA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HAM_VI_TU",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.DANG_CHUAN_CNF_DNF",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.KN.MINIMAX_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NUTMAXMIN",
+      "to": "B4.LOI.KHONG_THUC_TE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.DE_MORGAN",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B5.KN.TRI_THUC_THANH_PHAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.THUAT_TOAN",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.TT.THUAT_GIAI_TO_MAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.TT.ALPHA_BETA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B3.NL.HUONGTRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B3.KN.VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B3.KN.VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.NL.THAM_LAM_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NUTMAXMIN",
+      "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.NUTMAXMIN",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HAM_VI_TU",
+      "to": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.LOI.KHONG_THUC_TE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.MO_HINH_VAN_DE",
+      "to": "B3.KN.VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMOTRONG",
+      "to": "B6A.NL.DE_MORGAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.LICH_SU_AI",
+      "to": "B6A.KN.NGON_NGU_PROLOG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B3.KN.TKTOTNHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.VI_DU.TO_MAU_10_DINH",
+      "to": "B5.KN.SYMBOLAB",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.NL.THU_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.KG_DIEU_KHIEN",
+      "to": "B1.KN.NEN_TANG_AI_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.LINH_VUC_AI",
+      "to": "B6A.KN.NGON_NGU_PROLOG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.NL.HUONG_PHAT_TRIEN_AI",
+      "to": "B6A.KN.NGON_NGU_PROLOG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B6A.KN.BIEU_THUC_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.BT.PHAN_CONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THAM_LAM_2",
+      "to": "B2.NL.THU_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.NGUOI_DUA_THU",
+      "to": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VONG",
+      "to": "B3.TT.CAY_KHUNG_NHO_NHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMKIEMCHIEURONG",
+      "to": "B3.KN.TIMKIEMCHIEUSAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.G_N",
+      "to": "B3.KN.PREV",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.G_N",
+      "to": "B3.TT.CAP_NHAT_G",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B4.VI.TICTACTOE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.NUT_LA",
+      "to": "B4.KN.CAYTROCHOI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.LOI.KHONG_THUC_TE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.VET_CAN_THONG_MINH_2",
+      "to": "B3.KN.DO_THI_CO_HUONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.KN.VI_TU_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.VI_DU.LAN_KHONG_UOT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.BIEU_THUC_MENH_DE",
+      "to": "B6A.KN.CAC_TUONG_DUONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.NL.DANG_SUY_RA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "to": "B6A.VI_DU.LAN_KHONG_UOT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_UE_LUONG_H",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B4.TT.ALPHA_BETA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.TT.THUAT_GIAI_TO_MAU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_TRANG_THAI",
+      "to": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_TRANG_THAI",
+      "to": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B3.KN.DO_THI_TRANG_THAI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.NL.THU_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B2.TC.DAC_TINH_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_HO_TRO_QUYET_DINH",
+      "to": "B2.TC.DO_PHUC_TAP_O_N2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.NUT_LA",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.TC.DO_PHUC_TAP",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B3.KN.TKTOTNHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_DAY_DU",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.NL.THU_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B3.KN.HAMCOUNT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.UNG_DUNG_THUC_TE_AI",
+      "to": "B1.VI_DU.HE_THONG_GIAO_THONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.TO_MAU_DO_THI",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.TO_MAU_DO_THI",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.TO_MAU_DO_THI",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.TO_MAU_DO_THI",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.GANBANG",
+      "to": "B3.PP.CAIDATPUZZLEASTART",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "to": "B4.KN.MINIMAX_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.KN.HAM_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B4.KN.NUTMAXMIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.VI_DU.LAN_KHONG_UOT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.KN.MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.NL.DANG_SUY_RA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B4.LOI.KHONG_THUC_TE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B3.NL.HUONGTRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.UNG_DUNG_THUC_TE_AI",
+      "to": "B5.KN.WOLFRAM_ALPHA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAMCOUNT",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.TC.DAC_TINH_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B3.KN.TKTOTNHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.ROBOT",
+      "to": "B1.VI_DU.IBM_WATSON",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.KG_DIEU_KHIEN",
+      "to": "B1.VI_DU.HE_THONG_GIAO_THONG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TT.THUAT_GIAI_TO_MAU",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B6A.KN.VI_TU_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.GIAI_PHAN_CONG",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_CO_HUONG",
+      "to": "B4.KN.NUTMAXMIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.TT.THAY_THE_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.VI_TU_2",
+      "to": "B6A.NL.PHEP_TOAN_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.CAU_TRUC_INFO",
+      "to": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.LOI.KHONG_THUC_TE",
+      "to": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.MO_HINH_VAN_DE",
+      "to": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TKTOTNHAT",
+      "to": "B3.NL.HUONGTRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.HAM_HEURISTIC",
+      "to": "B2.TC.DO_PHUC_TAP_O_N2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.TC.DO_PHUC_TAP_O_N2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_UE_LUONG_H",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B5.KN.PHUONG_PHAP_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B6A.KN.HE_LUAT_DAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B6A.KN.MANG_NGU_NGHIA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.PHUONG_PHAP_BDTT",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_THUC_TIEN",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.HE_LUAT_DAN",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MANG_NGU_NGHIA",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAMCOUNT",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.POLYMINIMAL",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.NL.HUONG_PHAT_TRIEN_AI",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.KN.HE_CO_SO_TRI_THUC",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.BIEU_THUC_MENH_DE",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B2.NL.THAM_LAM_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B2.KN.HAM_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.BAI_TOAN_NGUOI_DUA_THU",
+      "to": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.TT.NGUOI_DUA_THU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B3.TT.DIJKSTRA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TOAN_TU_CHUYEN_TRANG_THAI",
+      "to": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_8_SO_A_STAR",
+      "to": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.GANBANG",
+      "to": "B3.VI_DU.CAI_DAT_PUZZLE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.CAIDATPUZZLEASTART",
+      "to": "B3.PP.XULYKE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.VI.TICTACTOE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_CO_HUONG",
+      "to": "B4.KN.CAYTROCHOI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.NUT_LA",
+      "to": "B4.KN.MINIMAX_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.CAC_TUONG_DUONG",
+      "to": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B3.KN.POLYMINIMAL",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHUC_TAP_O_N2",
+      "to": "B3.KN.HAM_UE_LUONG_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B2.NL.THAM_LAM_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.KN.THUAT_GIAI_HEURISTIC_3",
+      "to": "B6A.KN.TRI_THUC_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMKIEMCHIEUSAU",
+      "to": "B4.TC.DO_PHO_TAP_KHONG_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMKIEMCHIEUSAU",
+      "to": "B4.TC.DO_PHO_TAP_THOI_GIAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MENH_DE",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VAN_DE",
+      "to": "B6A.PP.BIEU_DIEN_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B3.KN.HAMCOUNT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B3.KN.HAM_H",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.PHAN_CONG_CONG_VIEC",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.TC.DO_PHU_TAP_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B3.VD.BAI_TOAN_NGUOI_VA_QUY",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.MO_HINH_AI",
+      "to": "B2.TC.DAC_TINH_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B3.NL.HUONGTRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.THU_TU",
+      "to": "B2.TC.HAN_CHE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_CHUYEN_GIA",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HE_GIAI_QUYET_VAN_DE_THONG_MINH",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.KHONG_GIAN_TRANG_THAI_2",
+      "to": "B4.KN.CAYTROCHOI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.VI_TU_2",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TT.ALPHA_BETA",
+      "to": "B4.VI_DU.CAY_TRO_CHOI_CO_VUA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.MO_HINH_VAN_DE",
+      "to": "B5.KN.HUONG_PHAT_TRIEN_BDTT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.NL.BIEU_DIEN_TRI_THUC",
+      "to": "B6A.PP.CHUNG_MINH_PHAN_CHUNG",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.HUONG_PT_AI",
+      "to": "B3.KN.MO_HINH_VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.LINH_VUC_UD",
+      "to": "B3.KN.MO_HINH_VAN_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B5.NL.TIEU_CHUAN_PHO_QUAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DAC_TINH_HEURISTIC",
+      "to": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAMCOUNT",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAMCOUNT",
+      "to": "B3.KN.TKTOTNHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_H",
+      "to": "B3.KN.TKTOTNHAT",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.POLYMINIMAL",
+      "to": "B3.KN.THUAT_TOAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TKTOTNHAT",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.KG_DIEU_KHIEN",
+      "to": "B1.KN.LINH_VUC_AI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.UNG_DUNG_THUC_TE_AI",
+      "to": "B5.KN.HE_CO_SO_TRI_THUC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B1.KN.UNG_DUNG_THUC_TE_AI",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHUC_TAP_O_N2",
+      "to": "B3.NL.HUONGTRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.CAI_DAT_BAI_TOAN",
+      "to": "B2.TT.TO_MAU_DO_THI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B6A.TT.THUAT_GIAI_VUONG_HAO",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B2.TC.DO_PHUC_TAP_O_N2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.BT.NGUOI_DUA_THU_HAI_CACH",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHUC_TAP_O_N2",
+      "to": "B2.TC.HAN_CHE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.DO_PHU_TAP_2",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.TC.HAN_CHE",
+      "to": "B3.TC.DO_PHUC_TAP",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.VI_DU.CHIEU_DAI_DUONG_DI",
+      "to": "B6A.KN.BANG_CHAN_TRI",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIMOTRONG",
+      "to": "B6A.KN.MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.PP.HEURISTIC_NGUOI_DUA_THU",
+      "to": "B3.KN.G_N",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.VONG",
+      "to": "B3.TT.THUAT_TOAN_SAP_XEP_CANH",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.TIM_KIEM_MU",
+      "to": "B3.KN.TKSAUDAN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B2.NL.VET_CAN_THONG_MINH_2",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.HAM_G",
+      "to": "B3.TT.A_STAR_2",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.NL.HAM_DANH_GIA",
+      "to": "B4.KN.HAM_DANH_GIA_HEURISTIC",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.PP.XULYKE",
+      "to": "B3.VI_DU.CAI_DAT_PUZZLE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.TT.ALPHA_BETA",
+      "to": "B4.VI.TICTACTOE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_CO_HUONG",
+      "to": "B4.KN.NGUOI_CHOI_MAX_MIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.KN.DO_THI_CO_HUONG",
+      "to": "B4.TT.ALPHA_BETA",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.CAYTROCHOI",
+      "to": "B4.KN.NUTMAXMIN",
+      "reason": "not approved"
+    },
+    {
+      "from": "B4.KN.MINIMAX_2",
+      "to": "B4.VI.NIM",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_LOGIC_VI_TU",
+      "to": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.MO_HINH_TRI_THUC_LOGIC_MENH_DE",
+      "to": "B6A.VI_DU.SUY_DIEN_MODUS_TOLLENS",
+      "reason": "not approved"
+    },
+    {
+      "from": "B3.VD.BAI_TOAN_DO_NUOC",
+      "to": "B6A.KN.LOGIC_MENH_DE_3",
+      "reason": "not approved"
+    },
+    {
+      "from": "B6A.KN.LOGIC_MENH_DE_3",
+      "to": "B6A.VI_DU.LAN_KHONG_UOT",
+      "reason": "not approved"
+    }
+  ],
+  "importedEdges": 0
+}

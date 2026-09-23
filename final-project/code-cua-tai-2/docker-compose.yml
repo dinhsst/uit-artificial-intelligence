@@ -1,0 +1,103 @@
+services:
+  web:
+    image: cpp-atlas:local
+    build: .
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 3s
+      start_period: 10s
+      retries: 3
+
+  api:
+    build:
+      context: ./api
+    networks:
+      - default
+      - sandbox
+    environment:
+      DATABASE_URL: postgresql+psycopg://cppatlas:cppatlas@postgres:5432/cppatlas
+      RUNNER_URL: http://runner:8010
+      JWT_SECRET: ${JWT_SECRET:-development-only-change-this-secret}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:4173,http://localhost:8080}
+      LLM_BASE_URL: ${LLM_BASE_URL:-}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-}
+      LLM_TIMEOUT: ${LLM_TIMEOUT:-30}
+    command: sh -c "alembic upgrade head && python seed.py && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    ports:
+      - "${API_PORT:-18000}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz')"]
+      interval: 10s
+      timeout: 3s
+      start_period: 20s
+      retries: 5
+
+  runner:
+    build:
+      context: ./runner
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,noexec,nosuid,nodev
+      - /workspace:size=64m,nosuid,nodev,exec
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - sandbox
+    ports: []
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8010/healthz')"]
+      interval: 10s
+      timeout: 3s
+      start_period: 20s
+      retries: 5
+
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: cppatlas
+      POSTGRES_PASSWORD: cppatlas
+      POSTGRES_DB: cppatlas
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT:-55433}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cppatlas -d cppatlas"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    ports:
+      - "${REDIS_PORT:-56379}:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  sandbox:
+    internal: true
